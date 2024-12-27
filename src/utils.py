@@ -6,10 +6,11 @@ from typing import Union
 def wmape(y_true, y_pred):
     return np.abs(y_true - y_pred).sum() / np.abs(y_true).sum()
 
-# --------------------------- 
+
+# ---------------------------
+
 
 class WMAPE(torch.nn.Module):
-
     def __init__(self):
         super(WMAPE, self).__init__()
         self.outputsize_multiplier = 1

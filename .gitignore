@@ -8,6 +8,15 @@ wheels/
 
 # Virtual environments
 .venv
+
+# dados
 deltalake/*
+
+#logs
 lightning_logs/*
+
+#secrets
 .secrets.toml
+
+#mage
+mage-ai/*
