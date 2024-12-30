@@ -11,6 +11,7 @@ import mlflow.pyfunc
 import psutil
 import platform
 import socket
+import uuid
 
 mlflow.set_tracking_uri("http://127.0.0.1:5000")
 mlflow.enable_system_metrics_logging()
@@ -56,7 +57,7 @@ def tuna_modelo_autolstm():
         mlflow.log_param("loss", "WMAPE")
 
         # Save and log the model
-        model_path = f"neuralforecast_lstm_{datetime.datetime.now().date()}.joblib"
+        model_path = f"ml_models/neuralforecast_lstm_{datetime.datetime.now().date()}.joblib"
         joblib.dump(model, model_path)
         mlflow.log_artifact(model_path)
 
@@ -81,7 +82,7 @@ def tuna_modelo_autolstm():
             ).set_index("ds")
             plot_df[["y", "AutoLSTM"]].plot(ax=ax[ax_i], linewidth=2, title=unique_id)
 
-        plot_path = "forecast_plot.png"
+        plot_path = f"reports/forecast_plot_{datetime.datetime.now().date()}.png"
         plt.savefig(plot_path)
         mlflow.log_artifact(plot_path)
 
