@@ -6,7 +6,24 @@ from neuralforecast import NeuralForecast
 from neuralforecast.auto import AutoLSTM
 import datetime
 import joblib
+import mlflow
+import mlflow.pyfunc
+import psutil
+import platform
+import socket
 
+mlflow.set_tracking_uri("http://127.0.0.1:5000")
+mlflow.enable_system_metrics_logging()
+mlflow.set_experiment("autolstm_experiment")
+
+def log_system_info():
+    mlflow.log_param("system", platform.system())
+    mlflow.log_param("release", platform.release())
+    mlflow.log_param("version", platform.version())
+    mlflow.log_param("machine", platform.machine())
+    mlflow.log_param("processor", platform.processor())
+    mlflow.log_param("cpu_count", psutil.cpu_count())
+    mlflow.log_param("memory", psutil.virtual_memory().total / (1024 ** 3))
 
 def tuna_modelo_autolstm():
     df = DeltaTable("deltalake").to_pandas()
@@ -24,34 +41,49 @@ def tuna_modelo_autolstm():
     valid = df.loc[(df["ds"] >= "2024-09-01") & (df["ds"] < "2024-12-20")]
     h = valid["ds"].nunique()
 
-    models = [AutoLSTM(h=h, num_samples=30, loss=WMAPE())]
+    models = [AutoLSTM(h=h, num_samples=3, loss=WMAPE())]
 
     model = NeuralForecast(models=models, freq="D")
 
-    model.fit(train, val_size=30)
+    with mlflow.start_run():
+        log_system_info()
 
-    joblib.dump(model, f"neuralforecast_lstm_{datetime.datetime.now().date()}.joblib")
+        model.fit(train, val_size=30)
 
-    p = model.predict().reset_index()
-    p = p.merge(valid[["ds", "unique_id", "y"]], on=["ds", "unique_id"], how="left")
+        # Log parameters
+        mlflow.log_param("h", h)
+        mlflow.log_param("num_samples", 3)
+        mlflow.log_param("loss", "WMAPE")
 
-    print(f"A avaliação do wmape é:", wmape(p["y"], p["AutoLSTM"]))
+        # Save and log the model
+        model_path = f"neuralforecast_lstm_{datetime.datetime.now().date()}.joblib"
+        joblib.dump(model, model_path)
+        mlflow.log_artifact(model_path)
 
-    fig, ax = plt.subplots(2, 1, figsize=(1280 / 96, 720 / 96))
-    fig.tight_layout(pad=7.0)
-    for ax_i, unique_id in enumerate(["ABEV3", "BBAS3"]):
-        plot_df = pd.concat(
-            [
-                train.loc[train["unique_id"] == unique_id].tail(30),
-                p.loc[p["unique_id"] == unique_id],
-            ]
-        ).set_index("ds")
-        plot_df[["y", "AutoLSTM"]].plot(ax=ax[ax_i], linewidth=2, title=unique_id)
+        p = model.predict().reset_index()
+        p = p.merge(valid[["ds", "unique_id", "y"]], on=["ds", "unique_id"], how="left")
 
-        ax[ax_i].grid()
-    fig.savefig(
-        f"reports/neuralforecast_lstm_{datetime.datetime.now().date()}.png", dpi=300
-    )
+        wmape_value = wmape(p["y"], p["AutoLSTM"])
+        print(f"A avaliação do wmape é:", wmape_value)
+
+        # Log metrics
+        mlflow.log_metric("wmape", wmape_value)
+
+        # Plot and save the figure
+        fig, ax = plt.subplots(2, 1, figsize=(1280 / 96, 720 / 96))
+        fig.tight_layout(pad=7.0)
+        for ax_i, unique_id in enumerate(["ABEV3", "BBAS3"]):
+            plot_df = pd.concat(
+                [
+                    train.loc[train["unique_id"] == unique_id].tail(30),
+                    p.loc[p["unique_id"] == unique_id],
+                ]
+            ).set_index("ds")
+            plot_df[["y", "AutoLSTM"]].plot(ax=ax[ax_i], linewidth=2, title=unique_id)
+
+        plot_path = "forecast_plot.png"
+        plt.savefig(plot_path)
+        mlflow.log_artifact(plot_path)
 
 
 if __name__ == "__main__":
