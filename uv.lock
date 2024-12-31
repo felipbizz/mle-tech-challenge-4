@@ -1617,6 +1617,15 @@ wheels = [
 ]
 
 [[package]]
+name = "nvidia-ml-py"
+version = "12.560.30"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/53/10/5f34de4a71db8b2b7ec4269f4a33287f24c23e2857ea3187c977b7bc3604/nvidia-ml-py-12.560.30.tar.gz", hash = "sha256:f0254dc7400647680a072ee02509bfd46102b60bdfeca321576d4d4817e7fe97", size = 39194 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b7/f3/a69ce0b1a1e12fbf6b2ad9f4c14c9999fdbdf15f2478d210f0fd501ddc98/nvidia_ml_py-12.560.30-py3-none-any.whl", hash = "sha256:fea371c94d63e38a611c17bbb85fe400e9c8ddb9e8684a9cd0e47786a4bc3c73", size = 40526 },
+]
+
+[[package]]
 name = "nvidia-nccl-cu12"
 version = "2.21.5"
 source = { registry = "https://pypi.org/simple" }
@@ -2026,6 +2035,18 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/8e/62/8336eff65bcbc8e4cb5d05b55faf041285951b6e80f33e2bff2024788f31/pygments-2.18.0.tar.gz", hash = "sha256:786ff802f32e91311bff3889f6e9a86e81505fe99f2735bb6d60ae0c5004f199", size = 4891905 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/f7/3f/01c8b82017c199075f8f788d0d906b9ffbbc5a47dc9918a945e13d5a2bda/pygments-2.18.0-py3-none-any.whl", hash = "sha256:b8e6aca0523f3ab76fee51799c488e38782ac06eafcf95e7ba832985c8e7b13a", size = 1205513 },
+]
+
+[[package]]
+name = "pynvml"
+version = "12.0.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "nvidia-ml-py" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/26/6f/6b5880ed0239e85b9a39aed103b65b2ef81425beef9f45e5c035bf008330/pynvml-12.0.0.tar.gz", hash = "sha256:299ce2451a6a17e6822d6faee750103e25b415f06f59abb8db65d30f794166f5", size = 33636 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ed/df/f7cf07a65a96dd11d71f346f9c2863accdd4784da83af7181b067d556cbc/pynvml-12.0.0-py3-none-any.whl", hash = "sha256:fdff84b62a27dbe98e08e1a647eb77342bef1aebe0878bcd15e99a83fcbecb9e", size = 26560 },
 ]
 
 [[package]]
@@ -2526,6 +2547,7 @@ dependencies = [
     { name = "neuralforecast" },
     { name = "polars" },
     { name = "psutil" },
+    { name = "pynvml" },
     { name = "yfinance" },
 ]
 
@@ -2542,6 +2564,7 @@ requires-dist = [
     { name = "neuralforecast", specifier = ">=1.7.7" },
     { name = "polars", specifier = ">=1.17.1" },
     { name = "psutil", specifier = ">=6.1.1" },
+    { name = "pynvml", specifier = ">=12.0.0" },
     { name = "yfinance", specifier = ">=0.2.51" },
 ]
 

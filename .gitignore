@@ -21,3 +21,4 @@ lightning_logs/*
 #mage
 mage-ai/*
 *.db
+mlruns/*
