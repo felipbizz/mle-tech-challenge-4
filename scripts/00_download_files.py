@@ -17,7 +17,7 @@ def download_files(symbols: list):
         df.columns = df.columns.droplevel(1)
         df = df.reset_index()
 
-        df = df.rename(columns={"Date": "ds", "Close": "y", "Price": "DIS"})
+        df = df.rename(columns={"Date": "ds", "Close": "y", }) #"Price": "DIS"
         df = df[["ds", "y"]]
 
         df["unique_id"] = symbol

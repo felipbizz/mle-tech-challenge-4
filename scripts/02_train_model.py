@@ -19,4 +19,7 @@ df = df[df["unique_id"].isin(FILTRA_IDS)]
 train = df.loc[df["ds"] < "2024-09-01"]
 
 model = NeuralForecast(models=models, freq="D")
-model.fit(train)
+
+if __name__ == "__main__":  
+    
+    model.fit(train)
