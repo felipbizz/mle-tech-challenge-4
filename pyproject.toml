@@ -19,3 +19,7 @@ dependencies = [
     "pynvml>=12.0.0",
     "yfinance>=0.2.51",
 ]
+
+[tool.setuptools]
+packages = ["src"]
+package-dir = {"" = "src"}
