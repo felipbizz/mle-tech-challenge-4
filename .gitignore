@@ -24,3 +24,5 @@ mage-ai/*
 mlruns/*
 uv.lock
 .env
+
+data/
