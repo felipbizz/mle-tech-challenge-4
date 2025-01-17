@@ -1,7 +1,7 @@
+import numpy as np
 import pandas as pd
 import torch
-from torch.utils.data import Dataset, DataLoader
-import numpy as np
+from torch.utils.data import DataLoader, Dataset
 
 
 class SequenceDataset(Dataset):

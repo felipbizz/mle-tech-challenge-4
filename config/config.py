@@ -6,7 +6,7 @@ settings = Dynaconf(
 )
 
 
-## Exemplo de .secrets.toml
+# Exemplo de .secrets.toml
 # minio_url = 'http://127.0.0.1:9000'
 # access_key = 'acess_key-do-minio'
 # secret_key = 'secret_key-do-minio'

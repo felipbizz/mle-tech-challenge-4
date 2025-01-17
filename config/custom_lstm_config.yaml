@@ -1,0 +1,9 @@
+model:
+  input_size: 14
+  hidden_size: 32
+  output_size: 14
+  output_sequence_length: 1
+training:
+  epochs: 50
+  batch_size: 32
+  learning_rate: 0.001

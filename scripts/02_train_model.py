@@ -1,6 +1,7 @@
+from deltalake import DeltaTable
 from neuralforecast import NeuralForecast
 from neuralforecast.models import LSTM
-from deltalake import DeltaTable
+
 from config.config import settings
 
 best_config = settings.best_config
@@ -20,6 +21,6 @@ train = df.loc[df["ds"] < "2024-09-01"]
 
 model = NeuralForecast(models=models, freq="D")
 
-if __name__ == "__main__":  
-    
+if __name__ == "__main__":
+
     model.fit(train)

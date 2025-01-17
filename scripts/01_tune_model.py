@@ -1,21 +1,21 @@
-import pandas as pd
-from deltalake import DeltaTable
-from src.utils import WMAPE, wmape
-import matplotlib.pyplot as plt
-from neuralforecast import NeuralForecast
-from neuralforecast.auto import AutoLSTM
 import datetime
+import platform
+
 import joblib
+import matplotlib.pyplot as plt
 import mlflow
 import mlflow.pyfunc
+import pandas as pd
 import psutil
-import platform
-import socket
-import uuid
+from deltalake import DeltaTable
+from neuralforecast import NeuralForecast
+from neuralforecast.auto import AutoLSTM
+from src.utils import WMAPE, wmape
 
 mlflow.set_tracking_uri("http://127.0.0.1:5000")
 mlflow.enable_system_metrics_logging()
 mlflow.set_experiment("autolstm_experiment")
+
 
 def log_system_info():
     mlflow.log_param("system", platform.system())
@@ -25,6 +25,7 @@ def log_system_info():
     mlflow.log_param("processor", platform.processor())
     mlflow.log_param("cpu_count", psutil.cpu_count())
     mlflow.log_param("memory", psutil.virtual_memory().total / (1024 ** 3))
+
 
 def tuna_modelo_autolstm():
     df = DeltaTable("deltalake").to_pandas()
@@ -65,7 +66,7 @@ def tuna_modelo_autolstm():
         p = p.merge(valid[["ds", "unique_id", "y"]], on=["ds", "unique_id"], how="left")
 
         wmape_value = wmape(p["y"], p["AutoLSTM"])
-        print(f"A avaliação do wmape é:", wmape_value)
+        print("A avaliação do wmape é:", wmape_value)
 
         # Log metrics
         mlflow.log_metric("wmape", wmape_value)

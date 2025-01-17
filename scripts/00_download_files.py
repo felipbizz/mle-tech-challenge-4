@@ -1,7 +1,7 @@
-from tqdm import tqdm
 import yfinance as yf
 from deltalake.writer import write_deltalake
 from src.utils import get_path_project
+from tqdm import tqdm
 
 PROJECT_DIR = get_path_project()
 DATALAKE_PATH = PROJECT_DIR / "data/raw/yfinance_api"

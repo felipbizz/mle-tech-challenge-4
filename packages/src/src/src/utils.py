@@ -1,10 +1,10 @@
+import os
 from pathlib import Path
 from typing import Callable, Union
-from dotenv import find_dotenv, load_dotenv
-import os
+
 import numpy as np
 import torch
-from typing import Union
+from dotenv import find_dotenv, load_dotenv
 
 load_dotenv(find_dotenv())
 
