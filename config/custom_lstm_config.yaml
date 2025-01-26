@@ -1,9 +1,8 @@
 model:
-  input_size: 14
-  hidden_size: 32
-  output_size: 14
-  output_sequence_length: 1
+  num_stocks: 14
+  num_lstm_layers: 32
+  lstm_out_size: 64
+  output_sequence_length: 7
 training:
-  epochs: 50
-  batch_size: 32
+  num_epochs: 50
   learning_rate: 0.001

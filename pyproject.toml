@@ -33,7 +33,10 @@ dev = [
     "ignr>=2.2",
 ]
 api = ["fastapi[standard]>=0.115.6"]
-viz = ["matplotlib>=3.10.0", "seaborn>=0.13.2"]
+viz = [
+    "matplotlib>=3.10.0",
+    "seaborn>=0.13.2",
+]
 
 [tool.uv.sources]
 src = { workspace = true }
