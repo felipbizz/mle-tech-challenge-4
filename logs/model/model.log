@@ -1,0 +1,65 @@
+2025-01-30 20:25:02,434 - model - INFO - Carregando o modelo neuralforecast_lstm_2025-01-29.joblib
+2025-01-30 20:25:02,435 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_2025-01-29.joblib
+2025-01-30 20:25:02,436 - model - ERROR - Arquivo neuralforecast_lstm_2025-01-29.joblib não encontrado na pasta ml_models. Verifique o nome do modelo.
+2025-01-30 20:25:02,436 - model - ERROR - Arquivo neuralforecast_lstm_2025-01-29.joblib não encontrado! Verifique o nome do modelo e tente novamente!
+2025-01-30 20:35:16,171 - model - INFO - Carregando o modelo neuralforecast_lstm_v6_10_000_epochs.joblib
+2025-01-30 20:35:16,171 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_v6_10_000_epochs.joblib
+2025-01-30 20:35:16,171 - model - INFO - Modelo neuralforecast_lstm_v6_10_000_epochs.joblib encontrado na pasta ml_models.
+2025-01-30 20:35:16,494 - model - INFO - Modelo <class 'neuralforecast.core.NeuralForecast'> carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-01-30 20:48:19,044 - model - INFO - Carregando o modelo neuralforecast_lstm_v4_1_000_epochs.joblib
+2025-01-30 20:48:19,045 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_v4_1_000_epochs.joblib
+2025-01-30 20:48:19,045 - model - INFO - Modelo neuralforecast_lstm_v4_1_000_epochs.joblib encontrado na pasta ml_models.
+2025-01-30 20:48:19,310 - model - INFO - Modelo neuralforecast_lstm_v4_1_000_epochs.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-01-30 20:48:19,313 - model - INFO - Dataframe de previsão criado.
+           ds
+0  2025-01-30
+1  2025-01-31
+2  2025-02-01
+3  2025-02-02
+4  2025-02-03
+5  2025-02-04
+6  2025-02-05
+2025-01-30 20:48:19,314 - model - ERROR - 'NeuralForecast' object has no attribute 'predicr'
+2025-01-30 20:53:36,942 - model - INFO - Carregando o modelo neuralforecast_lstm_v4_1_000_epochs.joblib
+2025-01-30 20:53:36,942 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_v4_1_000_epochs.joblib
+2025-01-30 20:53:36,943 - model - INFO - Modelo neuralforecast_lstm_v4_1_000_epochs.joblib encontrado na pasta ml_models.
+2025-01-30 20:53:37,233 - model - INFO - Modelo neuralforecast_lstm_v4_1_000_epochs.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-01-30 20:53:37,237 - model - INFO - Dataframe de previsão criado.
+           ds
+0  2025-01-30
+1  2025-01-31
+2  2025-02-01
+3  2025-02-02
+4  2025-02-03
+5  2025-02-04
+6  2025-02-05
+2025-01-30 20:53:37,237 - model - ERROR - 'y'
+2025-01-30 20:55:06,630 - model - INFO - Carregando o modelo neuralforecast_lstm_v4_1_000_epochs.joblib
+2025-01-30 20:55:06,630 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_v4_1_000_epochs.joblib
+2025-01-30 20:55:06,630 - model - INFO - Modelo neuralforecast_lstm_v4_1_000_epochs.joblib encontrado na pasta ml_models.
+2025-01-30 20:55:06,666 - model - INFO - Modelo neuralforecast_lstm_v4_1_000_epochs.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-01-30 20:55:06,668 - model - INFO - Dataframe de previsão criado.
+           ds
+0  2025-01-30
+1  2025-01-31
+2  2025-02-01
+3  2025-02-02
+4  2025-02-03
+5  2025-02-04
+6  2025-02-05
+2025-01-30 20:55:06,668 - model - ERROR - 'y'
+2025-01-30 21:03:50,971 - model - INFO - Carregando o modelo neuralforecast_lstm_v4_1_000_epochs.joblib
+2025-01-30 21:03:50,971 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_v4_1_000_epochs.joblib
+2025-01-30 21:03:50,971 - model - INFO - Modelo neuralforecast_lstm_v4_1_000_epochs.joblib encontrado na pasta ml_models.
+2025-01-30 21:03:51,260 - model - INFO - Modelo neuralforecast_lstm_v4_1_000_epochs.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-01-30 21:03:51,264 - model - INFO - Dataframe de previsão criado.
+           ds
+0  2025-01-30
+1  2025-01-31
+2  2025-02-01
+3  2025-02-02
+4  2025-02-03
+5  2025-02-04
+6  2025-02-05
+2025-01-30 21:03:51,265 - model - ERROR - 'y'
+2025-01-30 21:03:51,265 - model - ERROR - Dado retornado: y
