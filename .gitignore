@@ -6,19 +6,14 @@ dist/
 wheels/
 *.egg-info
 
+# Modelos gerados
+*.joblib
+
+# Credentials
+.logfire/
+
 # Virtual environments
 .venv
-
-# dados
 deltalake/*
-
-#logs
 lightning_logs/*
-
-#secrets
 .secrets.toml
-
-#mage
-mage-ai/*
-*.db
-mlruns/*
