@@ -1,0 +1,59 @@
+services:
+  mle-api:
+    image: mle-api
+    stdin_open: true # Representa o comando docker run -i
+    tty: true        # Representa o comando docker run -t
+    container_name: mle-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./deltalake:/app/deltalake
+      - ./logs:/app/logs
+      - ./ml_models:/app/ml_models
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+  prometheus:
+    image: prom/prometheus
+    container_name: prometheus
+    ports:
+      - 9090:9090
+    volumes:
+      - ./prometheus.yaml:/etc/prometheus/prometheus.yml
+  
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    volumes:
+       - ./volumes/grafana/var:/var/lib/grafana
+       - ./volumes/grafana/etc:/etc/grafana
+       - ./volumes/grafana/log:/var/log/grafana
+    ports:
+      - 3000:3000
+    depends_on:
+      - prometheus
+
+
+# Linhas de comando para execução individual dos containers
+# sudo docker run -dit --name grafana -p3000:3000 --add-host host.docker.internal:host-gateway grafana/grafana
+# sudo docker run -dit --name prometheus -p9090:9090 -v ./prometheus.yaml:/etc/prometheus/prometheus.yml --add-host host.docker.internal:host-gateway prom/prometheus
+
+# Abaixo um exemplo de como carregar a GPU local no container docker
+
+  # test:
+  #   image: nvidia/cuda:12.3.1-base-ubuntu20.04
+  #   command: nvidia-smi
+  #   deploy:
+  #     resources:
+  #       reservations:
+  #         devices:
+  #           - driver: nvidia
+  #             count: 1
+  #             capabilities: [gpu]
