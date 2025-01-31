@@ -3,24 +3,39 @@ from neuralforecast import NeuralForecast
 import joblib
 import os
 import pandas as pd
-from datetime import datetime, timedelta
+from datetime import datetime
+import matplotlib.pyplot as plt
 
 logger = setLog('model')
 
-def make_predictions(model_file, forecast_period) -> dict:
+def make_predictions(model_file : str, stock_option : str) -> dict:
 
     logger.info(f'Carregando o modelo {model_file}')
     try:
         model = load_model(model_file)
         logger.info(f'Modelo {model_file} carregado. Tipo do modelo {type(model)}')
 
-        predict_df = create_predict_dataframe(forecast_period)
-        logger.info(f'Dataframe de previsão criado.\n{predict_df}')
+        logger.info('Realizando previsões utilizando o horizonte definido no treinamento do modelo.')
 
-        predict_result = model.predict(predict_df)
+        predict_result = model.predict()
+
+        # stock_option = 'VALE3.SA' # Passar este valor como parâmetro
+
+        plot_df = predict_result[predict_result.unique_id==stock_option].drop('unique_id', axis=1)
+        
         logger.info(f'Resultado da previsão: {predict_result}')
 
+        plt.plot(plot_df['ds'], plot_df['LSTM'], c='purple', label=f'Previsões para {stock_option}')
+        plt.legend()
+        plt.grid()
+        plt.plot()
+
+        plt.savefig(f'reports/neuralforecast_lstm_{datetime.now().date()}.png', dpi=300)
+        
+        # fig.savefig(f'reports/neuralforecast_lstm_{datetime.datetime.now().date()}.png', dpi=300)
+
         return { 'message': f'Previsões:\n{predict_result}' }
+    
     except Exception as e:
         logger.error(e)
         data_returned = e.args[0]
@@ -48,9 +63,3 @@ def load_model(model_file : str) -> NeuralForecast :
     else:
         logger.error(f'Arquivo {model_file} não encontrado na pasta ml_models. Verifique o nome do modelo.')
         raise ValueError(f'Arquivo {model_file} não encontrado! Verifique o nome do modelo e tente novamente!')
-    
-def create_predict_dataframe(forecast_period: int):
-    start_date = datetime.today()
-    date_list = [(start_date + timedelta(days=i)).strftime('%Y-%m-%d') for i in range(forecast_period)]
-
-    return pd.DataFrame({'ds': date_list} )

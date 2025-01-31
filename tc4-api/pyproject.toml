@@ -9,6 +9,7 @@ dependencies = [
     "fastapi[standard]>=0.115.6",
     "joblib>=1.4.2",
     "logfire[fastapi]>=2.9.0",
+    "matplotlib>=3.10.0",
     "neuralforecast>=1.7.7",
     "prometheus-client>=0.21.1",
     "tqdm>=4.67.1",

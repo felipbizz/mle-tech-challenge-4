@@ -1,0 +1,4 @@
+2025-01-30 22:25:58,807 - datalake_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-01-30 22:25:58,808 - datalake_controller - INFO - Realizando o download dos símbolos: ['VALE3.SA', 'PETR4.SA', 'ITUB4.SA', 'ABEV3.SA', 'BBDC4.SA', 'SANB11.SA', 'BBAS3.SA', 'JBSS3.SA', 'KLBN11.SA', 'BPAC11.SA', 'BBDC3.SA', 'ITSA4.SA', 'WEGE3.SA']
+2025-01-30 22:26:10,088 - datalake_controller - DEBUG - Download concluído.
+Resultado: {'successful_downloads': ['VALE3.SA', 'PETR4.SA', 'ITUB4.SA', 'ABEV3.SA', 'BBDC4.SA', 'SANB11.SA', 'BBAS3.SA', 'JBSS3.SA', 'KLBN11.SA', 'BPAC11.SA', 'BBDC3.SA', 'ITSA4.SA', 'WEGE3.SA'], 'failed_downloads': []}

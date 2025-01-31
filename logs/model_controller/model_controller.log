@@ -25,3 +25,31 @@
 2025-01-30 21:03:32,155 - model_controller - DEBUG - Retornando a lista de arquivos existentes: ['neuralforecast_lstm_v4_1_000_epochs.joblib', 'neuralforecast_lstm_v6_10_000_epochs.joblib']
 2025-01-30 21:03:50,971 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
 2025-01-30 21:03:50,971 - model_controller - INFO - Iniciando previsão utilizando o modelo neuralforecast_lstm_v4_1_000_epochs.joblib
+2025-01-30 21:13:02,913 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-01-30 21:13:02,913 - model_controller - INFO - Listando modelos disponíveis para predição.
+2025-01-30 21:13:02,913 - model_controller - INFO - Obtendo lista de arquivos em ml_models
+2025-01-30 21:13:02,913 - model_controller - DEBUG - Retornando a lista de arquivos existentes: ['neuralforecast_lstm_v4_1_000_epochs.joblib', 'neuralforecast_lstm_v6_10_000_epochs.joblib']
+2025-01-30 21:14:01,608 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-01-30 21:14:01,608 - model_controller - INFO - Iniciando previsão utilizando o modelo neuralforecast_lstm_v4_1_000_epochs.joblib
+2025-01-30 21:45:32,552 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-01-30 21:45:32,553 - model_controller - INFO - Iniciando previsão utilizando o modelo neuralforecast_lstm_v4_1_000_epochs.joblib
+2025-01-30 21:54:38,935 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-01-30 21:54:38,935 - model_controller - INFO - Iniciando previsão utilizando o modelo neuralforecast_lstm_v4_1_000_epochs.joblib
+2025-01-30 22:59:49,770 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-01-30 22:59:49,770 - model_controller - INFO - Iniciando previsão utilizando o modelo neuralforecast_lstm_2025-01-30.joblib
+2025-01-30 23:01:03,756 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-01-30 23:01:03,756 - model_controller - INFO - Iniciando previsão utilizando o modelo neuralforecast_lstm_2025-01-30.joblib
+2025-01-30 23:07:00,102 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-01-30 23:07:00,103 - model_controller - INFO - Iniciando previsão utilizando o modelo neuralforecast_lstm_2025-01-30.joblib
+2025-01-30 23:14:42,578 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-01-30 23:14:42,579 - model_controller - INFO - Iniciando previsão utilizando o modelo neuralforecast_lstm_2025-01-30.joblib
+2025-01-30 23:42:02,941 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-01-30 23:42:02,942 - model_controller - INFO - Listando modelos disponíveis para predição.
+2025-01-30 23:42:02,942 - model_controller - INFO - Obtendo lista de arquivos em ml_models
+2025-01-30 23:42:02,942 - model_controller - DEBUG - Retornando a lista de arquivos existentes: ['neuralforecast_lstm_v4_1_000_epochs.joblib', 'neuralforecast_lstm_2025-01-30.joblib', 'neuralforecast_lstm_v6_10_000_epochs.joblib']
+2025-01-30 23:42:25,502 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-01-30 23:42:25,502 - model_controller - INFO - Iniciando previsão utilizando o modelo neuralforecast_lstm_2025-01-30.joblib
+2025-01-30 23:48:45,164 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-01-30 23:48:45,164 - model_controller - INFO - Iniciando previsão utilizando o modelo neuralforecast_lstm_2025-01-30.joblib
+2025-01-30 23:55:26,412 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-01-30 23:55:26,413 - model_controller - INFO - Iniciando previsão utilizando o modelo neuralforecast_lstm_2025-01-30.joblib

@@ -36,8 +36,7 @@ def list_models():
     return model_list
 
 @router.post('/predict')
-def predict(model_file: Annotated[str | None, Body()], 
-            forecast_period: int = 7):
+def predict(model_file: Annotated[str | None, Body()]):
     '''    
     Lista os modelos treinados disponíveis para serem utilizados em previsões.
 
@@ -56,4 +55,4 @@ def predict(model_file: Annotated[str | None, Body()],
     logger.info('---------------------------------------------------------------------------------------------------')
     logger.info(f'Iniciando previsão utilizando o modelo {model_file}')
     
-    return { 'message' : model.make_predictions(model_file, forecast_period) } 
+    return { 'message' : model.make_predictions(model_file) } 

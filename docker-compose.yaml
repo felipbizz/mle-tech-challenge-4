@@ -10,6 +10,7 @@ services:
       - ./deltalake:/app/deltalake
       - ./logs:/app/logs
       - ./ml_models:/app/ml_models
+      - ./reports:/app/reports
     deploy:
       resources:
         reservations:
