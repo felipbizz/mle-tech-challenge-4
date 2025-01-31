@@ -216,3 +216,144 @@
 1000  WEGE3.SA 2025-04-17  45.345791
 
 [1001 rows x 3 columns]
+2025-01-31 00:31:02,472 - model - INFO - Carregando o modelo neuralforecast_lstm_2025-01-30.joblib
+2025-01-31 00:31:02,473 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_2025-01-30.joblib
+2025-01-31 00:31:02,473 - model - INFO - Modelo neuralforecast_lstm_2025-01-30.joblib encontrado na pasta ml_models.
+2025-01-31 00:31:03,283 - model - INFO - Modelo neuralforecast_lstm_2025-01-30.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-01-31 00:31:03,283 - model - INFO - Realizando previsões utilizando o horizonte definido no treinamento do modelo.
+2025-01-31 00:31:05,088 - model - INFO - Resultado da previsão:      unique_id         ds       LSTM
+0     ABEV3.SA 2025-01-31  11.528522
+1     ABEV3.SA 2025-02-01  11.809755
+2     ABEV3.SA 2025-02-02  11.967010
+3     ABEV3.SA 2025-02-03  11.878508
+4     ABEV3.SA 2025-02-04  11.954718
+...        ...        ...        ...
+996   WEGE3.SA 2025-04-13  42.520805
+997   WEGE3.SA 2025-04-14  43.674618
+998   WEGE3.SA 2025-04-15  43.555531
+999   WEGE3.SA 2025-04-16  42.527393
+1000  WEGE3.SA 2025-04-17  45.345791
+
+[1001 rows x 3 columns]
+2025-01-31 00:31:45,119 - model - INFO - Carregando o modelo neuralforecast_lstm_2025-01-30.joblib
+2025-01-31 00:31:45,119 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_2025-01-30.joblib
+2025-01-31 00:31:45,119 - model - INFO - Modelo neuralforecast_lstm_2025-01-30.joblib encontrado na pasta ml_models.
+2025-01-31 00:31:45,171 - model - INFO - Modelo neuralforecast_lstm_2025-01-30.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-01-31 00:31:45,171 - model - INFO - Realizando previsões utilizando o horizonte definido no treinamento do modelo.
+2025-01-31 00:31:45,760 - model - INFO - Resultado da previsão:      unique_id         ds       LSTM
+0     ABEV3.SA 2025-01-31  11.528522
+1     ABEV3.SA 2025-02-01  11.809755
+2     ABEV3.SA 2025-02-02  11.967010
+3     ABEV3.SA 2025-02-03  11.878508
+4     ABEV3.SA 2025-02-04  11.954718
+...        ...        ...        ...
+996   WEGE3.SA 2025-04-13  42.520805
+997   WEGE3.SA 2025-04-14  43.674618
+998   WEGE3.SA 2025-04-15  43.555531
+999   WEGE3.SA 2025-04-16  42.527393
+1000  WEGE3.SA 2025-04-17  45.345791
+
+[1001 rows x 3 columns]
+2025-01-31 00:32:50,602 - model - INFO - Carregando o modelo neuralforecast_lstm_2025-01-30.joblib
+2025-01-31 00:32:50,602 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_2025-01-30.joblib
+2025-01-31 00:32:50,602 - model - INFO - Modelo neuralforecast_lstm_2025-01-30.joblib encontrado na pasta ml_models.
+2025-01-31 00:32:50,673 - model - INFO - Modelo neuralforecast_lstm_2025-01-30.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-01-31 00:32:50,673 - model - INFO - Realizando previsões utilizando o horizonte definido no treinamento do modelo.
+2025-01-31 00:32:51,349 - model - INFO - Resultado da previsão:      unique_id         ds       LSTM
+0     ABEV3.SA 2025-01-31  11.528522
+1     ABEV3.SA 2025-02-01  11.809755
+2     ABEV3.SA 2025-02-02  11.967010
+3     ABEV3.SA 2025-02-03  11.878508
+4     ABEV3.SA 2025-02-04  11.954718
+...        ...        ...        ...
+996   WEGE3.SA 2025-04-13  42.520805
+997   WEGE3.SA 2025-04-14  43.674618
+998   WEGE3.SA 2025-04-15  43.555531
+999   WEGE3.SA 2025-04-16  42.527393
+1000  WEGE3.SA 2025-04-17  45.345791
+
+[1001 rows x 3 columns]
+2025-01-31 00:33:45,682 - model - INFO - Carregando o modelo neuralforecast_lstm_2025-01-30.joblib
+2025-01-31 00:33:45,682 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_2025-01-30.joblib
+2025-01-31 00:33:45,682 - model - INFO - Modelo neuralforecast_lstm_2025-01-30.joblib encontrado na pasta ml_models.
+2025-01-31 00:33:46,140 - model - INFO - Modelo neuralforecast_lstm_2025-01-30.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-01-31 00:33:46,141 - model - INFO - Realizando previsões utilizando o horizonte definido no treinamento do modelo.
+2025-01-31 00:33:46,966 - model - INFO - Resultado da previsão:      unique_id         ds       LSTM
+0     ABEV3.SA 2025-01-31  11.528522
+1     ABEV3.SA 2025-02-01  11.809755
+2     ABEV3.SA 2025-02-02  11.967010
+3     ABEV3.SA 2025-02-03  11.878508
+4     ABEV3.SA 2025-02-04  11.954718
+...        ...        ...        ...
+996   WEGE3.SA 2025-04-13  42.520805
+997   WEGE3.SA 2025-04-14  43.674618
+998   WEGE3.SA 2025-04-15  43.555531
+999   WEGE3.SA 2025-04-16  42.527393
+1000  WEGE3.SA 2025-04-17  45.345791
+
+[1001 rows x 3 columns]
+2025-01-31 00:35:02,478 - model - INFO - Carregando o modelo neuralforecast_lstm_2025-01-30.joblib
+2025-01-31 00:35:02,478 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_2025-01-30.joblib
+2025-01-31 00:35:02,478 - model - INFO - Modelo neuralforecast_lstm_2025-01-30.joblib encontrado na pasta ml_models.
+2025-01-31 00:35:02,523 - model - INFO - Modelo neuralforecast_lstm_2025-01-30.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-01-31 00:35:02,523 - model - INFO - Realizando previsões utilizando o horizonte definido no treinamento do modelo.
+2025-01-31 00:35:03,119 - model - INFO - Resultado da previsão:      unique_id         ds       LSTM
+0     ABEV3.SA 2025-01-31  11.528522
+1     ABEV3.SA 2025-02-01  11.809755
+2     ABEV3.SA 2025-02-02  11.967010
+3     ABEV3.SA 2025-02-03  11.878508
+4     ABEV3.SA 2025-02-04  11.954718
+...        ...        ...        ...
+996   WEGE3.SA 2025-04-13  42.520805
+997   WEGE3.SA 2025-04-14  43.674618
+998   WEGE3.SA 2025-04-15  43.555531
+999   WEGE3.SA 2025-04-16  42.527393
+1000  WEGE3.SA 2025-04-17  45.345791
+
+[1001 rows x 3 columns]
+2025-01-31 00:57:07,140 - model - INFO - Carregando o modelo string
+2025-01-31 00:57:07,140 - model - INFO - Validando a existência do modelo treinado : string
+2025-01-31 00:57:07,140 - model - ERROR - Arquivo string não encontrado na pasta ml_models. Verifique o nome do modelo.
+2025-01-31 00:57:07,140 - model - ERROR - Arquivo string não encontrado! Verifique o nome do modelo e tente novamente!
+2025-01-31 00:57:54,129 - model - INFO - Carregando o modelo neuralforecast_lstm_2025-01-30.joblib
+2025-01-31 00:57:54,129 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_2025-01-30.joblib
+2025-01-31 00:57:54,129 - model - INFO - Modelo neuralforecast_lstm_2025-01-30.joblib encontrado na pasta ml_models.
+2025-01-31 00:57:54,724 - model - INFO - Modelo neuralforecast_lstm_2025-01-30.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-01-31 00:57:54,724 - model - INFO - Realizando previsões utilizando o horizonte definido no treinamento do modelo.
+2025-01-31 00:57:55,312 - model - INFO - Resultado da previsão:      unique_id         ds       LSTM
+0     ABEV3.SA 2025-01-31  11.528522
+1     ABEV3.SA 2025-02-01  11.809755
+2     ABEV3.SA 2025-02-02  11.967010
+3     ABEV3.SA 2025-02-03  11.878508
+4     ABEV3.SA 2025-02-04  11.954718
+...        ...        ...        ...
+996   WEGE3.SA 2025-04-13  42.520805
+997   WEGE3.SA 2025-04-14  43.674618
+998   WEGE3.SA 2025-04-15  43.555531
+999   WEGE3.SA 2025-04-16  42.527393
+1000  WEGE3.SA 2025-04-17  45.345791
+
+[1001 rows x 3 columns]
+2025-01-31 00:57:55,312 - model - INFO - Gerando plot para as previsões de ABEV3.SA
+2025-01-31 00:57:55,324 - model - INFO - Imagem do plot salva em reports/neuralforecast_lstm_ABEV3.SA_2025-01-31.png
+2025-01-31 00:59:01,194 - model - INFO - Carregando o modelo neuralforecast_lstm_2025-01-30.joblib
+2025-01-31 00:59:01,194 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_2025-01-30.joblib
+2025-01-31 00:59:01,194 - model - INFO - Modelo neuralforecast_lstm_2025-01-30.joblib encontrado na pasta ml_models.
+2025-01-31 00:59:01,265 - model - INFO - Modelo neuralforecast_lstm_2025-01-30.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-01-31 00:59:01,265 - model - INFO - Realizando previsões utilizando o horizonte definido no treinamento do modelo.
+2025-01-31 00:59:01,842 - model - INFO - Resultado da previsão:      unique_id         ds       LSTM
+0     ABEV3.SA 2025-01-31  11.528522
+1     ABEV3.SA 2025-02-01  11.809755
+2     ABEV3.SA 2025-02-02  11.967010
+3     ABEV3.SA 2025-02-03  11.878508
+4     ABEV3.SA 2025-02-04  11.954718
+...        ...        ...        ...
+996   WEGE3.SA 2025-04-13  42.520805
+997   WEGE3.SA 2025-04-14  43.674618
+998   WEGE3.SA 2025-04-15  43.555531
+999   WEGE3.SA 2025-04-16  42.527393
+1000  WEGE3.SA 2025-04-17  45.345791
+
+[1001 rows x 3 columns]
+2025-01-31 00:59:01,842 - model - INFO - Gerando plot para as previsões de VALE3.SA
+2025-01-31 00:59:01,852 - model - INFO - Imagem do plot salva em reports/neuralforecast_lstm_VALE3.SA_2025-01-31.png

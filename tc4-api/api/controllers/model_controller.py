@@ -36,7 +36,7 @@ def list_models():
     return model_list
 
 @router.post('/predict')
-def predict(model_file: Annotated[str | None, Body()]):
+def predict(model_file: Annotated[str | None, Body()], stock_option : str = 'VALE3.SA'):
     '''    
     Lista os modelos treinados disponíveis para serem utilizados em previsões.
 
@@ -55,4 +55,4 @@ def predict(model_file: Annotated[str | None, Body()]):
     logger.info('---------------------------------------------------------------------------------------------------')
     logger.info(f'Iniciando previsão utilizando o modelo {model_file}')
     
-    return { 'message' : model.make_predictions(model_file) } 
+    return { 'message' : model.make_predictions(model_file, stock_option) } 
