@@ -6,6 +6,9 @@ from neuralforecast import NeuralForecast
 from neuralforecast.auto import AutoLSTM
 import datetime
 import joblib
+from src.utils import setLog
+
+logger = setLog('tune_model', level=10)
 
 def tuna_modelo_autolstm():
 
@@ -13,17 +16,9 @@ def tuna_modelo_autolstm():
     df = DeltaTable('deltalake').to_pandas()
     df = df.sort_values(by=['unique_id', 'ds']).reset_index(drop=True)
 
-    TEMPO_FILTRO_PARA_TESTE = '2018-01-01'
-
-    df = df.loc[df['ds'] > TEMPO_FILTRO_PARA_TESTE]
-
-    # Remover os comentários abaixo para testar o modelo com apenas 2 ativos
-    # FILTRA_IDS = df['unique_id'].unique()[:2]
-    # df = df[df['unique_id'].isin(FILTRA_IDS)]
-
-    # Separando dados de treinamento e testes
-    train = df.loc[df['ds'] < '2024-09-01']
-    test = df.loc[(df['ds'] >= '2024-09-01') & (df['ds'] < '2024-12-20')]
+    # # Separando dados de treinamento e testes
+    # train = df.loc[df['ds'] < '2024-09-01']
+    # test = df.loc[(df['ds'] >= '2024-09-01') & (df['ds'] < '2024-12-20')]
 
     h = test['ds'].nunique()
 
@@ -33,9 +28,17 @@ def tuna_modelo_autolstm():
 
     model = NeuralForecast(models=models, freq='D')
 
-    model.fit(train, val_size=30)
+    initial_config = model.config
+    logger.debug(f'Salvando configuração inicial: {initial_config}')
     
-    joblib.dump(model, f"neuralforecast_lstm_{datetime.datetime.now().date()}.joblib")
+    model.fit(train, val_size=30)
+    best_hp = models[0].results.get_best_result().metrics['config']
+    logger.info(f'Melhores parâmetros encontrados:\n {best_hp}')
+    
+    trained_config = model.config
+    logger.debug(f'Configuração após o treino: {trained_config}')
+    
+    joblib.dump(model, f"neuralforecast_autolstm_{datetime.datetime.now().date()}.joblib")
 
     predictions = model.predict().reset_index()
     predictions = predictions.merge(test[['ds','unique_id', 'y']], on=['ds', 'unique_id'], how='left')
@@ -50,7 +53,7 @@ def tuna_modelo_autolstm():
         plot_df[['y', 'AutoLSTM']].plot(ax=ax[ax_i], linewidth=2, title=unique_id)
         
         ax[ax_i].grid()
-    fig.savefig(f'reports/neuralforecast_lstm_{datetime.datetime.now().date()}.png', dpi=300)
+    fig.savefig(f'reports/neuralforecast_autolstm_{datetime.datetime.now().date()}.png', dpi=300)
 
 if __name__ == '__main__':
     tuna_modelo_autolstm()

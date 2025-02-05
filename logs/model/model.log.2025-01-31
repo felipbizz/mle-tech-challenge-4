@@ -1,0 +1,359 @@
+2025-01-30 20:25:02,434 - model - INFO - Carregando o modelo neuralforecast_lstm_2025-01-29.joblib
+2025-01-30 20:25:02,435 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_2025-01-29.joblib
+2025-01-30 20:25:02,436 - model - ERROR - Arquivo neuralforecast_lstm_2025-01-29.joblib não encontrado na pasta ml_models. Verifique o nome do modelo.
+2025-01-30 20:25:02,436 - model - ERROR - Arquivo neuralforecast_lstm_2025-01-29.joblib não encontrado! Verifique o nome do modelo e tente novamente!
+2025-01-30 20:35:16,171 - model - INFO - Carregando o modelo neuralforecast_lstm_v6_10_000_epochs.joblib
+2025-01-30 20:35:16,171 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_v6_10_000_epochs.joblib
+2025-01-30 20:35:16,171 - model - INFO - Modelo neuralforecast_lstm_v6_10_000_epochs.joblib encontrado na pasta ml_models.
+2025-01-30 20:35:16,494 - model - INFO - Modelo <class 'neuralforecast.core.NeuralForecast'> carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-01-30 20:48:19,044 - model - INFO - Carregando o modelo neuralforecast_lstm_v4_1_000_epochs.joblib
+2025-01-30 20:48:19,045 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_v4_1_000_epochs.joblib
+2025-01-30 20:48:19,045 - model - INFO - Modelo neuralforecast_lstm_v4_1_000_epochs.joblib encontrado na pasta ml_models.
+2025-01-30 20:48:19,310 - model - INFO - Modelo neuralforecast_lstm_v4_1_000_epochs.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-01-30 20:48:19,313 - model - INFO - Dataframe de previsão criado.
+           ds
+0  2025-01-30
+1  2025-01-31
+2  2025-02-01
+3  2025-02-02
+4  2025-02-03
+5  2025-02-04
+6  2025-02-05
+2025-01-30 20:48:19,314 - model - ERROR - 'NeuralForecast' object has no attribute 'predicr'
+2025-01-30 20:53:36,942 - model - INFO - Carregando o modelo neuralforecast_lstm_v4_1_000_epochs.joblib
+2025-01-30 20:53:36,942 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_v4_1_000_epochs.joblib
+2025-01-30 20:53:36,943 - model - INFO - Modelo neuralforecast_lstm_v4_1_000_epochs.joblib encontrado na pasta ml_models.
+2025-01-30 20:53:37,233 - model - INFO - Modelo neuralforecast_lstm_v4_1_000_epochs.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-01-30 20:53:37,237 - model - INFO - Dataframe de previsão criado.
+           ds
+0  2025-01-30
+1  2025-01-31
+2  2025-02-01
+3  2025-02-02
+4  2025-02-03
+5  2025-02-04
+6  2025-02-05
+2025-01-30 20:53:37,237 - model - ERROR - 'y'
+2025-01-30 20:55:06,630 - model - INFO - Carregando o modelo neuralforecast_lstm_v4_1_000_epochs.joblib
+2025-01-30 20:55:06,630 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_v4_1_000_epochs.joblib
+2025-01-30 20:55:06,630 - model - INFO - Modelo neuralforecast_lstm_v4_1_000_epochs.joblib encontrado na pasta ml_models.
+2025-01-30 20:55:06,666 - model - INFO - Modelo neuralforecast_lstm_v4_1_000_epochs.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-01-30 20:55:06,668 - model - INFO - Dataframe de previsão criado.
+           ds
+0  2025-01-30
+1  2025-01-31
+2  2025-02-01
+3  2025-02-02
+4  2025-02-03
+5  2025-02-04
+6  2025-02-05
+2025-01-30 20:55:06,668 - model - ERROR - 'y'
+2025-01-30 21:03:50,971 - model - INFO - Carregando o modelo neuralforecast_lstm_v4_1_000_epochs.joblib
+2025-01-30 21:03:50,971 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_v4_1_000_epochs.joblib
+2025-01-30 21:03:50,971 - model - INFO - Modelo neuralforecast_lstm_v4_1_000_epochs.joblib encontrado na pasta ml_models.
+2025-01-30 21:03:51,260 - model - INFO - Modelo neuralforecast_lstm_v4_1_000_epochs.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-01-30 21:03:51,264 - model - INFO - Dataframe de previsão criado.
+           ds
+0  2025-01-30
+1  2025-01-31
+2  2025-02-01
+3  2025-02-02
+4  2025-02-03
+5  2025-02-04
+6  2025-02-05
+2025-01-30 21:03:51,265 - model - ERROR - 'y'
+2025-01-30 21:03:51,265 - model - ERROR - Dado retornado: y
+2025-01-30 21:14:01,608 - model - INFO - Carregando o modelo neuralforecast_lstm_v4_1_000_epochs.joblib
+2025-01-30 21:14:01,609 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_v4_1_000_epochs.joblib
+2025-01-30 21:14:01,609 - model - INFO - Modelo neuralforecast_lstm_v4_1_000_epochs.joblib encontrado na pasta ml_models.
+2025-01-30 21:14:01,885 - model - INFO - Modelo neuralforecast_lstm_v4_1_000_epochs.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-01-30 21:14:01,890 - model - INFO - Dataframe de previsão criado.
+           ds
+0  2025-01-30
+1  2025-01-31
+2  2025-02-01
+3  2025-02-02
+4  2025-02-03
+5  2025-02-04
+6  2025-02-05
+2025-01-30 21:14:01,891 - model - ERROR - 'y'
+2025-01-30 21:14:01,891 - model - ERROR - Dado retornado: y
+2025-01-30 21:45:32,553 - model - INFO - Carregando o modelo neuralforecast_lstm_v4_1_000_epochs.joblib
+2025-01-30 21:45:32,553 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_v4_1_000_epochs.joblib
+2025-01-30 21:45:32,553 - model - INFO - Modelo neuralforecast_lstm_v4_1_000_epochs.joblib encontrado na pasta ml_models.
+2025-01-30 21:45:32,891 - model - INFO - Modelo neuralforecast_lstm_v4_1_000_epochs.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-01-30 21:45:32,895 - model - INFO - Dataframe de previsão criado.
+           ds
+0  2025-01-30
+1  2025-01-31
+2  2025-02-01
+3  2025-02-02
+4  2025-02-03
+5  2025-02-04
+6  2025-02-05
+2025-01-30 21:45:33,272 - model - INFO - Resultado da previsão:     unique_id         ds   AutoLSTM
+0       ABEV3 2024-08-31  12.711094
+1       ABEV3 2024-09-01  12.728609
+2       ABEV3 2024-09-02  12.800849
+3       ABEV3 2024-09-03  12.884477
+4       ABEV3 2024-09-04  12.878689
+..        ...        ...        ...
+149     BBAS3 2024-11-11  25.244989
+150     BBAS3 2024-11-12  25.278793
+151     BBAS3 2024-11-13  25.270103
+152     BBAS3 2024-11-14  25.318707
+153     BBAS3 2024-11-15  25.270378
+
+[154 rows x 3 columns]
+2025-01-30 21:54:38,935 - model - INFO - Carregando o modelo neuralforecast_lstm_v4_1_000_epochs.joblib
+2025-01-30 21:54:38,935 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_v4_1_000_epochs.joblib
+2025-01-30 21:54:38,935 - model - INFO - Modelo neuralforecast_lstm_v4_1_000_epochs.joblib encontrado na pasta ml_models.
+2025-01-30 21:54:39,277 - model - INFO - Modelo neuralforecast_lstm_v4_1_000_epochs.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-01-30 21:54:39,282 - model - INFO - Dataframe de previsão criado.
+           ds
+0  2025-01-30
+1  2025-01-31
+2  2025-02-01
+3  2025-02-02
+4  2025-02-03
+5  2025-02-04
+6  2025-02-05
+2025-01-30 21:54:39,292 - model - ERROR - Recurrent models do not support step_size > 1
+2025-01-30 21:54:39,292 - model - ERROR - Dado retornado: Recurrent models do not support step_size > 1
+2025-01-30 22:59:49,771 - model - INFO - Carregando o modelo neuralforecast_lstm_2025-01-30.joblib
+2025-01-30 22:59:49,771 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_2025-01-30.joblib
+2025-01-30 22:59:49,771 - model - INFO - Modelo neuralforecast_lstm_2025-01-30.joblib encontrado na pasta ml_models.
+2025-01-30 22:59:49,826 - model - INFO - Modelo neuralforecast_lstm_2025-01-30.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-01-30 22:59:49,833 - model - INFO - Dataframe de previsão criado.
+           ds
+0  2025-01-30
+1  2025-01-31
+2  2025-02-01
+3  2025-02-02
+4  2025-02-03
+5  2025-02-04
+6  2025-02-05
+2025-01-30 22:59:49,859 - model - ERROR - Recurrent models do not support step_size > 1
+2025-01-30 22:59:49,859 - model - ERROR - Dado retornado: Recurrent models do not support step_size > 1
+2025-01-30 23:01:03,756 - model - INFO - Carregando o modelo neuralforecast_lstm_2025-01-30.joblib
+2025-01-30 23:01:03,757 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_2025-01-30.joblib
+2025-01-30 23:01:03,757 - model - INFO - Modelo neuralforecast_lstm_2025-01-30.joblib encontrado na pasta ml_models.
+2025-01-30 23:01:04,017 - model - INFO - Modelo neuralforecast_lstm_2025-01-30.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-01-30 23:01:04,021 - model - INFO - Dataframe de previsão criado.
+           ds
+0  2025-01-30
+1  2025-01-31
+2  2025-02-01
+3  2025-02-02
+4  2025-02-03
+5  2025-02-04
+6  2025-02-05
+2025-01-30 23:01:04,136 - model - ERROR - DataLoader.__init__() got an unexpected keyword argument 'h'
+2025-01-30 23:01:04,136 - model - ERROR - Dado retornado: DataLoader.__init__() got an unexpected keyword argument 'h'
+2025-01-30 23:14:42,579 - model - INFO - Carregando o modelo neuralforecast_lstm_2025-01-30.joblib
+2025-01-30 23:14:42,579 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_2025-01-30.joblib
+2025-01-30 23:14:42,579 - model - INFO - Modelo neuralforecast_lstm_2025-01-30.joblib encontrado na pasta ml_models.
+2025-01-30 23:14:42,858 - model - INFO - Modelo neuralforecast_lstm_2025-01-30.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-01-30 23:14:42,858 - model - INFO - Realizando previsões utilizando o horizonte definido no treinamento do modelo.
+2025-01-30 23:14:43,638 - model - INFO - Resultado da previsão:      unique_id         ds       LSTM
+0     ABEV3.SA 2025-01-31  11.528522
+1     ABEV3.SA 2025-02-01  11.809755
+2     ABEV3.SA 2025-02-02  11.967010
+3     ABEV3.SA 2025-02-03  11.878508
+4     ABEV3.SA 2025-02-04  11.954718
+...        ...        ...        ...
+996   WEGE3.SA 2025-04-13  42.520805
+997   WEGE3.SA 2025-04-14  43.674618
+998   WEGE3.SA 2025-04-15  43.555531
+999   WEGE3.SA 2025-04-16  42.527393
+1000  WEGE3.SA 2025-04-17  45.345791
+
+[1001 rows x 3 columns]
+2025-01-30 23:42:25,503 - model - INFO - Carregando o modelo neuralforecast_lstm_2025-01-30.joblib
+2025-01-30 23:42:25,503 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_2025-01-30.joblib
+2025-01-30 23:42:25,503 - model - INFO - Modelo neuralforecast_lstm_2025-01-30.joblib encontrado na pasta ml_models.
+2025-01-30 23:42:25,904 - model - INFO - Modelo neuralforecast_lstm_2025-01-30.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-01-30 23:42:25,904 - model - INFO - Realizando previsões utilizando o horizonte definido no treinamento do modelo.
+2025-01-30 23:42:26,610 - model - ERROR - cannot access local variable 'plot_df' where it is not associated with a value
+2025-01-30 23:42:26,610 - model - ERROR - Dado retornado: cannot access local variable 'plot_df' where it is not associated with a value
+2025-01-30 23:48:45,164 - model - INFO - Carregando o modelo neuralforecast_lstm_2025-01-30.joblib
+2025-01-30 23:48:45,164 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_2025-01-30.joblib
+2025-01-30 23:48:45,165 - model - INFO - Modelo neuralforecast_lstm_2025-01-30.joblib encontrado na pasta ml_models.
+2025-01-30 23:48:45,424 - model - INFO - Modelo neuralforecast_lstm_2025-01-30.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-01-30 23:48:45,424 - model - INFO - Realizando previsões utilizando o horizonte definido no treinamento do modelo.
+2025-01-30 23:48:46,081 - model - INFO - Resultado da previsão:      unique_id         ds       LSTM
+0     ABEV3.SA 2025-01-31  11.528522
+1     ABEV3.SA 2025-02-01  11.809755
+2     ABEV3.SA 2025-02-02  11.967010
+3     ABEV3.SA 2025-02-03  11.878508
+4     ABEV3.SA 2025-02-04  11.954718
+...        ...        ...        ...
+996   WEGE3.SA 2025-04-13  42.520805
+997   WEGE3.SA 2025-04-14  43.674618
+998   WEGE3.SA 2025-04-15  43.555531
+999   WEGE3.SA 2025-04-16  42.527393
+1000  WEGE3.SA 2025-04-17  45.345791
+
+[1001 rows x 3 columns]
+2025-01-30 23:48:46,097 - model - ERROR - type object 'datetime.datetime' has no attribute 'datetime'
+2025-01-30 23:48:46,097 - model - ERROR - Dado retornado: type object 'datetime.datetime' has no attribute 'datetime'
+2025-01-30 23:55:26,413 - model - INFO - Carregando o modelo neuralforecast_lstm_2025-01-30.joblib
+2025-01-30 23:55:26,413 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_2025-01-30.joblib
+2025-01-30 23:55:26,413 - model - INFO - Modelo neuralforecast_lstm_2025-01-30.joblib encontrado na pasta ml_models.
+2025-01-30 23:55:26,735 - model - INFO - Modelo neuralforecast_lstm_2025-01-30.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-01-30 23:55:26,735 - model - INFO - Realizando previsões utilizando o horizonte definido no treinamento do modelo.
+2025-01-30 23:55:27,404 - model - INFO - Resultado da previsão:      unique_id         ds       LSTM
+0     ABEV3.SA 2025-01-31  11.528522
+1     ABEV3.SA 2025-02-01  11.809755
+2     ABEV3.SA 2025-02-02  11.967010
+3     ABEV3.SA 2025-02-03  11.878508
+4     ABEV3.SA 2025-02-04  11.954718
+...        ...        ...        ...
+996   WEGE3.SA 2025-04-13  42.520805
+997   WEGE3.SA 2025-04-14  43.674618
+998   WEGE3.SA 2025-04-15  43.555531
+999   WEGE3.SA 2025-04-16  42.527393
+1000  WEGE3.SA 2025-04-17  45.345791
+
+[1001 rows x 3 columns]
+2025-01-31 00:31:02,472 - model - INFO - Carregando o modelo neuralforecast_lstm_2025-01-30.joblib
+2025-01-31 00:31:02,473 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_2025-01-30.joblib
+2025-01-31 00:31:02,473 - model - INFO - Modelo neuralforecast_lstm_2025-01-30.joblib encontrado na pasta ml_models.
+2025-01-31 00:31:03,283 - model - INFO - Modelo neuralforecast_lstm_2025-01-30.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-01-31 00:31:03,283 - model - INFO - Realizando previsões utilizando o horizonte definido no treinamento do modelo.
+2025-01-31 00:31:05,088 - model - INFO - Resultado da previsão:      unique_id         ds       LSTM
+0     ABEV3.SA 2025-01-31  11.528522
+1     ABEV3.SA 2025-02-01  11.809755
+2     ABEV3.SA 2025-02-02  11.967010
+3     ABEV3.SA 2025-02-03  11.878508
+4     ABEV3.SA 2025-02-04  11.954718
+...        ...        ...        ...
+996   WEGE3.SA 2025-04-13  42.520805
+997   WEGE3.SA 2025-04-14  43.674618
+998   WEGE3.SA 2025-04-15  43.555531
+999   WEGE3.SA 2025-04-16  42.527393
+1000  WEGE3.SA 2025-04-17  45.345791
+
+[1001 rows x 3 columns]
+2025-01-31 00:31:45,119 - model - INFO - Carregando o modelo neuralforecast_lstm_2025-01-30.joblib
+2025-01-31 00:31:45,119 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_2025-01-30.joblib
+2025-01-31 00:31:45,119 - model - INFO - Modelo neuralforecast_lstm_2025-01-30.joblib encontrado na pasta ml_models.
+2025-01-31 00:31:45,171 - model - INFO - Modelo neuralforecast_lstm_2025-01-30.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-01-31 00:31:45,171 - model - INFO - Realizando previsões utilizando o horizonte definido no treinamento do modelo.
+2025-01-31 00:31:45,760 - model - INFO - Resultado da previsão:      unique_id         ds       LSTM
+0     ABEV3.SA 2025-01-31  11.528522
+1     ABEV3.SA 2025-02-01  11.809755
+2     ABEV3.SA 2025-02-02  11.967010
+3     ABEV3.SA 2025-02-03  11.878508
+4     ABEV3.SA 2025-02-04  11.954718
+...        ...        ...        ...
+996   WEGE3.SA 2025-04-13  42.520805
+997   WEGE3.SA 2025-04-14  43.674618
+998   WEGE3.SA 2025-04-15  43.555531
+999   WEGE3.SA 2025-04-16  42.527393
+1000  WEGE3.SA 2025-04-17  45.345791
+
+[1001 rows x 3 columns]
+2025-01-31 00:32:50,602 - model - INFO - Carregando o modelo neuralforecast_lstm_2025-01-30.joblib
+2025-01-31 00:32:50,602 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_2025-01-30.joblib
+2025-01-31 00:32:50,602 - model - INFO - Modelo neuralforecast_lstm_2025-01-30.joblib encontrado na pasta ml_models.
+2025-01-31 00:32:50,673 - model - INFO - Modelo neuralforecast_lstm_2025-01-30.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-01-31 00:32:50,673 - model - INFO - Realizando previsões utilizando o horizonte definido no treinamento do modelo.
+2025-01-31 00:32:51,349 - model - INFO - Resultado da previsão:      unique_id         ds       LSTM
+0     ABEV3.SA 2025-01-31  11.528522
+1     ABEV3.SA 2025-02-01  11.809755
+2     ABEV3.SA 2025-02-02  11.967010
+3     ABEV3.SA 2025-02-03  11.878508
+4     ABEV3.SA 2025-02-04  11.954718
+...        ...        ...        ...
+996   WEGE3.SA 2025-04-13  42.520805
+997   WEGE3.SA 2025-04-14  43.674618
+998   WEGE3.SA 2025-04-15  43.555531
+999   WEGE3.SA 2025-04-16  42.527393
+1000  WEGE3.SA 2025-04-17  45.345791
+
+[1001 rows x 3 columns]
+2025-01-31 00:33:45,682 - model - INFO - Carregando o modelo neuralforecast_lstm_2025-01-30.joblib
+2025-01-31 00:33:45,682 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_2025-01-30.joblib
+2025-01-31 00:33:45,682 - model - INFO - Modelo neuralforecast_lstm_2025-01-30.joblib encontrado na pasta ml_models.
+2025-01-31 00:33:46,140 - model - INFO - Modelo neuralforecast_lstm_2025-01-30.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-01-31 00:33:46,141 - model - INFO - Realizando previsões utilizando o horizonte definido no treinamento do modelo.
+2025-01-31 00:33:46,966 - model - INFO - Resultado da previsão:      unique_id         ds       LSTM
+0     ABEV3.SA 2025-01-31  11.528522
+1     ABEV3.SA 2025-02-01  11.809755
+2     ABEV3.SA 2025-02-02  11.967010
+3     ABEV3.SA 2025-02-03  11.878508
+4     ABEV3.SA 2025-02-04  11.954718
+...        ...        ...        ...
+996   WEGE3.SA 2025-04-13  42.520805
+997   WEGE3.SA 2025-04-14  43.674618
+998   WEGE3.SA 2025-04-15  43.555531
+999   WEGE3.SA 2025-04-16  42.527393
+1000  WEGE3.SA 2025-04-17  45.345791
+
+[1001 rows x 3 columns]
+2025-01-31 00:35:02,478 - model - INFO - Carregando o modelo neuralforecast_lstm_2025-01-30.joblib
+2025-01-31 00:35:02,478 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_2025-01-30.joblib
+2025-01-31 00:35:02,478 - model - INFO - Modelo neuralforecast_lstm_2025-01-30.joblib encontrado na pasta ml_models.
+2025-01-31 00:35:02,523 - model - INFO - Modelo neuralforecast_lstm_2025-01-30.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-01-31 00:35:02,523 - model - INFO - Realizando previsões utilizando o horizonte definido no treinamento do modelo.
+2025-01-31 00:35:03,119 - model - INFO - Resultado da previsão:      unique_id         ds       LSTM
+0     ABEV3.SA 2025-01-31  11.528522
+1     ABEV3.SA 2025-02-01  11.809755
+2     ABEV3.SA 2025-02-02  11.967010
+3     ABEV3.SA 2025-02-03  11.878508
+4     ABEV3.SA 2025-02-04  11.954718
+...        ...        ...        ...
+996   WEGE3.SA 2025-04-13  42.520805
+997   WEGE3.SA 2025-04-14  43.674618
+998   WEGE3.SA 2025-04-15  43.555531
+999   WEGE3.SA 2025-04-16  42.527393
+1000  WEGE3.SA 2025-04-17  45.345791
+
+[1001 rows x 3 columns]
+2025-01-31 00:57:07,140 - model - INFO - Carregando o modelo string
+2025-01-31 00:57:07,140 - model - INFO - Validando a existência do modelo treinado : string
+2025-01-31 00:57:07,140 - model - ERROR - Arquivo string não encontrado na pasta ml_models. Verifique o nome do modelo.
+2025-01-31 00:57:07,140 - model - ERROR - Arquivo string não encontrado! Verifique o nome do modelo e tente novamente!
+2025-01-31 00:57:54,129 - model - INFO - Carregando o modelo neuralforecast_lstm_2025-01-30.joblib
+2025-01-31 00:57:54,129 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_2025-01-30.joblib
+2025-01-31 00:57:54,129 - model - INFO - Modelo neuralforecast_lstm_2025-01-30.joblib encontrado na pasta ml_models.
+2025-01-31 00:57:54,724 - model - INFO - Modelo neuralforecast_lstm_2025-01-30.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-01-31 00:57:54,724 - model - INFO - Realizando previsões utilizando o horizonte definido no treinamento do modelo.
+2025-01-31 00:57:55,312 - model - INFO - Resultado da previsão:      unique_id         ds       LSTM
+0     ABEV3.SA 2025-01-31  11.528522
+1     ABEV3.SA 2025-02-01  11.809755
+2     ABEV3.SA 2025-02-02  11.967010
+3     ABEV3.SA 2025-02-03  11.878508
+4     ABEV3.SA 2025-02-04  11.954718
+...        ...        ...        ...
+996   WEGE3.SA 2025-04-13  42.520805
+997   WEGE3.SA 2025-04-14  43.674618
+998   WEGE3.SA 2025-04-15  43.555531
+999   WEGE3.SA 2025-04-16  42.527393
+1000  WEGE3.SA 2025-04-17  45.345791
+
+[1001 rows x 3 columns]
+2025-01-31 00:57:55,312 - model - INFO - Gerando plot para as previsões de ABEV3.SA
+2025-01-31 00:57:55,324 - model - INFO - Imagem do plot salva em reports/neuralforecast_lstm_ABEV3.SA_2025-01-31.png
+2025-01-31 00:59:01,194 - model - INFO - Carregando o modelo neuralforecast_lstm_2025-01-30.joblib
+2025-01-31 00:59:01,194 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_2025-01-30.joblib
+2025-01-31 00:59:01,194 - model - INFO - Modelo neuralforecast_lstm_2025-01-30.joblib encontrado na pasta ml_models.
+2025-01-31 00:59:01,265 - model - INFO - Modelo neuralforecast_lstm_2025-01-30.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-01-31 00:59:01,265 - model - INFO - Realizando previsões utilizando o horizonte definido no treinamento do modelo.
+2025-01-31 00:59:01,842 - model - INFO - Resultado da previsão:      unique_id         ds       LSTM
+0     ABEV3.SA 2025-01-31  11.528522
+1     ABEV3.SA 2025-02-01  11.809755
+2     ABEV3.SA 2025-02-02  11.967010
+3     ABEV3.SA 2025-02-03  11.878508
+4     ABEV3.SA 2025-02-04  11.954718
+...        ...        ...        ...
+996   WEGE3.SA 2025-04-13  42.520805
+997   WEGE3.SA 2025-04-14  43.674618
+998   WEGE3.SA 2025-04-15  43.555531
+999   WEGE3.SA 2025-04-16  42.527393
+1000  WEGE3.SA 2025-04-17  45.345791
+
+[1001 rows x 3 columns]
+2025-01-31 00:59:01,842 - model - INFO - Gerando plot para as previsões de VALE3.SA
+2025-01-31 00:59:01,852 - model - INFO - Imagem do plot salva em reports/neuralforecast_lstm_VALE3.SA_2025-01-31.png

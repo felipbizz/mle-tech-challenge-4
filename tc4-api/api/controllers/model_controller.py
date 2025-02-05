@@ -35,6 +35,7 @@ def list_models():
     
     return model_list
 
+
 @router.post('/predict')
 def predict(model_file: Annotated[str | None, Body()], stock_option : str = 'VALE3.SA'):
     '''    

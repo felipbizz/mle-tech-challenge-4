@@ -18,7 +18,7 @@
 
 ## Setup
 
-<details>
+<details open>
 
 <summary> Expandir/Ocultar... </summary>
 
@@ -29,7 +29,7 @@ Para instalar siga a documentação em: https://docs.astral.sh/uv/getting-starte
 
 ## Roadmap
 
-<details>
+<details open>
 
 <summary> Expandir/Ocultar... </summary>
 
@@ -39,7 +39,7 @@ As tarefas que devem ser executadas estão definidas em: https://github.com/feli
 
 ## Premissas do projeto
 
-<details>
+<details open>
 
 <summary> Expandir/Ocultar... </summary>
 
@@ -69,15 +69,25 @@ Configure o token como uma variável de ambiente a ser utilizada pelo Docker Com
 > [Criando tokens de acesso ao projeto do Pydantic Logfire](https://logfire.pydantic.dev/docs/how-to-guides/create-write-tokens/)  
 > [Integrando o FastAPI com o Pydantic Logfire](https://logfire.pydantic.dev/docs/integrations/web-frameworks/fastapi/)  
 
-As atividades assíncronas do projeto foram desenvolvidas utilizando o RabbitMQ como orquestrador de mensagens.
+### Definição do modelo
+## Buscando os melhores hiperparâmetros utilizando o AutoLSTM
 
-> Referência: [Tutorial RabbitMQ](https://www.rabbitmq.com/tutorials) - Acessado em 29/01/2025
+## Treinando o modelo
+
+Após o tuning do modelo foram observados os hiperparâmetros abaixo que melhor atendiam às previsões.
+
+![Parâmetros obtidos através do AutoLSTM](readme_files/AutoLSTM-bestparameters.png)
+
+Estes hiperparâmetros foram então usados no treinamento do modelo, utilizando como entradas os dados armazenados no datalake previamente baixado utilizando a biblioteca YFinance.
+
+![Treinamento do modelo](readme_files/LSTM-Model-Training.png)
+
 
 </details>
 
 ## Imagens docker do projeto
 
-<details>
+<details open>
 
 <summary> Expandir/Ocultar... </summary>
 
@@ -85,9 +95,7 @@ As atividades assíncronas do projeto foram desenvolvidas utilizando o RabbitMQ 
 | :---: | :--- |
 | mle-api | API para execução das tarefas |
 | prometheus | Servidor Prometheus |
-| grafana | Servidor Grafana |
-| rabbitmq | Servidor RabbitMQ |
-| postgres | Banco de dados PostgreSQL |
+| grafana | Servidor Grafana ||
 
 ### Gerando as imagens
 
@@ -103,7 +111,7 @@ docker build -f Dockerfile -t mle-api --secret id=logfire,src=.logfire/logfire_c
 
 ## Executando o projeto
 
-<details>
+<details open>
 
 <summary> Expandir/Ocultar... </summary>
 
@@ -118,7 +126,7 @@ docker-compose up -d
 
 ## Visualizando métricas
 
-<details>
+<details open>
 
 <summary> Expandir/Ocultar... </summary>
 
@@ -156,7 +164,7 @@ Acesse a URL : http://localhost:15672/#/
 
 ## Estrutura do projeto <<< Atualizar ao Final da Implementação >>>
 
-<details>
+<details open>
 
 <summary> Expandir/Ocultar... </summary>
 

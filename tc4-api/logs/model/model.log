@@ -1,0 +1,112 @@
+2025-02-04 21:21:01,823 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_2025-02-02.joblib
+2025-02-04 21:21:01,825 - model - ERROR - Arquivo neuralforecast_lstm_2025-02-02.joblib não encontrado na pasta ml_models. Verifique o nome do modelo.
+2025-02-04 21:21:55,120 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_2025-02-02.joblib
+2025-02-04 21:21:55,122 - model - INFO - Modelo neuralforecast_lstm_2025-02-02.joblib encontrado na pasta ml_models.
+2025-02-04 21:21:55,432 - model - INFO - Modelo neuralforecast_lstm_2025-02-02.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-02-04 21:22:00,850 - model - INFO - Realizando previsões utilizando o horizonte definido no treinamento do modelo.
+2025-02-04 21:22:05,100 - model - INFO - Resultado da previsão:    unique_id         ds       LSTM
+0   WEGE3.SA 2025-02-01  52.364040
+1   WEGE3.SA 2025-02-02  51.475018
+2   WEGE3.SA 2025-02-03  52.254383
+3   WEGE3.SA 2025-02-04  52.672131
+4   WEGE3.SA 2025-02-05  53.265884
+..       ...        ...        ...
+72  WEGE3.SA 2025-04-14  53.669323
+73  WEGE3.SA 2025-04-15  54.342106
+74  WEGE3.SA 2025-04-16  52.840630
+75  WEGE3.SA 2025-04-17  54.466328
+76  WEGE3.SA 2025-04-18  53.689232
+
+[77 rows x 3 columns]
+2025-02-04 21:22:31,155 - model - INFO - Dados do deltalake carregados. Tamanho do dataset: 6299
+2025-02-04 21:22:35,488 - model - INFO - Dados após a remoção de duplicatas. Tamanho do dataset: 6299
+2025-02-04 21:22:38,020 - model - DEBUG - Header histórico:
+(169, 3)
+2025-02-04 21:22:38,021 - model - DEBUG - Header previsto:
+(77, 3)
+2025-02-04 21:22:55,794 - model - DEBUG - Dados concatenados : 
+(169, 4)
+2025-02-04 21:23:52,222 - model - INFO - Resultado da previsão:    unique_id         ds       LSTM
+0   WEGE3.SA 2025-02-01  52.364040
+1   WEGE3.SA 2025-02-02  51.475018
+2   WEGE3.SA 2025-02-03  52.254383
+3   WEGE3.SA 2025-02-04  52.672131
+4   WEGE3.SA 2025-02-05  53.265884
+..       ...        ...        ...
+72  WEGE3.SA 2025-04-14  53.669323
+73  WEGE3.SA 2025-04-15  54.342106
+74  WEGE3.SA 2025-04-16  52.840630
+75  WEGE3.SA 2025-04-17  54.466328
+76  WEGE3.SA 2025-04-18  53.689232
+
+[77 rows x 3 columns]
+2025-02-04 21:24:16,130 - model - DEBUG - Dados concatenados : 
+(169, 5)
+2025-02-04 21:24:39,010 - model - INFO - Resultado da previsão:    unique_id         ds       LSTM
+0   WEGE3.SA 2025-02-01  52.364040
+1   WEGE3.SA 2025-02-02  51.475018
+2   WEGE3.SA 2025-02-03  52.254383
+3   WEGE3.SA 2025-02-04  52.672131
+4   WEGE3.SA 2025-02-05  53.265884
+..       ...        ...        ...
+72  WEGE3.SA 2025-04-14  53.669323
+73  WEGE3.SA 2025-04-15  54.342106
+74  WEGE3.SA 2025-04-16  52.840630
+75  WEGE3.SA 2025-04-17  54.466328
+76  WEGE3.SA 2025-04-18  53.689232
+
+[77 rows x 3 columns]
+2025-02-04 21:26:32,771 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_2025-01-30.joblib
+2025-02-04 21:26:32,773 - model - INFO - Modelo neuralforecast_lstm_2025-01-30.joblib encontrado na pasta ml_models.
+2025-02-04 21:26:32,814 - model - INFO - Modelo neuralforecast_lstm_2025-01-30.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-02-04 21:27:43,411 - model - INFO - Resultado da previsão:    unique_id         ds       LSTM
+0   WEGE3.SA 2025-02-01  52.364040
+1   WEGE3.SA 2025-02-02  51.475018
+2   WEGE3.SA 2025-02-03  52.254383
+3   WEGE3.SA 2025-02-04  52.672131
+4   WEGE3.SA 2025-02-05  53.265884
+..       ...        ...        ...
+72  WEGE3.SA 2025-04-14  53.669323
+73  WEGE3.SA 2025-04-15  54.342106
+74  WEGE3.SA 2025-04-16  52.840630
+75  WEGE3.SA 2025-04-17  54.466328
+76  WEGE3.SA 2025-04-18  53.689232
+
+[77 rows x 3 columns]
+2025-02-04 21:27:54,960 - model - INFO - Dados do deltalake carregados. Tamanho do dataset: 6299
+2025-02-04 21:27:57,282 - model - INFO - Dados após a remoção de duplicatas. Tamanho do dataset: 6299
+2025-02-04 21:28:00,991 - model - DEBUG - Header histórico:
+(169, 3)
+2025-02-04 21:28:00,993 - model - DEBUG - Header previsto:
+(77, 3)
+2025-02-04 21:29:08,502 - model - DEBUG - Dados concatenados : 
+(246, 5)
+2025-02-04 21:29:30,436 - model - INFO - Resultado da previsão:    unique_id         ds       LSTM
+0   WEGE3.SA 2025-02-01  52.364040
+1   WEGE3.SA 2025-02-02  51.475018
+2   WEGE3.SA 2025-02-03  52.254383
+3   WEGE3.SA 2025-02-04  52.672131
+4   WEGE3.SA 2025-02-05  53.265884
+..       ...        ...        ...
+72  WEGE3.SA 2025-04-14  53.669323
+73  WEGE3.SA 2025-04-15  54.342106
+74  WEGE3.SA 2025-04-16  52.840630
+75  WEGE3.SA 2025-04-17  54.466328
+76  WEGE3.SA 2025-04-18  53.689232
+
+[77 rows x 3 columns]
+2025-02-04 21:29:34,315 - model - INFO - Dados do deltalake carregados. Tamanho do dataset: 6299
+2025-02-04 21:29:42,629 - model - INFO - Dados após a remoção de duplicatas. Tamanho do dataset: 6299
+2025-02-04 21:29:47,767 - model - DEBUG - Header histórico:
+(169, 3)
+2025-02-04 21:29:47,769 - model - DEBUG - Header previsto:
+(77, 3)
+2025-02-04 21:29:51,164 - model - DEBUG - Dados concatenados : 
+(246, 4)
+2025-02-04 21:29:58,640 - model - INFO - Gerando plot para as previsões de WEGE3.SA
+2025-02-04 21:29:58,668 - model - INFO - Imagem do plot salva em reports/neuralforecast_lstm_WEGE3.SA_2025-02-04.png
+2025-02-04 21:30:11,048 - model - INFO - Gerando plot para as previsões de WEGE3.SA
+2025-02-04 21:30:11,057 - model - INFO - Imagem do plot salva em ../reports/neuralforecast_lstm_WEGE3.SA_2025-02-04.png
+2025-02-04 21:31:37,902 - model - INFO - Dados do deltalake carregados. Tamanho do dataset: 6299
+2025-02-04 21:38:06,479 - model - INFO - Dados do deltalake carregados. Tamanho do dataset: 6301
+2025-02-04 21:38:25,374 - model - INFO - Dados do deltalake carregados. Tamanho do dataset: 6299

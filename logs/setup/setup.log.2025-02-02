@@ -1,0 +1,36 @@
+2025-02-02 13:14:45,647 - setup - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-02 13:14:45,648 - setup - INFO - Buscando rotas em api/controllers
+2025-02-02 13:14:45,648 - setup - DEBUG - Módulos encontrados: ['__init__.py', 'datalake_controller.py', 'model_controller.py']
+2025-02-02 13:14:45,648 - setup - INFO - Carregando rotas de : __init__.py
+2025-02-02 13:14:45,648 - setup - INFO - Extraindo atributos do módulo __init__
+2025-02-02 13:14:45,648 - setup - WARNING - Nenhuma rota encontrada no módulo __init__
+2025-02-02 13:14:45,648 - setup - INFO - Carregando rotas de : datalake_controller.py
+2025-02-02 13:14:45,649 - setup - INFO - Extraindo atributos do módulo datalake_controller
+2025-02-02 13:14:45,650 - setup - INFO - Rotas carregadas de datalake_controller 
+2025-02-02 13:14:45,650 - setup - INFO - Carregando rotas de : model_controller.py
+2025-02-02 13:14:45,650 - setup - INFO - Extraindo atributos do módulo model_controller
+2025-02-02 13:14:45,651 - setup - INFO - Rotas carregadas de model_controller 
+2025-02-02 13:14:59,664 - setup - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-02 13:14:59,664 - setup - INFO - Buscando rotas em api/controllers
+2025-02-02 13:14:59,664 - setup - DEBUG - Módulos encontrados: ['__init__.py', 'datalake_controller.py', 'model_controller.py']
+2025-02-02 13:14:59,664 - setup - INFO - Carregando rotas de : __init__.py
+2025-02-02 13:14:59,664 - setup - INFO - Extraindo atributos do módulo __init__
+2025-02-02 13:14:59,665 - setup - WARNING - Nenhuma rota encontrada no módulo __init__
+2025-02-02 13:14:59,665 - setup - INFO - Carregando rotas de : datalake_controller.py
+2025-02-02 13:14:59,665 - setup - INFO - Extraindo atributos do módulo datalake_controller
+2025-02-02 13:14:59,665 - setup - INFO - Rotas carregadas de datalake_controller 
+2025-02-02 13:14:59,665 - setup - INFO - Carregando rotas de : model_controller.py
+2025-02-02 13:14:59,666 - setup - INFO - Extraindo atributos do módulo model_controller
+2025-02-02 13:14:59,667 - setup - INFO - Rotas carregadas de model_controller 
+2025-02-02 15:38:40,773 - setup - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-02 15:38:40,774 - setup - INFO - Buscando rotas em api/controllers
+2025-02-02 15:38:40,774 - setup - DEBUG - Módulos encontrados: ['__init__.py', 'datalake_controller.py', 'model_controller.py']
+2025-02-02 15:38:40,774 - setup - INFO - Carregando rotas de : __init__.py
+2025-02-02 15:38:40,775 - setup - INFO - Extraindo atributos do módulo __init__
+2025-02-02 15:38:40,775 - setup - WARNING - Nenhuma rota encontrada no módulo __init__
+2025-02-02 15:38:40,775 - setup - INFO - Carregando rotas de : datalake_controller.py
+2025-02-02 15:38:40,775 - setup - INFO - Extraindo atributos do módulo datalake_controller
+2025-02-02 15:38:40,776 - setup - INFO - Rotas carregadas de datalake_controller 
+2025-02-02 15:38:40,776 - setup - INFO - Carregando rotas de : model_controller.py
+2025-02-02 15:38:40,776 - setup - INFO - Extraindo atributos do módulo model_controller
+2025-02-02 15:38:40,777 - setup - INFO - Rotas carregadas de model_controller 

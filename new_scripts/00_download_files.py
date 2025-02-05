@@ -31,7 +31,7 @@ def download_files(symbols: list) -> None:
 
         df['unique_id'] = symbol
 
-        write_deltalake('deltalake', df, mode='append', partition_by=['unique_id'])
+        write_deltalake('deltalake', df, mode='overwrite', partition_by=['unique_id'])
         logger.info(f'Dados para {symbol} gravados com sucesso no DeltaLake')
 
 if __name__ == '__main__':

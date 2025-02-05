@@ -1,0 +1,24 @@
+2025-02-02 13:14:45,604 - api - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-02 13:14:45,605 - api - INFO - Iniciando API
+2025-02-02 13:14:45,605 - api - INFO - Configurando acesso ao Pydantic Logfire.
+2025-02-02 13:14:45,647 - api - INFO - Adicionando rotas.
+2025-02-02 13:14:45,651 - api - INFO - Configurando o instrumentador de métricas do cliente do Prometheus.
+2025-02-02 13:14:45,651 - api - INFO - Definindo o endpoint de coleta de métricas a ser usado pelo servidor do Prometheus.
+2025-02-02 13:14:45,652 - api - INFO - Realizando configuração inicial da API
+2025-02-02 13:14:45,652 - api - INFO - Adicionando middleware para CORS
+2025-02-02 13:14:59,641 - api - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-02 13:14:59,641 - api - INFO - Iniciando API
+2025-02-02 13:14:59,642 - api - INFO - Configurando acesso ao Pydantic Logfire.
+2025-02-02 13:14:59,664 - api - INFO - Adicionando rotas.
+2025-02-02 13:14:59,667 - api - INFO - Configurando o instrumentador de métricas do cliente do Prometheus.
+2025-02-02 13:14:59,667 - api - INFO - Definindo o endpoint de coleta de métricas a ser usado pelo servidor do Prometheus.
+2025-02-02 13:14:59,667 - api - INFO - Realizando configuração inicial da API
+2025-02-02 13:14:59,667 - api - INFO - Adicionando middleware para CORS
+2025-02-02 15:38:40,722 - api - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-02 15:38:40,723 - api - INFO - Iniciando API
+2025-02-02 15:38:40,723 - api - INFO - Configurando acesso ao Pydantic Logfire.
+2025-02-02 15:38:40,773 - api - INFO - Adicionando rotas.
+2025-02-02 15:38:40,777 - api - INFO - Configurando o instrumentador de métricas do cliente do Prometheus.
+2025-02-02 15:38:40,778 - api - INFO - Definindo o endpoint de coleta de métricas a ser usado pelo servidor do Prometheus.
+2025-02-02 15:38:40,778 - api - INFO - Realizando configuração inicial da API
+2025-02-02 15:38:40,778 - api - INFO - Adicionando middleware para CORS
