@@ -1,3 +1,5 @@
+import shutil
+
 import yfinance as yf
 from deltalake.writer import write_deltalake
 from src.utils import get_path_project
@@ -5,6 +7,10 @@ from tqdm import tqdm
 
 PROJECT_DIR = get_path_project()
 DATALAKE_PATH = PROJECT_DIR / "data/raw/yfinance_api"
+
+if DATALAKE_PATH.exists() and DATALAKE_PATH.is_dir():
+    shutil.rmtree(DATALAKE_PATH)
+
 SYMBOLS = [
     "DIS",
     "VALE3",
@@ -34,6 +40,9 @@ def download_files(symbols: list) -> None:
         except Exception as e:
             print(f"Não foi possível processar {symbol} por conta de {e}")
             continue
+
+        assert df is not None
+
         df.columns = df.columns.droplevel(1)
         df = df.reset_index()
 

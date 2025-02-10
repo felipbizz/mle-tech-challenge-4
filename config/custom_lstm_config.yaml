@@ -1,8 +1,14 @@
 model:
-  num_stocks: 14
+  num_stocks: 9
   num_lstm_layers: 32
   lstm_out_size: 64
   output_sequence_length: 7
 training:
   num_epochs: 50
   learning_rate: 0.001
+dataset:
+  input_len: 14
+  target_len: 7
+dataloader:
+  batch_size: 32
+  shuffle: yes

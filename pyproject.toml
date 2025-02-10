@@ -18,10 +18,22 @@ dependencies = [
     "pynvml>=12.0.0",
     "python-dotenv>=1.0.1",
     "yfinance>=0.2.51",
+    "pip>=25.0",
 ]
 
 
 [dependency-groups]
+neuralnetwork = [
+    "src",
+    "deltalake>=0.22.3",
+    "joblib>=1.4.2",
+    "mlflow>=2.19.0",
+    "psutil>=6.1.1",
+    "pynvml>=12.0.0",
+    "python-dotenv>=1.0.1",
+    "yfinance>=0.2.51",
+    "pip>=25.0",
+]
 dev = [
     "black[jupyter]>=24.10.0",
     "pytest>=8.3.4",
