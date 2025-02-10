@@ -4,10 +4,15 @@ from src.utils import setLog
 from business_rules import model
 import os
 
+from prometheus_client import Summary, Counter
 
 logger = setLog('model_controller', level=10)
 
 router = APIRouter(prefix='/api/v1/model', tags=['Endpoints do Modelo'])
+
+# Define Prometheus metrics
+REQUEST_TIME = Summary('request_processing_seconds', 'Time spent processing request')
+REQUEST_COUNT = Counter('request_count', 'Total number of requests')
 
 @router.get('/list')
 def list_models():

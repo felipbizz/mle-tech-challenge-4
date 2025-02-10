@@ -18,8 +18,6 @@ logfire.instrument_fastapi(app)
 
 logger.info('Adicionando rotas.')
 detect_routers(app)
-# app.include_router(model_controller.router)
-# app.include_router(datalake_controller.router)
 
 logger.info('Configurando o instrumentador de métricas do cliente do Prometheus.')
 metrics_app = make_asgi_app()

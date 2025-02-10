@@ -17,3 +17,5 @@ wheels/
 deltalake/*
 lightning_logs/*
 .secrets.toml
+
+mlruns/*
