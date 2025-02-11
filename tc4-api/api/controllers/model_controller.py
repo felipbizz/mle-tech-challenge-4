@@ -41,7 +41,9 @@ def list_models():
     return model_list
 
 
+
 @router.post('/predict')
+@REQUEST_TIME.time()
 def predict(model_file: Annotated[str | None, Body()], stock_option : str = 'VALE3.SA'):
     '''    
     Lista os modelos treinados disponíveis para serem utilizados em previsões.
@@ -60,5 +62,5 @@ def predict(model_file: Annotated[str | None, Body()], stock_option : str = 'VAL
     '''
     logger.info('---------------------------------------------------------------------------------------------------')
     logger.info(f'Iniciando previsão utilizando o modelo {model_file}')
-    
+    REQUEST_COUNT.inc()
     return { 'message' : model.make_predictions(model_file, stock_option) } 

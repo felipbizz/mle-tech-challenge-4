@@ -11,12 +11,12 @@ from prometheus_client import start_http_server, Summary, Counter, Gauge, genera
 from prometheus_client import CONTENT_TYPE_LATEST
 
 
-REQUEST_TIME = Summary('request_processing_seconds', 'Time spent processing request')
+# REQUEST_TIME = Summary('request_processing_seconds', 'Time spent processing request')
 INFERENCE_COUNT = Counter('inference_count', 'Total number of inferences made')
 
 logger = setLog('model')
 
-@REQUEST_TIME.time()
+# @REQUEST_TIME.time()
 def make_predictions(model_file : str, stock_option : str) -> dict:
 
     logger.info(f'Carregando o modelo {model_file}')
@@ -39,8 +39,10 @@ def make_predictions(model_file : str, stock_option : str) -> dict:
         logger.info(f'Dados após a remoção de duplicatas. Tamanho do dataset: {len(df_hist)}')
 
         df_hist = df_hist[df_hist['ds'] >= '2024-06-01']
+        df_hist = df_hist[df_hist['unique_id'] == stock_option]
         logger.debug(f'Header histórico:\n{df_hist.shape}')
         logger.debug(f'Header previsto:\n{predict_result.shape}')
+        logger.debug(f'Stock: {df_hist["unique_id"].unique()}')
 
         plot_df = pd.concat([df_hist, plot_df])
         logger.debug(f'Dados concatenados : \n{plot_df.shape}')

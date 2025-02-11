@@ -1,73 +1,59 @@
-2025-02-02 11:19:34,227 - train_model - INFO - Iniciando treinamento utilizandos os seguintes hiperparâmetros: {'h': 77, 'encoder_hidden_size': 300, 'encoder_n_layers': 1, 'context_size': 10, 'decoder_hidden_size': 64, 'learning_rate': 0.008279309926218455, 'max_steps': 10000, 'batch_size': 32, 'loss': WMAPE(), 'check_val_every_n_epoch': 100, 'random_seed': 19, 'input_size': 4928}
-2025-02-02 11:19:34,239 - train_model - INFO - Modelo carregado
-2025-02-02 11:19:34,352 - train_model - INFO - Dados do deltalake carregados. Tamanho do dataset: 134647
-2025-02-02 11:23:12,720 - train_model - INFO - Iniciando treinamento utilizandos os seguintes hiperparâmetros: {'h': 77, 'encoder_hidden_size': 300, 'encoder_n_layers': 1, 'context_size': 10, 'decoder_hidden_size': 64, 'learning_rate': 0.008279309926218455, 'max_steps': 10000, 'batch_size': 32, 'loss': WMAPE(), 'check_val_every_n_epoch': 100, 'random_seed': 19, 'input_size': 4928}
-2025-02-02 11:23:12,726 - train_model - INFO - Modelo carregado
-2025-02-02 11:23:12,785 - train_model - INFO - Dados do deltalake carregados. Tamanho do dataset: 134647
-2025-02-02 11:31:55,152 - train_model - INFO - Iniciando treinamento utilizandos os seguintes hiperparâmetros: {'h': 77, 'encoder_hidden_size': 300, 'encoder_n_layers': 1, 'context_size': 10, 'decoder_hidden_size': 64, 'learning_rate': 0.008279309926218455, 'max_steps': 10000, 'batch_size': 32, 'loss': WMAPE(), 'check_val_every_n_epoch': 100, 'random_seed': 19, 'input_size': 4928}
-2025-02-02 11:31:55,158 - train_model - INFO - Modelo carregado
-2025-02-02 11:31:55,206 - train_model - INFO - Dados do deltalake carregados. Tamanho do dataset: 134647
-2025-02-02 11:42:38,034 - train_model - INFO - Iniciando treinamento utilizandos os seguintes hiperparâmetros: {'h': 77, 'encoder_hidden_size': 300, 'encoder_n_layers': 1, 'context_size': 10, 'decoder_hidden_size': 64, 'learning_rate': 0.008279309926218455, 'max_steps': 10000, 'batch_size': 32, 'loss': WMAPE(), 'check_val_every_n_epoch': 100, 'random_seed': 19, 'input_size': 4928}
-2025-02-02 11:42:38,047 - train_model - INFO - Modelo carregado
-2025-02-02 11:42:38,176 - train_model - INFO - Dados do deltalake carregados. Tamanho do dataset: 134647
-2025-02-02 11:50:48,160 - train_model - INFO - Iniciando treinamento utilizandos os seguintes hiperparâmetros: {'h': 77, 'encoder_hidden_size': 300, 'encoder_n_layers': 1, 'context_size': 10, 'decoder_hidden_size': 64, 'learning_rate': 0.008279309926218455, 'max_steps': 10000, 'batch_size': 32, 'loss': WMAPE(), 'check_val_every_n_epoch': 100, 'random_seed': 19, 'input_size': 4928}
-2025-02-02 11:50:48,169 - train_model - INFO - Modelo criado.
-2025-02-02 11:50:48,248 - train_model - INFO - Dados do deltalake carregados. Tamanho do dataset: 201977
-2025-02-02 11:53:02,555 - train_model - INFO - Iniciando treinamento utilizandos os seguintes hiperparâmetros: {'h': 77, 'encoder_hidden_size': 300, 'encoder_n_layers': 1, 'context_size': 10, 'decoder_hidden_size': 64, 'learning_rate': 0.008279309926218455, 'max_steps': 10000, 'batch_size': 32, 'loss': WMAPE(), 'check_val_every_n_epoch': 100, 'random_seed': 19, 'input_size': 4928}
-2025-02-02 11:53:02,561 - train_model - INFO - Modelo criado.
-2025-02-02 11:54:29,545 - train_model - INFO - Iniciando treinamento utilizandos os seguintes hiperparâmetros: {'h': 77, 'encoder_hidden_size': 300, 'encoder_n_layers': 1, 'context_size': 10, 'decoder_hidden_size': 64, 'learning_rate': 0.008279309926218455, 'max_steps': 10000, 'batch_size': 32, 'loss': WMAPE(), 'check_val_every_n_epoch': 100, 'random_seed': 19, 'input_size': 4928}
-2025-02-02 11:54:29,551 - train_model - INFO - Modelo criado.
-2025-02-02 11:56:47,970 - train_model - INFO - Iniciando treinamento utilizandos os seguintes hiperparâmetros: {'h': 77, 'encoder_hidden_size': 300, 'encoder_n_layers': 1, 'context_size': 10, 'decoder_hidden_size': 64, 'learning_rate': 0.008279309926218455, 'max_steps': 10000, 'batch_size': 32, 'loss': WMAPE(), 'check_val_every_n_epoch': 100, 'random_seed': 19, 'input_size': 4928}
-2025-02-02 11:56:47,977 - train_model - INFO - Modelo criado.
-2025-02-02 11:56:48,052 - train_model - INFO - Dados do deltalake carregados. Tamanho do dataset: 201977
-2025-02-02 11:56:48,065 - train_model - INFO - Dados após a remoção de duplicatas. Tamanho do dataset: 67330
-2025-02-02 11:57:20,485 - train_model - INFO - Iniciando treinamento utilizandos os seguintes hiperparâmetros: {'h': 77, 'encoder_hidden_size': 300, 'encoder_n_layers': 1, 'context_size': 10, 'decoder_hidden_size': 64, 'learning_rate': 0.008279309926218455, 'max_steps': 10000, 'batch_size': 32, 'loss': WMAPE(), 'check_val_every_n_epoch': 100, 'random_seed': 19, 'input_size': 4928}
-2025-02-02 11:57:20,492 - train_model - INFO - Modelo criado.
-2025-02-02 11:57:20,576 - train_model - INFO - Dados do deltalake carregados. Tamanho do dataset: 201977
-2025-02-02 11:57:20,589 - train_model - INFO - Dados após a remoção de duplicatas. Tamanho do dataset: 67330
-2025-02-02 12:22:53,663 - train_model - INFO - Modelo treinado.
-2025-02-02 12:22:53,731 - train_model - INFO - Modelo salvo em: ml_models/neuralforecast_lstm_2025-02-02.joblib
-2025-02-02 12:22:53,732 - train_model - INFO - Tempo total de execução: 0:25:33.246442
-2025-02-02 12:39:45,810 - train_model - INFO - Iniciando treinamento utilizandos os seguintes hiperparâmetros: {'h': 77, 'encoder_hidden_size': 300, 'encoder_n_layers': 1, 'context_size': 10, 'decoder_hidden_size': 64, 'learning_rate': 0.008279309926218455, 'max_steps': 10000, 'batch_size': 32, 'loss': WMAPE(), 'check_val_every_n_epoch': 100, 'random_seed': 19, 'input_size': 4928}
-2025-02-02 12:39:45,827 - train_model - INFO - Modelo criado.
-2025-02-02 12:39:45,897 - train_model - INFO - Dados do deltalake carregados. Tamanho do dataset: 6299
-2025-02-02 12:39:45,899 - train_model - INFO - Dados após a remoção de duplicatas. Tamanho do dataset: 6299
-2025-02-02 12:47:34,205 - train_model - INFO - Iniciando treinamento utilizandos os seguintes hiperparâmetros: {'h': 77, 'encoder_hidden_size': 300, 'encoder_n_layers': 1, 'context_size': 10, 'decoder_hidden_size': 64, 'learning_rate': 0.008279309926218455, 'max_steps': 10000, 'batch_size': 32, 'loss': WMAPE(), 'check_val_every_n_epoch': 100, 'random_seed': 19, 'input_size': 4928}
-2025-02-02 12:47:34,211 - train_model - INFO - Modelo criado.
-2025-02-02 12:47:34,245 - train_model - INFO - Dados do deltalake carregados. Tamanho do dataset: 6299
-2025-02-02 12:47:34,246 - train_model - INFO - Dados após a remoção de duplicatas. Tamanho do dataset: 6299
-2025-02-02 12:48:52,462 - train_model - INFO - Iniciando treinamento utilizandos os seguintes hiperparâmetros: {'h': 77, 'encoder_hidden_size': 300, 'encoder_n_layers': 1, 'context_size': 10, 'decoder_hidden_size': 64, 'learning_rate': 0.008279309926218455, 'max_steps': 10000, 'batch_size': 32, 'loss': WMAPE(), 'check_val_every_n_epoch': 100, 'random_seed': 19, 'input_size': 4928}
-2025-02-02 12:48:52,468 - train_model - INFO - Modelo criado.
-2025-02-02 12:48:52,502 - train_model - INFO - Dados do deltalake carregados. Tamanho do dataset: 6299
-2025-02-02 12:48:52,503 - train_model - INFO - Dados após a remoção de duplicatas. Tamanho do dataset: 6299
-2025-02-02 12:51:36,570 - train_model - INFO - Iniciando treinamento utilizandos os seguintes hiperparâmetros: {'h': 77, 'encoder_hidden_size': 300, 'encoder_n_layers': 1, 'context_size': 10, 'decoder_hidden_size': 64, 'learning_rate': 0.008279309926218455, 'max_steps': 10000, 'batch_size': 32, 'loss': WMAPE(), 'check_val_every_n_epoch': 100, 'random_seed': 19, 'input_size': 4928}
-2025-02-02 12:51:36,586 - train_model - INFO - Modelo criado.
-2025-02-02 12:51:36,663 - train_model - INFO - Dados do deltalake carregados. Tamanho do dataset: 6299
-2025-02-02 12:51:36,665 - train_model - INFO - Dados após a remoção de duplicatas. Tamanho do dataset: 6299
-2025-02-02 12:55:17,229 - train_model - INFO - Iniciando treinamento utilizandos os seguintes hiperparâmetros: {'h': 77, 'encoder_hidden_size': 300, 'encoder_n_layers': 1, 'context_size': 10, 'decoder_hidden_size': 64, 'learning_rate': 0.008279309926218455, 'max_steps': 10000, 'batch_size': 32, 'loss': WMAPE(), 'check_val_every_n_epoch': 100, 'random_seed': 19, 'input_size': 4928}
-2025-02-02 12:55:17,234 - train_model - INFO - Modelo criado.
-2025-02-02 12:55:17,268 - train_model - INFO - Dados do deltalake carregados. Tamanho do dataset: 6299
-2025-02-02 12:55:17,269 - train_model - INFO - Dados após a remoção de duplicatas. Tamanho do dataset: 6299
-2025-02-02 16:39:38,926 - train_model - INFO - Iniciando treinamento utilizandos os seguintes hiperparâmetros: {'h': 77, 'encoder_hidden_size': 300, 'encoder_n_layers': 1, 'context_size': 10, 'decoder_hidden_size': 64, 'learning_rate': 0.008279309926218455, 'max_steps': 10000, 'batch_size': 32, 'loss': WMAPE(), 'check_val_every_n_epoch': 100, 'random_seed': 19, 'input_size': 4928}
-2025-02-02 16:39:38,934 - train_model - INFO - Modelo criado.
-2025-02-02 16:39:38,990 - train_model - INFO - Dados do deltalake carregados. Tamanho do dataset: 6299
-2025-02-02 16:39:38,991 - train_model - INFO - Dados após a remoção de duplicatas. Tamanho do dataset: 6299
-2025-02-02 16:45:25,874 - train_model - INFO - Iniciando treinamento utilizandos os seguintes hiperparâmetros: {'h': 77, 'encoder_hidden_size': 300, 'encoder_n_layers': 1, 'context_size': 10, 'decoder_hidden_size': 64, 'learning_rate': 0.008279309926218455, 'max_steps': 10000, 'batch_size': 32, 'loss': WMAPE(), 'check_val_every_n_epoch': 100, 'random_seed': 19, 'input_size': 4928}
-2025-02-02 16:45:25,884 - train_model - INFO - Modelo criado.
-2025-02-02 16:45:25,960 - train_model - INFO - Dados do deltalake carregados. Tamanho do dataset: 6299
-2025-02-02 16:45:25,962 - train_model - INFO - Dados após a remoção de duplicatas. Tamanho do dataset: 6299
-2025-02-02 16:47:18,428 - train_model - INFO - Iniciando treinamento utilizandos os seguintes hiperparâmetros: {'h': 77, 'encoder_hidden_size': 300, 'encoder_n_layers': 1, 'context_size': 10, 'decoder_hidden_size': 64, 'learning_rate': 0.008279309926218455, 'max_steps': 10000, 'batch_size': 32, 'loss': WMAPE(), 'check_val_every_n_epoch': 100, 'random_seed': 19, 'input_size': 4928}
-2025-02-02 16:47:18,434 - train_model - INFO - Modelo criado.
-2025-02-02 16:47:18,462 - train_model - INFO - Dados do deltalake carregados. Tamanho do dataset: 6299
-2025-02-02 16:47:18,464 - train_model - INFO - Dados após a remoção de duplicatas. Tamanho do dataset: 6299
-2025-02-02 17:33:48,664 - train_model - INFO - Modelo treinado.
-2025-02-02 17:33:48,706 - train_model - INFO - Modelo salvo em: ml_models/neuralforecast_lstm_2025-02-02.joblib
-2025-02-02 17:33:48,706 - train_model - INFO - Tempo total de execução: 0:46:30.278562
-2025-02-02 17:36:22,052 - train_model - INFO - Iniciando treinamento utilizandos os seguintes hiperparâmetros: {'h': 77, 'encoder_hidden_size': 300, 'encoder_n_layers': 1, 'context_size': 10, 'decoder_hidden_size': 64, 'learning_rate': 0.008279309926218455, 'max_steps': 10000, 'batch_size': 32, 'loss': WMAPE(), 'check_val_every_n_epoch': 100, 'random_seed': 19, 'input_size': 4928}
-2025-02-02 17:36:22,059 - train_model - INFO - Modelo criado.
-2025-02-02 17:36:22,089 - train_model - INFO - Dados do deltalake carregados. Tamanho do dataset: 6299
-2025-02-02 17:36:22,090 - train_model - INFO - Dados após a remoção de duplicatas. Tamanho do dataset: 6299
-2025-02-02 17:37:53,033 - train_model - INFO - Iniciando treinamento utilizandos os seguintes hiperparâmetros: {'h': 77, 'encoder_hidden_size': 300, 'encoder_n_layers': 1, 'context_size': 10, 'decoder_hidden_size': 64, 'learning_rate': 0.008279309926218455, 'max_steps': 10000, 'batch_size': 32, 'loss': WMAPE(), 'check_val_every_n_epoch': 100, 'random_seed': 19, 'input_size': 4928}
-2025-02-02 17:37:53,046 - train_model - INFO - Modelo criado.
-2025-02-02 17:37:53,090 - train_model - INFO - Dados do deltalake carregados. Tamanho do dataset: 6299
-2025-02-02 17:37:53,091 - train_model - INFO - Dados após a remoção de duplicatas. Tamanho do dataset: 6299
+2025-02-10 22:25:27,068 - train_model - INFO - Iniciando treinamento utilizandos os seguintes hiperparâmetros: {'batch_size': 16, 'context_size': 50, 'dataloader_kwargs': None, 'decoder_hidden_size': 512, 'decoder_layers': 2, 'drop_last_loader': False, 'early_stop_patience_steps': -1, 'encoder_bias': True, 'encoder_dropout': 0.0, 'encoder_hidden_size': 300, 'encoder_n_layers': 1, 'futr_exog_list': None, 'h': 169, 'hist_exog_list': None, 'inference_input_size': -169, 'input_size': -169, 'learning_rate': 0.00028291811423129034, 'loss': WMAPE(), 'lr_scheduler': None, 'lr_scheduler_kwargs': None, 'max_steps': 500, 'num_lr_decays': -1, 'num_workers_loader': 0, 'optimizer': None, 'optimizer_kwargs': None, 'random_seed': 9, 'scaler_type': 'robust', 'stat_exog_list': None, 'val_check_steps': 100, 'valid_batch_size': None, 'valid_loss': WMAPE()}
+2025-02-10 22:25:58,861 - train_model - INFO - Iniciando treinamento utilizandos os seguintes hiperparâmetros: {'batch_size': 16, 'context_size': 50, 'dataloader_kwargs': None, 'decoder_hidden_size': 512, 'decoder_layers': 2, 'drop_last_loader': False, 'early_stop_patience_steps': -1, 'encoder_bias': True, 'encoder_dropout': 0.0, 'encoder_hidden_size': 300, 'encoder_n_layers': 1, 'futr_exog_list': None, 'h': 169, 'hist_exog_list': None, 'inference_input_size': -169, 'input_size': -169, 'learning_rate': 0.00028291811423129034, 'loss': WMAPE(), 'lr_scheduler': None, 'lr_scheduler_kwargs': None, 'max_steps': 500, 'num_lr_decays': -1, 'num_workers_loader': 0, 'optimizer': None, 'optimizer_kwargs': None, 'random_seed': 9, 'stat_exog_list': None, 'val_check_steps': 100, 'valid_batch_size': None, 'valid_loss': WMAPE()}
+2025-02-10 22:25:58,876 - train_model - INFO - Modelo criado.
+2025-02-10 22:25:58,924 - train_model - INFO - Dados do deltalake carregados. Tamanho do dataset: 73709
+2025-02-10 22:25:58,928 - train_model - INFO - Dados após a remoção de duplicatas. Tamanho do dataset: 67408
+2025-02-10 22:29:54,552 - train_model - INFO - Iniciando treinamento utilizandos os seguintes hiperparâmetros: {'batch_size': 16, 'context_size': 50, 'dataloader_kwargs': None, 'decoder_hidden_size': 512, 'decoder_layers': 2, 'drop_last_loader': False, 'early_stop_patience_steps': -1, 'encoder_bias': True, 'encoder_dropout': 0.0, 'encoder_hidden_size': 300, 'encoder_n_layers': 1, 'futr_exog_list': None, 'h': 169, 'hist_exog_list': None, 'inference_input_size': -169, 'input_size': -169, 'learning_rate': 0.00028291811423129034, 'loss': WMAPE(), 'lr_scheduler': None, 'lr_scheduler_kwargs': None, 'max_steps': 500, 'num_lr_decays': -1, 'num_workers_loader': 0, 'optimizer': None, 'optimizer_kwargs': None, 'random_seed': 9, 'stat_exog_list': None, 'val_check_steps': 100, 'valid_batch_size': None, 'valid_loss': WMAPE()}
+2025-02-10 22:29:54,571 - train_model - INFO - Modelo criado.
+2025-02-10 22:29:54,618 - train_model - INFO - Dados do deltalake carregados. Tamanho do dataset: 73709
+2025-02-10 22:29:54,623 - train_model - INFO - Dados após a remoção de duplicatas. Tamanho do dataset: 67408
+2025-02-10 22:31:33,718 - train_model - INFO - Iniciando treinamento utilizandos os seguintes hiperparâmetros: {'batch_size': 16, 'context_size': 50, 'dataloader_kwargs': None, 'decoder_hidden_size': 512, 'decoder_layers': 2, 'drop_last_loader': False, 'early_stop_patience_steps': -1, 'encoder_bias': True, 'encoder_dropout': 0.0, 'encoder_hidden_size': 300, 'encoder_n_layers': 1, 'futr_exog_list': None, 'h': 169, 'hist_exog_list': None, 'inference_input_size': -169, 'input_size': -169, 'learning_rate': 0.00028291811423129034, 'loss': WMAPE(), 'lr_scheduler': None, 'lr_scheduler_kwargs': None, 'max_steps': 500, 'num_lr_decays': -1, 'num_workers_loader': 0, 'optimizer': None, 'optimizer_kwargs': None, 'random_seed': 9, 'stat_exog_list': None, 'val_check_steps': 100, 'valid_batch_size': None, 'valid_loss': WMAPE()}
+2025-02-10 22:31:33,732 - train_model - INFO - Modelo criado.
+2025-02-10 22:31:33,775 - train_model - INFO - Dados do deltalake carregados. Tamanho do dataset: 73709
+2025-02-10 22:31:33,780 - train_model - INFO - Dados após a remoção de duplicatas. Tamanho do dataset: 67408
+2025-02-10 22:32:02,606 - train_model - INFO - Iniciando treinamento utilizandos os seguintes hiperparâmetros: {'batch_size': 16, 'context_size': 50, 'dataloader_kwargs': None, 'decoder_hidden_size': 512, 'decoder_layers': 2, 'drop_last_loader': False, 'early_stop_patience_steps': -1, 'encoder_bias': True, 'encoder_dropout': 0.0, 'encoder_hidden_size': 300, 'encoder_n_layers': 1, 'futr_exog_list': None, 'h': 169, 'hist_exog_list': None, 'inference_input_size': -169, 'input_size': -169, 'learning_rate': 0.00028291811423129034, 'loss': WMAPE(), 'lr_scheduler': None, 'lr_scheduler_kwargs': None, 'max_steps': 500, 'num_lr_decays': -1, 'num_workers_loader': 0, 'optimizer': None, 'optimizer_kwargs': None, 'random_seed': 9, 'stat_exog_list': None, 'val_check_steps': 100, 'valid_batch_size': None, 'valid_loss': WMAPE()}
+2025-02-10 22:32:02,622 - train_model - INFO - Modelo criado.
+2025-02-10 22:32:02,668 - train_model - INFO - Dados do deltalake carregados. Tamanho do dataset: 73709
+2025-02-10 22:32:02,674 - train_model - INFO - Dados após a remoção de duplicatas. Tamanho do dataset: 67408
+2025-02-10 22:32:35,240 - train_model - INFO - Iniciando treinamento utilizandos os seguintes hiperparâmetros: {'batch_size': 16, 'context_size': 50, 'dataloader_kwargs': None, 'decoder_hidden_size': 512, 'decoder_layers': 2, 'drop_last_loader': False, 'early_stop_patience_steps': -1, 'encoder_bias': True, 'encoder_dropout': 0.0, 'encoder_hidden_size': 300, 'encoder_n_layers': 1, 'futr_exog_list': None, 'h': 169, 'hist_exog_list': None, 'inference_input_size': -169, 'input_size': -169, 'learning_rate': 0.00028291811423129034, 'loss': WMAPE(), 'lr_scheduler': None, 'lr_scheduler_kwargs': None, 'max_steps': 500, 'num_lr_decays': -1, 'num_workers_loader': 0, 'optimizer': None, 'optimizer_kwargs': None, 'random_seed': 9, 'stat_exog_list': None, 'val_check_steps': 100, 'valid_batch_size': None, 'valid_loss': WMAPE()}
+2025-02-10 22:32:35,255 - train_model - INFO - Modelo criado.
+2025-02-10 22:32:35,298 - train_model - INFO - Dados do deltalake carregados. Tamanho do dataset: 73709
+2025-02-10 22:32:35,303 - train_model - INFO - Dados após a remoção de duplicatas. Tamanho do dataset: 67408
+2025-02-10 22:33:03,860 - train_model - INFO - Iniciando treinamento utilizandos os seguintes hiperparâmetros: {'batch_size': 16, 'context_size': 50, 'dataloader_kwargs': None, 'decoder_hidden_size': 512, 'decoder_layers': 2, 'drop_last_loader': False, 'early_stop_patience_steps': -1, 'encoder_bias': True, 'encoder_dropout': 0.0, 'encoder_hidden_size': 300, 'encoder_n_layers': 1, 'futr_exog_list': None, 'h': 169, 'hist_exog_list': None, 'inference_input_size': -169, 'input_size': -169, 'learning_rate': 0.00028291811423129034, 'loss': WMAPE(), 'lr_scheduler': None, 'lr_scheduler_kwargs': None, 'max_steps': 500, 'num_lr_decays': -1, 'num_workers_loader': 0, 'optimizer': None, 'optimizer_kwargs': None, 'random_seed': 9, 'stat_exog_list': None, 'val_check_steps': 100, 'valid_batch_size': None, 'valid_loss': WMAPE()}
+2025-02-10 22:33:03,875 - train_model - INFO - Modelo criado.
+2025-02-10 22:33:03,920 - train_model - INFO - Dados do deltalake carregados. Tamanho do dataset: 73709
+2025-02-10 22:33:03,924 - train_model - INFO - Dados após a remoção de duplicatas. Tamanho do dataset: 67408
+2025-02-10 22:36:01,200 - train_model - INFO - Iniciando treinamento utilizandos os seguintes hiperparâmetros: {'batch_size': 32, 'context_size': 50, 'dataloader_kwargs': None, 'decoder_hidden_size': 512, 'decoder_layers': 2, 'drop_last_loader': False, 'early_stop_patience_steps': -1, 'encoder_bias': True, 'encoder_dropout': 0.0, 'encoder_hidden_size': 300, 'encoder_n_layers': 1, 'futr_exog_list': None, 'h': 169, 'hist_exog_list': None, 'inference_input_size': -169, 'input_size': -169, 'learning_rate': 0.00028291811423129034, 'loss': WMAPE(), 'lr_scheduler': None, 'lr_scheduler_kwargs': None, 'max_steps': 500, 'num_lr_decays': -1, 'num_workers_loader': 0, 'optimizer': None, 'optimizer_kwargs': None, 'random_seed': 9, 'stat_exog_list': None, 'val_check_steps': 100, 'valid_batch_size': None, 'valid_loss': WMAPE()}
+2025-02-10 22:36:01,213 - train_model - INFO - Modelo criado.
+2025-02-10 22:36:01,266 - train_model - INFO - Dados do deltalake carregados. Tamanho do dataset: 73709
+2025-02-10 22:36:01,270 - train_model - INFO - Dados após a remoção de duplicatas. Tamanho do dataset: 67408
+2025-02-10 22:36:25,945 - train_model - INFO - Iniciando treinamento utilizandos os seguintes hiperparâmetros: {'batch_size': 8, 'context_size': 50, 'dataloader_kwargs': None, 'decoder_hidden_size': 512, 'decoder_layers': 2, 'drop_last_loader': False, 'early_stop_patience_steps': -1, 'encoder_bias': True, 'encoder_dropout': 0.0, 'encoder_hidden_size': 300, 'encoder_n_layers': 1, 'futr_exog_list': None, 'h': 169, 'hist_exog_list': None, 'inference_input_size': -169, 'input_size': -169, 'learning_rate': 0.00028291811423129034, 'loss': WMAPE(), 'lr_scheduler': None, 'lr_scheduler_kwargs': None, 'max_steps': 500, 'num_lr_decays': -1, 'num_workers_loader': 0, 'optimizer': None, 'optimizer_kwargs': None, 'random_seed': 9, 'stat_exog_list': None, 'val_check_steps': 100, 'valid_batch_size': None, 'valid_loss': WMAPE()}
+2025-02-10 22:36:25,959 - train_model - INFO - Modelo criado.
+2025-02-10 22:36:26,004 - train_model - INFO - Dados do deltalake carregados. Tamanho do dataset: 73709
+2025-02-10 22:36:26,008 - train_model - INFO - Dados após a remoção de duplicatas. Tamanho do dataset: 67408
+2025-02-10 22:37:30,235 - train_model - INFO - Iniciando treinamento utilizandos os seguintes hiperparâmetros: {'h': 77, 'encoder_hidden_size': 300, 'encoder_n_layers': 1, 'context_size': 10, 'decoder_hidden_size': 64, 'learning_rate': 0.008279309926218455, 'max_steps': 10000, 'batch_size': 32, 'loss': WMAPE(), 'check_val_every_n_epoch': 100, 'random_seed': 19, 'input_size': 4928}
+2025-02-10 22:37:30,241 - train_model - INFO - Modelo criado.
+2025-02-10 22:37:30,287 - train_model - INFO - Dados do deltalake carregados. Tamanho do dataset: 73709
+2025-02-10 22:37:30,292 - train_model - INFO - Dados após a remoção de duplicatas. Tamanho do dataset: 67408
+2025-02-10 22:39:39,986 - train_model - INFO - Iniciando treinamento utilizandos os seguintes hiperparâmetros: {'h': 77, 'encoder_hidden_size': 300, 'encoder_n_layers': 1, 'context_size': 50, 'decoder_hidden_size': 512, 'learning_rate': 0.00028291811423129034, 'max_steps': 10000, 'batch_size': 32, 'loss': WMAPE(), 'check_val_every_n_epoch': 100, 'random_seed': 19, 'input_size': 4928}
+2025-02-10 22:39:39,995 - train_model - INFO - Modelo criado.
+2025-02-10 22:39:40,039 - train_model - INFO - Dados do deltalake carregados. Tamanho do dataset: 73709
+2025-02-10 22:39:40,043 - train_model - INFO - Dados após a remoção de duplicatas. Tamanho do dataset: 67408
+2025-02-10 22:40:28,343 - train_model - INFO - Iniciando treinamento utilizandos os seguintes hiperparâmetros: {'h': 169, 'encoder_hidden_size': 300, 'encoder_n_layers': 1, 'context_size': 50, 'decoder_hidden_size': 512, 'learning_rate': 0.00028291811423129034, 'max_steps': 10000, 'batch_size': 32, 'loss': WMAPE(), 'check_val_every_n_epoch': 100, 'random_seed': 19, 'input_size': 4928}
+2025-02-10 22:40:28,358 - train_model - INFO - Modelo criado.
+2025-02-10 22:40:28,412 - train_model - INFO - Dados do deltalake carregados. Tamanho do dataset: 73709
+2025-02-10 22:40:28,416 - train_model - INFO - Dados após a remoção de duplicatas. Tamanho do dataset: 67408
+2025-02-10 22:46:59,085 - train_model - INFO - Iniciando treinamento utilizandos os seguintes hiperparâmetros: {'batch_size': 32, 'context_size': 50, 'dataloader_kwargs': None, 'decoder_hidden_size': 512, 'decoder_layers': 2, 'drop_last_loader': False, 'early_stop_patience_steps': -1, 'encoder_bias': True, 'encoder_dropout': 0.0, 'encoder_hidden_size': 100, 'encoder_n_layers': 2, 'futr_exog_list': None, 'h': 103, 'hist_exog_list': None, 'inference_input_size': -103, 'input_size': 412, 'learning_rate': 0.00027069412997418423, 'loss': WMAPE(), 'lr_scheduler': None, 'lr_scheduler_kwargs': None, 'max_steps': 1000, 'num_lr_decays': -1, 'num_workers_loader': 0, 'optimizer': None, 'optimizer_kwargs': None, 'random_seed': 5, 'stat_exog_list': None, 'val_check_steps': 100, 'valid_batch_size': None, 'valid_loss': WMAPE()}
+2025-02-10 22:46:59,091 - train_model - INFO - Modelo criado.
+2025-02-10 22:46:59,138 - train_model - INFO - Dados do deltalake carregados. Tamanho do dataset: 73709
+2025-02-10 22:46:59,142 - train_model - INFO - Dados após a remoção de duplicatas. Tamanho do dataset: 67408
+2025-02-10 22:48:15,028 - train_model - INFO - Modelo treinado.
+2025-02-10 22:48:15,058 - train_model - INFO - Modelo salvo em: ml_models/neuralforecast_lstm_2025-02-10.joblib
+2025-02-10 22:48:15,058 - train_model - INFO - Tempo total de execução: 0:01:15.972689
+2025-02-10 23:13:17,526 - train_model - INFO - Iniciando treinamento utilizandos os seguintes hiperparâmetros: {'batch_size': 16, 'context_size': 5, 'dataloader_kwargs': None, 'decoder_hidden_size': 128, 'decoder_layers': 2, 'drop_last_loader': False, 'early_stop_patience_steps': -1, 'encoder_bias': True, 'encoder_dropout': 0.0, 'encoder_hidden_size': 200, 'encoder_n_layers': 1, 'futr_exog_list': None, 'h': 82, 'hist_exog_list': None, 'inference_input_size': -82, 'input_size': 1312, 'learning_rate': 0.0004350037351403283, 'loss': WMAPE(), 'lr_scheduler': None, 'lr_scheduler_kwargs': None, 'max_steps': 500, 'num_lr_decays': -1, 'num_workers_loader': 0, 'optimizer': None, 'optimizer_kwargs': None, 'random_seed': 18, 'stat_exog_list': None, 'val_check_steps': 100, 'valid_batch_size': None, 'valid_loss': WMAPE()}
+2025-02-10 23:13:17,530 - train_model - INFO - Modelo criado.
+2025-02-10 23:13:17,581 - train_model - INFO - Dados do deltalake carregados. Tamanho do dataset: 73709
+2025-02-10 23:13:17,585 - train_model - INFO - Dados após a remoção de duplicatas. Tamanho do dataset: 67408
+2025-02-10 23:14:12,687 - train_model - INFO - Modelo treinado.
+2025-02-10 23:14:12,713 - train_model - INFO - Modelo salvo em: ml_models/neuralforecast_lstm_2025-02-10.joblib
+2025-02-10 23:14:12,713 - train_model - INFO - Tempo total de execução: 0:00:55.186764

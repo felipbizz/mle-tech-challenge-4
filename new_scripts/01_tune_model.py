@@ -3,6 +3,7 @@ from deltalake import DeltaTable
 from src.utils import WMAPE, wmape
 import matplotlib.pyplot as plt
 from neuralforecast import NeuralForecast
+from ray.tune.search.hyperopt import HyperOptSearch
 from neuralforecast.auto import AutoLSTM
 import datetime
 import joblib
@@ -40,10 +41,10 @@ def tuna_modelo_autolstm():
     logger.info(f'Dados carregados para os seguintes símbolos {df["unique_id"].unique()}')
 
     # # Separando dados de treinamento e testes
-    train = df.loc[df['ds'] < '2024-09-01']
-    valid = df.loc[(df['ds'] >= '2024-09-01') & (df['ds'] < '2025-01-31')]
+    train = df.loc[df['ds'] < '2024-10-01']
+    valid = df.loc[(df['ds'] >= '2024-10-01') & (df['ds'] < '2025-01-31')]
 
-    h = train['ds'].nunique()
+    h = valid['ds'].nunique()
     logger.info(f'Horizonte de treinamento definido como: {h}')
 
     models = [AutoLSTM(h=h, 
@@ -64,6 +65,8 @@ def tuna_modelo_autolstm():
         logger.debug(f'Salvando configuração inicial: {initial_config}')
         
         model.fit(train, val_size=30)
+        mlflow.log_param('hparams', model.models[0].model.hparams)
+        logger.info(f'Hiperparâmetros: {model.models[0].model.hparams}')
         # best_hp = models[0].results.get_best_result().metrics['config']
         # best_hp = model.best_hyperparameters_
         # logger.info(f'Melhores parâmetros encontrados:\n {best_hp}')
@@ -76,7 +79,7 @@ def tuna_modelo_autolstm():
         trained_config = models[0].config
         logger.debug(f'Configuração após o treino: {trained_config}')
 
-        model_path = f"ml_models/neuralforecast_lstm_{datetime.datetime.now().date()}.joblib"
+        model_path = f"ml_models/neuralforecast_autolstm_{datetime.datetime.now().date()}.joblib"
         joblib.dump(model, model_path)
         mlflow.log_artifact(model_path)
         logger.info(f"Salvando modelo em: {model_path}")
