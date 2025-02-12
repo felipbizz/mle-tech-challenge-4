@@ -12,6 +12,7 @@ dependencies = [
     "joblib>=1.4.2",
     "logfire[fastapi]>=2.9.0",
     "matplotlib>=3.10.0",
+    "mlflow>=2.20.1",
     "neuralforecast>=1.7.7",
     "polars>=1.21.0",
     "prometheus-client>=0.21.1",

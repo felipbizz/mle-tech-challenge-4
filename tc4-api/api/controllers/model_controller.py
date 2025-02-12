@@ -2,6 +2,8 @@ from fastapi import APIRouter, Body
 from typing import Annotated, Any
 from src.utils import setLog
 from business_rules import model
+from business_rules.tune_model import tuna_modelo_autolstm
+from business_rules.train_model import train_model
 import os
 
 from prometheus_client import Summary, Counter
@@ -64,3 +66,13 @@ def predict(model_file: Annotated[str | None, Body()], stock_option : str = 'VAL
     logger.info(f'Iniciando previsão utilizando o modelo {model_file}')
     REQUEST_COUNT.inc()
     return { 'message' : model.make_predictions(model_file, stock_option) } 
+
+@router.get('/tune')
+@REQUEST_TIME.time()
+def tune():
+    return tuna_modelo_autolstm()
+
+@router.post('/train')
+@REQUEST_TIME.time()
+def train(best_config : Annotated[dict | None, Body()]):
+    return train_model(best_config)

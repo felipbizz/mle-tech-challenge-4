@@ -11,6 +11,7 @@ services:
       - ./logs:/app/logs
       - ./ml_models:/app/ml_models
       - ./reports:/app/reports
+      - ./volumes/mle-api/ray:/tmp/ray
     deploy:
       resources:
         reservations:
@@ -40,6 +41,17 @@ services:
       - 3000:3000
     depends_on:
       - prometheus
+
+  mlflow:
+    image: ghcr.io/mlflow/mlflow:latest
+    container_name: mlflow
+    ports:
+      - "5000:5000"
+    environment:
+      - MLFLOW_TRACKING_URI=http://0.0.0.0:5000
+    volumes:
+      - ./mlruns:/mlflow/mlruns
+    command: "mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root /mlflow/mlruns --host 0.0.0.0"
 
 
 # Linhas de comando para execução individual dos containers

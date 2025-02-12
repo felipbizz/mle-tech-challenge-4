@@ -15,7 +15,7 @@ import platform
 
 logger = setLog('tune_model', level=10)
 
-mlflow.set_tracking_uri("http://127.0.0.1:5000")
+mlflow.set_tracking_uri("http://mlflow:5000")
 mlflow.enable_system_metrics_logging()
 mlflow.set_experiment("autolstm_experiment")
 
@@ -57,29 +57,24 @@ def tuna_modelo_autolstm():
 
     with mlflow.start_run():
         run_name = f"fiap_mle_fase4_{datetime.datetime.now().strftime('%Y%m%d_%H%M')}"
+
         mlflow.set_tag('mlflow.runName', run_name)
         logger.info(f'Definindo o nome da execução do experimento como : {run_name}')
+
         log_system_info()
 
-        initial_config = models[0].config
-        logger.debug(f'Salvando configuração inicial: {initial_config}')
+        # Log parameters
+        mlflow.log_param("h", h)
+        mlflow.log_param("num_samples", 30)
+        mlflow.log_param("loss", "WMAPE")
         
         model.fit(train, val_size=30)
-        mlflow.log_param('hparams', model.models[0].model.hparams)
-        logger.info(f'Hiperparâmetros: {model.models[0].model.hparams}')
-        # best_hp = models[0].results.get_best_result().metrics['config']
-        # best_hp = model.best_hyperparameters_
-        # logger.info(f'Melhores parâmetros encontrados:\n {best_hp}')
-    
-            # Log parameters
-        mlflow.log_param("h", h)
-        mlflow.log_param("num_samples", 3)
-        mlflow.log_param("loss", "WMAPE")
 
-        trained_config = models[0].config
-        logger.debug(f'Configuração após o treino: {trained_config}')
+        best_hp = model.models[0].model.hparams
+        mlflow.log_param('hparams', best_hp)
+        logger.info(f'Melhores Hiperparâmetros: {best_hp}')
 
-        model_path = f"ml_models/neuralforecast_autolstm_{datetime.datetime.now().date()}.joblib"
+        model_path = f"ml_models/neuralforecast_autolstm_{datetime.datetime.now().strftime('%Y%m%d_%H%M')}.joblib"
         joblib.dump(model, model_path)
         mlflow.log_artifact(model_path)
         logger.info(f"Salvando modelo em: {model_path}")
@@ -106,10 +101,8 @@ def tuna_modelo_autolstm():
             ).set_index("ds")
             plot_df[["y", "AutoLSTM"]].plot(ax=ax[ax_i], linewidth=2, title=unique_id)
 
-        plot_path = f"reports/forecast_plot_{datetime.datetime.now().date()}.png"
+        plot_path = f"reports/forecast_plot_{datetime.datetime.now().strftime('%Y%m%d_%H%M')}.png"
         plt.savefig(plot_path)
         mlflow.log_artifact(plot_path)
         logger.info(f'Plot salvo em : {plot_path}')
-
-if __name__ == '__main__':
-    tuna_modelo_autolstm()
+    return best_hp

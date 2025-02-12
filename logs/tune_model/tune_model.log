@@ -304,3 +304,47 @@
  'ITUB4.SA' 'JBSS3.SA' 'KLBN11.SA' 'PETR4.SA' 'SANB11.SA' 'VALE3.SA'
  'WEGE3.SA']
 2025-02-10 23:08:54,914 - tune_model - INFO - Plot salvo em : reports/forecast_plot_2025-02-10.png
+2025-02-11 23:48:30,886 - tune_model - INFO - Dataframe filtrado: (3902, 3)
+2025-02-11 23:48:30,887 - tune_model - INFO - Dados carregados para os seguintes símbolos ['ABEV3.SA' 'BBAS3.SA' 'BBDC3.SA' 'BBDC4.SA' 'BPAC11.SA' 'ITSA4.SA'
+ 'ITUB4.SA' 'JBSS3.SA' 'KLBN11.SA' 'PETR4.SA' 'SANB11.SA' 'VALE3.SA'
+ 'WEGE3.SA']
+2025-02-11 23:48:30,889 - tune_model - INFO - Horizonte de treinamento definido como: 82
+2025-02-11 23:48:30,891 - tune_model - INFO - Modelo carregado.
+2025-02-11 23:48:31,054 - tune_model - INFO - Definindo o nome da execução do experimento como : fiap_mle_fase4_20250211_2348
+2025-02-12 00:02:21,103 - tune_model - INFO - Melhores Hiperparâmetros: "alias":                     None
+"batch_size":                16
+"context_size":              5
+"dataloader_kwargs":         None
+"decoder_hidden_size":       128
+"decoder_layers":            2
+"drop_last_loader":          False
+"early_stop_patience_steps": -1
+"encoder_bias":              True
+"encoder_dropout":           0.0
+"encoder_hidden_size":       200
+"encoder_n_layers":          1
+"futr_exog_list":            None
+"h":                         82
+"hist_exog_list":            None
+"inference_input_size":      -82
+"input_size":                1312
+"learning_rate":             0.0004350037351403283
+"loss":                      WMAPE()
+"lr_scheduler":              None
+"lr_scheduler_kwargs":       None
+"max_steps":                 500
+"num_lr_decays":             -1
+"optimizer":                 None
+"optimizer_kwargs":          None
+"random_seed":               18
+"scaler_type":               robust
+"stat_exog_list":            None
+"val_check_steps":           100
+"valid_batch_size":          None
+"valid_loss":                WMAPE()
+2025-02-12 00:02:21,187 - tune_model - INFO - Salvando modelo em: ml_models/neuralforecast_autolstm_20250212_0002.joblib
+2025-02-12 00:02:21,268 - tune_model - INFO - A avaliação do wmape é: 0.07139992666682272
+2025-02-12 00:02:21,268 - tune_model - DEBUG - Stocks previstos: ['ABEV3.SA' 'BBAS3.SA' 'BBDC3.SA' 'BBDC4.SA' 'BPAC11.SA' 'ITSA4.SA'
+ 'ITUB4.SA' 'JBSS3.SA' 'KLBN11.SA' 'PETR4.SA' 'SANB11.SA' 'VALE3.SA'
+ 'WEGE3.SA']
+2025-02-12 00:02:21,665 - tune_model - INFO - Plot salvo em : reports/forecast_plot_20250212_0002.png

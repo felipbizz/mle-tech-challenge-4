@@ -3,15 +3,17 @@ from deltalake import DeltaTable
 from src.utils import WMAPE, wmape
 import matplotlib.pyplot as plt
 from neuralforecast import NeuralForecast
+from ray.tune.search.hyperopt import HyperOptSearch
 from neuralforecast.auto import AutoLSTM
 import datetime
 import joblib
+from src.utils import setLog
 import mlflow
 import mlflow.pyfunc
 import psutil
 import platform
-import socket
-import uuid
+
+logger = setLog('tune_model', level=10)
 
 mlflow.set_tracking_uri("http://127.0.0.1:5000")
 mlflow.enable_system_metrics_logging()
@@ -26,54 +28,70 @@ def log_system_info():
     mlflow.log_param("cpu_count", psutil.cpu_count())
     mlflow.log_param("memory", psutil.virtual_memory().total / (1024 ** 3))
 
+
 def tuna_modelo_autolstm():
-    df = DeltaTable("deltalake").to_pandas()
-    df = df.sort_values(by=["unique_id", "ds"]).reset_index(drop=True)
 
-    TEMPO_FILTRO_PARA_TESTE = "2018-01-01"
+    # Carregando dados armazenados no DeltaLake
+    df = DeltaTable('deltalake').to_pandas()
+    df = df.sort_values(by=['unique_id', 'ds']).reset_index(drop=True)
 
-    df = df.loc[df["ds"] > TEMPO_FILTRO_PARA_TESTE]
+    df = df.loc[df['ds'] > '2024-01-01']
+    logger.info(f'Dataframe filtrado: {df.shape}')
 
-    FILTRA_IDS = df["unique_id"].unique()[:2]
+    logger.info(f'Dados carregados para os seguintes símbolos {df["unique_id"].unique()}')
 
-    df = df[df["unique_id"].isin(FILTRA_IDS)]
+    # # Separando dados de treinamento e testes
+    train = df.loc[df['ds'] < '2024-10-01']
+    valid = df.loc[(df['ds'] >= '2024-10-01') & (df['ds'] < '2025-01-31')]
 
-    train = df.loc[df["ds"] < "2024-09-01"]
-    valid = df.loc[(df["ds"] >= "2024-09-01") & (df["ds"] < "2024-12-20")]
-    h = valid["ds"].nunique()
+    h = valid['ds'].nunique()
+    logger.info(f'Horizonte de treinamento definido como: {h}')
 
-    models = [AutoLSTM(h=h, num_samples=3, loss=WMAPE())]
+    models = [AutoLSTM(h=h, 
+                    num_samples=30, 
+                    loss=WMAPE())]
 
-    model = NeuralForecast(models=models, freq="D")
+    model = NeuralForecast(models=models, freq='D')
+    logger.info('Modelo carregado.')
+
 
     with mlflow.start_run():
-        log_system_info()
+        run_name = f"fiap_mle_fase4_{datetime.datetime.now().strftime('%Y%m%d_%H%M')}"
 
-        model.fit(train, val_size=30)
+        mlflow.set_tag('mlflow.runName', run_name)
+        logger.info(f'Definindo o nome da execução do experimento como : {run_name}')
+
+        log_system_info()
 
         # Log parameters
         mlflow.log_param("h", h)
-        mlflow.log_param("num_samples", 3)
+        mlflow.log_param("num_samples", 30)
         mlflow.log_param("loss", "WMAPE")
+        
+        model.fit(train, val_size=30)
 
-        # Save and log the model
-        model_path = f"ml_models/neuralforecast_lstm_{datetime.datetime.now().date()}.joblib"
+        mlflow.log_param('hparams', model.models[0].model.hparams)
+        logger.info(f'Melhores Hiperparâmetros: {model.models[0].model.hparams}')
+
+        model_path = f"ml_models/neuralforecast_autolstm_{datetime.datetime.now().strftime('%Y%m%d_%H%M')}.joblib"
         joblib.dump(model, model_path)
         mlflow.log_artifact(model_path)
+        logger.info(f"Salvando modelo em: {model_path}")
 
         p = model.predict().reset_index()
         p = p.merge(valid[["ds", "unique_id", "y"]], on=["ds", "unique_id"], how="left")
 
-        wmape_value = wmape(p["y"], p["AutoLSTM"])
-        print(f"A avaliação do wmape é:", wmape_value)
-
         # Log metrics
+        wmape_value = wmape(p["y"], p["AutoLSTM"])
         mlflow.log_metric("wmape", wmape_value)
+        logger.info(f"A avaliação do wmape é: {wmape_value}")
+
+        logger.debug(f"Stocks previstos: {p['unique_id'].unique()}")
 
         # Plot and save the figure
         fig, ax = plt.subplots(2, 1, figsize=(1280 / 96, 720 / 96))
         fig.tight_layout(pad=7.0)
-        for ax_i, unique_id in enumerate(["ABEV3", "BBAS3"]):
+        for ax_i, unique_id in enumerate(["ABEV3.SA", "BBAS3.SA"]):
             plot_df = pd.concat(
                 [
                     train.loc[train["unique_id"] == unique_id].tail(30),
@@ -82,10 +100,10 @@ def tuna_modelo_autolstm():
             ).set_index("ds")
             plot_df[["y", "AutoLSTM"]].plot(ax=ax[ax_i], linewidth=2, title=unique_id)
 
-        plot_path = f"reports/forecast_plot_{datetime.datetime.now().date()}.png"
+        plot_path = f"reports/forecast_plot_{datetime.datetime.now().strftime('%Y%m%d_%H%M')}.png"
         plt.savefig(plot_path)
         mlflow.log_artifact(plot_path)
+        logger.info(f'Plot salvo em : {plot_path}')
 
-
-if __name__ == "__main__":
+if __name__ == '__main__':
     tuna_modelo_autolstm()
