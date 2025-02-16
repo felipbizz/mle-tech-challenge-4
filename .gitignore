@@ -20,7 +20,7 @@ lightning_logs/*
 
 mlruns/*
 
-*.png
+reports/*.png
 *.log
 
 volumes/mle-api/*
