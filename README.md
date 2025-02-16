@@ -76,16 +76,17 @@ Mais informações sobre como realizar a build se encontram em seções abaixo.
 # Definição do modelo
 ## Buscando os melhores hiperparâmetros utilizando o AutoLSTM
 
-## Treinando o modelo
+Para a execução deste trabalho nos utilizamos do modelo LSTM da biblioteca NeuralForecast desenvolvida pela NIXTLA.  
+Esta biblioteca possui uma função de autoajuste (AutoLSTM) que foi utilizada para a definição dos hiperparâmetros utilizados no treinamento do modelo produtivo.  
 
-Após o tuning do modelo foram observados os hiperparâmetros abaixo que melhor atendiam às previsões.
+> **Referência**: https://nixtlaverse.nixtla.io/neuralforecast/models.lstm.html
 
-![Parâmetros obtidos através do AutoLSTM](readme_files/AutoLSTM-bestparameters.png)
+Como função de erro, desenvolvemos uma variação da função MAPE onde são utilizados valores ponderados no cálculo do erro.  
+Esta função se chama WMAPE (Weighted Mean Absolute Percentage Error) e pode ser encontrada como função utilitária no projeto.
 
-Estes hiperparâmetros foram então usados no treinamento do modelo, utilizando como entradas os dados armazenados no datalake previamente baixado utilizando a biblioteca YFinance.
+> **Referência**: https://pt.linkedin.com/pulse/wmape-um-dos-indicadores-mais-utilizados-para-medir-ricardo-lang
 
-![Treinamento do modelo](readme_files/LSTM-Model-Training.png)
-
+![Função de erro WMAPE](readme_files/WMAPE.png)
 
 </details>
 
@@ -102,21 +103,22 @@ Estes hiperparâmetros foram então usados no treinamento do modelo, utilizando 
 | grafana | Servidor Grafana |
 | mlflow | Servidor MLFlow |
 
-### Gerando a imagem da API
-
-#### API
-
-Garanta que o logfire está autenticado e que o arquivo de credencial exista no caminho <APP>/.logfire/logfire_credentials.json  
-
-```bash
-docker build -f Dockerfile -t mle-api --secret id=logfire,src=.logfire/logfire_credentials.json .
-```
-
 </details>
+
+### Gerando a imagem da API
 
 <details open>
 
 <summary> Expandir/Ocultar... </summary>
+
+Garanta que o logfire está autenticado e que o arquivo de credencial exista no caminho <APP>/.logfire/logfire_credentials.json  
+
+> **Importante**  
+> O comando abaixo deve ser executado na raiz da API, e não na raiz do projeto do GitHub (_tc4-api_).
+
+```bash
+docker build -f Dockerfile -t mle-api --secret id=logfire,src=.logfire/logfire_credentials.json .
+```
 
 Para iniciar todos os containers necessários para a execução do projeto, basta executar o comando a seguir:  
 _Lembre-se que é necessário que todas as imagens tenham sido criadas_
@@ -267,7 +269,6 @@ Detalhes desta configuração estão fora do escopo deste trabalho, mas podem se
 
 [Suporte do Grafana à fonte de dados do Prometheus](https://prometheus.io/docs/visualization/grafana/)
 
-
 ### Visualizando o dashboard
 
 ![Dashboard Granfana](readme_files/GrafanaDashboard.png)
@@ -290,58 +291,3 @@ Informações relevantes são registradas nos logs correspondentes de cada módu
 Abaixo é exibido um exemplo de como estão estruturados os logs gerados.
 
 ![Exemplo do arquivo de logs](readme_files/LogExample.png)
-
-## Estrutura do projeto <<< Atualizar ao Final da Implementação >>>
-
-<details open>
-
-<summary> Expandir/Ocultar... </summary>
-
-```
-.
-├── README.md
-├── config
-│   ├── config.py
-│   └── settings.toml
-├── ml_models
-│   ├── neuralforecast_lstm_v4_1_000_epochs.joblib
-│   └── neuralforecast_lstm_v6_10_000_epochs.joblib
-├── notebooks
-│   ├── 00_exploratoria.ipynb
-│   └── 01_salva_minio.ipynb
-├── project_structure.txt
-├── pyproject.toml
-├── scripts
-│   ├── 00_download_files.py
-│   ├── 01_tune_model.py
-│   ├── 02_train_model.py
-│   ├── __init__.py
-│   └── src
-│       ├── __init__.py
-│       └── utils.py
-├── src
-│   ├── __init__.py
-│   └── utils.py
-├── tc4-api
-│   ├── Dockerfile
-│   ├── README.md
-│   ├── api
-│   │   ├── __init__.py
-│   │   ├── app.py
-│   │   └── controllers
-│   │       ├── __init__.py
-│   │       ├── metrics_controller.py
-│   │       └── model_controller.py
-│   ├── logs
-│   │   ├── api
-│   │   │   └── api.log
-│   │   └── metrics_controller
-│   │       └── metrics_controller.log
-│   ├── pyproject.toml
-│   └── src
-│       ├── __init__.py
-│       └── utils.py
-└── uv.lock
-```
-
-</details>
