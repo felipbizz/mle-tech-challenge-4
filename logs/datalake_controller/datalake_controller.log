@@ -16,3 +16,7 @@ Resultado: {'successful_downloads': ['VALE3.SA', 'PETR4.SA', 'ITUB4.SA', 'ABEV3.
 2025-02-16 16:13:09,218 - datalake_controller - INFO - Realizando o download dos símbolos: ['VALE3.SA', 'PETR4.SA', 'ITUB4.SA', 'ABEV3.SA', 'BBDC4.SA', 'SANB11.SA', 'BBAS3.SA', 'JBSS3.SA', 'KLBN11.SA', 'BPAC11.SA', 'BBDC3.SA', 'ITSA4.SA', 'WEGE3.SA']
 2025-02-16 16:13:20,336 - datalake_controller - DEBUG - Download concluído.
 Resultado: {'successful_downloads': ['VALE3.SA', 'PETR4.SA', 'ITUB4.SA', 'ABEV3.SA', 'SANB11.SA', 'BBAS3.SA', 'JBSS3.SA', 'KLBN11.SA', 'BPAC11.SA', 'BBDC3.SA', 'ITSA4.SA', 'WEGE3.SA'], 'failed_downloads': ['BBDC4.SA']}
+2025-02-16 20:41:04,420 - datalake_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 20:41:04,426 - datalake_controller - INFO - Realizando o download dos símbolos: ['VALE3.SA', 'PETR4.SA', 'ITUB4.SA', 'ABEV3.SA', 'BBDC4.SA', 'SANB11.SA', 'BBAS3.SA', 'JBSS3.SA', 'KLBN11.SA', 'BPAC11.SA', 'BBDC3.SA', 'ITSA4.SA', 'WEGE3.SA']
+2025-02-16 20:41:20,610 - datalake_controller - DEBUG - Download concluído.
+Resultado: {'successful_downloads': ['VALE3.SA', 'PETR4.SA', 'ITUB4.SA', 'ABEV3.SA', 'SANB11.SA', 'BBAS3.SA', 'JBSS3.SA', 'KLBN11.SA', 'BPAC11.SA', 'BBDC3.SA', 'ITSA4.SA', 'WEGE3.SA'], 'failed_downloads': ['BBDC4.SA']}

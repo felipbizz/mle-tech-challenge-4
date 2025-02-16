@@ -6,6 +6,11 @@ services:
     container_name: mle-api
     ports:
       - "8000:8000"
+    healthcheck:
+      test: "cat /proc/net/tcp 2>&1 | grep '00000000:1F40' || exit 1"
+      interval: 30s
+      timeout: 10s
+      retries: 5
     volumes:
       - ./deltalake:/app/deltalake
       - ./logs:/app/logs
@@ -52,6 +57,20 @@ services:
     volumes:
       - ./mlruns:/mlflow/mlruns
     command: "mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root /mlflow/mlruns --host 0.0.0.0"
+
+  front:
+    build:
+      context: ./front
+      dockerfile: Dockerfile
+    image: front:latest
+    container_name: front
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./reports:/app/reports
+    depends_on:
+      mle-api:
+        condition: service_healthy
 
 
 # Abaixo um exemplo de como carregar a GPU local no container docker

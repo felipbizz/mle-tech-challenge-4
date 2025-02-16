@@ -22,3 +22,5 @@ mlruns/*
 reports/* 
 logs/* 
 volumes/* 
+*.png
+*.log

@@ -84,7 +84,7 @@ Esta biblioteca possui uma função de autoajuste (AutoLSTM) que foi utilizada p
 Como função de erro, desenvolvemos uma variação da função MAPE que faz uso de valores ponderados no cálculo do erro.  
 Esta função se chama WMAPE (Weighted Mean Absolute Percentage Error) e pode ser encontrada como função utilitária no projeto.
 
-> **Referência**: https://pt.linkedin.com/pulse/wmape-um-dos-indicadores-mais-utilizados-para-medir-ricardo-lang
+> **Referência**: https://lightning.ai/docs/torchmetrics/stable/regression/weighted_mean_absolute_percentage_error.html
 
 ![Função de erro WMAPE](readme_files/WMAPE.png)
 
@@ -112,6 +112,14 @@ Esta função se chama WMAPE (Weighted Mean Absolute Percentage Error) e pode se
 <summary> Expandir/Ocultar... </summary>
 
 Garanta que o logfire está autenticado e que o arquivo de credencial exista no caminho <APP>/.logfire/logfire_credentials.json  
+
+Caso decida por não utilizar o Logfire, execute o script shell abaixo na raiz da API (_tc4-api_) abaixo para criar o arquivo de credenciais vazio.
+
+```bash
+sh inicializarLogfireCredentials.sh
+```
+
+![Criando credenciais vazias](readme_files/EmptyCredentialsCreation.png)
 
 > **Importante**  
 > O comando abaixo deve ser executado na raiz da API (_tc4-api_), e não na raiz do projeto do GitHub.
@@ -171,7 +179,7 @@ Dentre os modelos, poderão ser listados tanto modelos gerados durante o ajuste 
 <summary> Expandir/Ocultar... </summary>
 
 Este é processo que pode levar bastante tempo e, por isso, é recomendado que só seja realizado quando necessário.  
-Ao final da execução serão retornados os melhores hiperparâmetros encontrados durante a fase de ajuste.
+Ao final da execução serão retornados os melhores hiperparâmetros encontrados durante a fase de ajuste.  
 O ajuste abaixo foi executado em 15m23s.
 
 ![Ajuste do modelo](readme_files/ModelTuning.png)

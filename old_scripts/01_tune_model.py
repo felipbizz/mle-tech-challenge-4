@@ -17,6 +17,7 @@ mlflow.set_tracking_uri("http://127.0.0.1:5000")
 mlflow.enable_system_metrics_logging()
 mlflow.set_experiment("autolstm_experiment")
 
+
 def log_system_info():
     mlflow.log_param("system", platform.system())
     mlflow.log_param("release", platform.release())
@@ -24,7 +25,8 @@ def log_system_info():
     mlflow.log_param("machine", platform.machine())
     mlflow.log_param("processor", platform.processor())
     mlflow.log_param("cpu_count", psutil.cpu_count())
-    mlflow.log_param("memory", psutil.virtual_memory().total / (1024 ** 3))
+    mlflow.log_param("memory", psutil.virtual_memory().total / (1024**3))
+
 
 def tuna_modelo_autolstm():
     df = DeltaTable("deltalake").to_pandas()
@@ -57,7 +59,9 @@ def tuna_modelo_autolstm():
         mlflow.log_param("loss", "WMAPE")
 
         # Save and log the model
-        model_path = f"ml_models/neuralforecast_lstm_{datetime.datetime.now().date()}.joblib"
+        model_path = (
+            f"ml_models/neuralforecast_lstm_{datetime.datetime.now().date()}.joblib"
+        )
         joblib.dump(model, model_path)
         mlflow.log_artifact(model_path)
 
