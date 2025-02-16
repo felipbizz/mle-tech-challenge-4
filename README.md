@@ -84,7 +84,7 @@ Esta biblioteca possui uma função de autoajuste (AutoLSTM) que foi utilizada p
 Como função de erro, desenvolvemos uma variação da função MAPE que faz uso de valores ponderados no cálculo do erro.  
 Esta função se chama WMAPE (Weighted Mean Absolute Percentage Error) e pode ser encontrada como função utilitária no projeto.
 
-> **Referência**: https://pt.linkedin.com/pulse/wmape-um-dos-indicadores-mais-utilizados-para-medir-ricardo-lang
+> **Referência**: https://lightning.ai/docs/torchmetrics/stable/regression/weighted_mean_absolute_percentage_error.html
 
 ![Função de erro WMAPE](readme_files/WMAPE.png)
 
