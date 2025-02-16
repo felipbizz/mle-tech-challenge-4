@@ -43,7 +43,7 @@ As tarefas que devem ser executadas estão definidas em: https://github.com/feli
 
 <summary> Expandir/Ocultar... </summary>
 
-Para limitar o escopo de treinamento do modelo restringimos as ações availiadas às seguintes empresas:
+Para limitar o escopo de treinamento do modelo restringimos as ações avaliadas às seguintes empresas:
 
 |Cód.|Empresa|
 |---|---|
@@ -62,7 +62,7 @@ Para limitar o escopo de treinamento do modelo restringimos as ações availiada
 |ITSA4.SA|ITAUSA PN|
 |WEGE3.SA|Weg SA|
 
-Para o monitoramento online da API foi utilizada a integração do FastAPI com o Pydantic Logfire.  
+Para o monitoramento online da API foi empregada a integração do FastAPI com o Pydantic Logfire.  
 Vale ressaltar que para utilizar o Pydantic Logfire é necessário realizar o registro no portal (sendo possível utilizar as credenciais do GitHub como Single Sign On).  
 Uma vez registrado, siga as instruções encontradas nas referências abaixo para configurar o projeto e criar as credenciais necessárias para o envio de métricas.  
 Para a correta execução do ambiente do docker compose será necessário injetar as credenciais do Logfire na imagem da API.
@@ -76,12 +76,12 @@ Mais informações sobre como realizar a build se encontram em seções abaixo.
 # Definição do modelo
 ## Buscando os melhores hiperparâmetros utilizando o AutoLSTM
 
-Para a execução deste trabalho nos utilizamos do modelo LSTM da biblioteca NeuralForecast desenvolvida pela NIXTLA.  
+Para a execução deste trabalho fizemos uso do modelo LSTM da biblioteca NeuralForecast desenvolvida pela NIXTLA.  
 Esta biblioteca possui uma função de autoajuste (AutoLSTM) que foi utilizada para a definição dos hiperparâmetros utilizados no treinamento do modelo produtivo.  
 
 > **Referência**: https://nixtlaverse.nixtla.io/neuralforecast/models.lstm.html
 
-Como função de erro, desenvolvemos uma variação da função MAPE onde são utilizados valores ponderados no cálculo do erro.  
+Como função de erro, desenvolvemos uma variação da função MAPE que faz uso de valores ponderados no cálculo do erro.  
 Esta função se chama WMAPE (Weighted Mean Absolute Percentage Error) e pode ser encontrada como função utilitária no projeto.
 
 > **Referência**: https://pt.linkedin.com/pulse/wmape-um-dos-indicadores-mais-utilizados-para-medir-ricardo-lang
@@ -114,15 +114,13 @@ Esta função se chama WMAPE (Weighted Mean Absolute Percentage Error) e pode se
 Garanta que o logfire está autenticado e que o arquivo de credencial exista no caminho <APP>/.logfire/logfire_credentials.json  
 
 > **Importante**  
-> O comando abaixo deve ser executado na raiz da API, e não na raiz do projeto do GitHub (_tc4-api_).
+> O comando abaixo deve ser executado na raiz da API (_tc4-api_), e não na raiz do projeto do GitHub.
 
 ```bash
 docker build -f Dockerfile -t mle-api --secret id=logfire,src=.logfire/logfire_credentials.json .
 ```
 
 Para iniciar todos os containers necessários para a execução do projeto, basta executar o comando a seguir:  
-_Lembre-se que é necessário que todas as imagens tenham sido criadas_
-
 
 > **Importante**  
 > Os modelos foram treinados em um ambiente com GPU e, portanto, podem gerar o erro abaixo caso não sejam executados em um ambiente que não a possua.
@@ -251,9 +249,15 @@ ou, execute o comando abaixo em um terminal:
 curl http://localhost:8000/metrics/
 ```
 
+![Métricas do cliente do Prometheus](readme_files/PrometheusRawData.png)
+
 ## Acessando a interface do servidor Prometheus
 
 Acesse a URL: http://localhost:9090/query
+
+Através desta interface é possível consultar métricas diretamente do servidor do Prometheus.
+
+![Servidor do Prometheus](readme_files/PrometheusServer.png)
 
 ## Acessando a interface do servidor Grafana
 
@@ -265,18 +269,18 @@ Acesse a URL : http://localhost:3000
 ### Definição da fonte de dados
 
 O Grafana foi configurado para receber dados coletados pelo servidor Prometheus.  
-Detalhes desta configuração estão fora do escopo deste trabalho, mas podem ser encontrados na referência abaixo.
+Detalhes desta configuração estão fora do escopo deste trabalho, mas podem ser encontrados na referência abaixo.  
+Neste projeto há um dashboard pré-configurado chamado **FIAP MLE Fase 4**
 
 [Suporte do Grafana à fonte de dados do Prometheus](https://prometheus.io/docs/visualization/grafana/)
 
 ### Visualizando o dashboard
 
 ![Dashboard Granfana](readme_files/GrafanaDashboard.png)
-![alt text](image.png)
 
-#### Verificando dados do dashboard de acordo com o que foi registrado no log
+### Validando os dados do dashboard de acordo com o que foi registrado no log
 
-Abaixo podemos fazer a correspondência entre o valor registrado no dashboard do grafana com o valor calculado e registrado nos logs para o tempo consumido em uma requisição de treinamento.
+Abaixo podemos fazer a correspondência entre o valor registrado no dashboard do Grafana com o valor calculado e registrado nos logs para o tempo consumido em uma requisição de treinamento.
 
 ![Tempo de treinamento no Grafana](readme_files/GrafanaTrainTime.png)
 
