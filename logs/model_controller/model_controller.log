@@ -36,3 +36,201 @@
 2025-02-16 16:43:40,743 - model_controller - INFO - Iniciando previsão utilizando o modelo neuralforecast_lstm_20250216_1639.joblib
 2025-02-16 16:59:55,930 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
 2025-02-16 16:59:55,931 - model_controller - INFO - Iniciando previsão utilizando o modelo neuralforecast_lstm_20250216_1639.joblib
+2025-02-16 20:26:35,903 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 20:26:35,903 - model_controller - INFO - Listando modelos disponíveis para predição.
+2025-02-16 20:26:35,903 - model_controller - INFO - Obtendo lista de arquivos em ml_models
+2025-02-16 20:26:35,903 - model_controller - DEBUG - Retornando a lista de arquivos existentes: ['neuralforecast_lstm_v4_1_000_epochs.joblib', 'neuralforecast_lstm_v6_10_000_epochs.joblib']
+2025-02-16 20:29:17,020 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 20:29:17,020 - model_controller - INFO - Listando modelos disponíveis para predição.
+2025-02-16 20:29:17,020 - model_controller - INFO - Obtendo lista de arquivos em ml_models
+2025-02-16 20:29:17,020 - model_controller - DEBUG - Retornando a lista de arquivos existentes: ['neuralforecast_lstm_v4_1_000_epochs.joblib', 'neuralforecast_lstm_v6_10_000_epochs.joblib']
+2025-02-16 20:30:54,675 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 20:30:54,675 - model_controller - INFO - Listando modelos disponíveis para predição.
+2025-02-16 20:30:54,675 - model_controller - INFO - Obtendo lista de arquivos em ml_models
+2025-02-16 20:30:54,676 - model_controller - DEBUG - Retornando a lista de arquivos existentes: ['neuralforecast_lstm_v4_1_000_epochs.joblib', 'neuralforecast_lstm_v6_10_000_epochs.joblib']
+2025-02-16 20:31:53,560 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 20:31:53,561 - model_controller - INFO - Listando modelos disponíveis para predição.
+2025-02-16 20:31:53,561 - model_controller - INFO - Obtendo lista de arquivos em ml_models
+2025-02-16 20:31:53,561 - model_controller - DEBUG - Retornando a lista de arquivos existentes: ['neuralforecast_lstm_v4_1_000_epochs.joblib', 'neuralforecast_lstm_v6_10_000_epochs.joblib']
+2025-02-16 20:32:18,464 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 20:32:18,464 - model_controller - INFO - Listando modelos disponíveis para predição.
+2025-02-16 20:32:18,464 - model_controller - INFO - Obtendo lista de arquivos em ml_models
+2025-02-16 20:32:18,464 - model_controller - DEBUG - Retornando a lista de arquivos existentes: ['neuralforecast_lstm_v4_1_000_epochs.joblib', 'neuralforecast_lstm_v6_10_000_epochs.joblib']
+2025-02-16 20:32:21,132 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 20:32:21,132 - model_controller - INFO - Listando modelos disponíveis para predição.
+2025-02-16 20:32:21,132 - model_controller - INFO - Obtendo lista de arquivos em ml_models
+2025-02-16 20:32:21,132 - model_controller - DEBUG - Retornando a lista de arquivos existentes: ['neuralforecast_lstm_v4_1_000_epochs.joblib', 'neuralforecast_lstm_v6_10_000_epochs.joblib']
+2025-02-16 20:33:26,550 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 20:33:26,550 - model_controller - INFO - Listando modelos disponíveis para predição.
+2025-02-16 20:33:26,550 - model_controller - INFO - Obtendo lista de arquivos em ml_models
+2025-02-16 20:33:26,550 - model_controller - DEBUG - Retornando a lista de arquivos existentes: ['neuralforecast_lstm_v4_1_000_epochs.joblib', 'neuralforecast_lstm_v6_10_000_epochs.joblib']
+2025-02-16 20:33:41,495 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 20:33:41,495 - model_controller - INFO - Listando modelos disponíveis para predição.
+2025-02-16 20:33:41,495 - model_controller - INFO - Obtendo lista de arquivos em ml_models
+2025-02-16 20:33:41,496 - model_controller - DEBUG - Retornando a lista de arquivos existentes: ['neuralforecast_lstm_v4_1_000_epochs.joblib', 'neuralforecast_lstm_v6_10_000_epochs.joblib']
+2025-02-16 20:33:44,257 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 20:33:44,258 - model_controller - INFO - Listando modelos disponíveis para predição.
+2025-02-16 20:33:44,258 - model_controller - INFO - Obtendo lista de arquivos em ml_models
+2025-02-16 20:33:44,258 - model_controller - DEBUG - Retornando a lista de arquivos existentes: ['neuralforecast_lstm_v4_1_000_epochs.joblib', 'neuralforecast_lstm_v6_10_000_epochs.joblib']
+2025-02-16 20:33:49,848 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 20:33:49,848 - model_controller - INFO - Listando modelos disponíveis para predição.
+2025-02-16 20:33:49,848 - model_controller - INFO - Obtendo lista de arquivos em ml_models
+2025-02-16 20:33:49,848 - model_controller - DEBUG - Retornando a lista de arquivos existentes: ['neuralforecast_lstm_v4_1_000_epochs.joblib', 'neuralforecast_lstm_v6_10_000_epochs.joblib']
+2025-02-16 20:34:07,201 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 20:34:07,202 - model_controller - INFO - Listando modelos disponíveis para predição.
+2025-02-16 20:34:07,202 - model_controller - INFO - Obtendo lista de arquivos em ml_models
+2025-02-16 20:34:07,202 - model_controller - DEBUG - Retornando a lista de arquivos existentes: ['neuralforecast_lstm_v4_1_000_epochs.joblib', 'neuralforecast_lstm_v6_10_000_epochs.joblib']
+2025-02-16 20:37:32,869 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 20:37:32,869 - model_controller - INFO - Listando modelos disponíveis para predição.
+2025-02-16 20:37:32,869 - model_controller - INFO - Obtendo lista de arquivos em ml_models
+2025-02-16 20:37:32,869 - model_controller - DEBUG - Retornando a lista de arquivos existentes: ['neuralforecast_lstm_v4_1_000_epochs.joblib', 'neuralforecast_lstm_v6_10_000_epochs.joblib']
+2025-02-16 20:37:58,667 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 20:37:58,667 - model_controller - INFO - Listando modelos disponíveis para predição.
+2025-02-16 20:37:58,667 - model_controller - INFO - Obtendo lista de arquivos em ml_models
+2025-02-16 20:37:58,667 - model_controller - DEBUG - Retornando a lista de arquivos existentes: ['neuralforecast_lstm_v4_1_000_epochs.joblib', 'neuralforecast_lstm_v6_10_000_epochs.joblib']
+2025-02-16 20:38:07,968 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 20:38:07,968 - model_controller - INFO - Listando modelos disponíveis para predição.
+2025-02-16 20:38:07,969 - model_controller - INFO - Obtendo lista de arquivos em ml_models
+2025-02-16 20:38:07,969 - model_controller - DEBUG - Retornando a lista de arquivos existentes: ['neuralforecast_lstm_v4_1_000_epochs.joblib', 'neuralforecast_lstm_v6_10_000_epochs.joblib']
+2025-02-16 20:38:09,400 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 20:38:09,400 - model_controller - INFO - Listando modelos disponíveis para predição.
+2025-02-16 20:38:09,400 - model_controller - INFO - Obtendo lista de arquivos em ml_models
+2025-02-16 20:38:09,400 - model_controller - DEBUG - Retornando a lista de arquivos existentes: ['neuralforecast_lstm_v4_1_000_epochs.joblib', 'neuralforecast_lstm_v6_10_000_epochs.joblib']
+2025-02-16 20:38:10,839 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 20:38:10,839 - model_controller - INFO - Listando modelos disponíveis para predição.
+2025-02-16 20:38:10,839 - model_controller - INFO - Obtendo lista de arquivos em ml_models
+2025-02-16 20:38:10,839 - model_controller - DEBUG - Retornando a lista de arquivos existentes: ['neuralforecast_lstm_v4_1_000_epochs.joblib', 'neuralforecast_lstm_v6_10_000_epochs.joblib']
+2025-02-16 20:38:14,612 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 20:38:14,613 - model_controller - INFO - Listando modelos disponíveis para predição.
+2025-02-16 20:38:14,613 - model_controller - INFO - Obtendo lista de arquivos em ml_models
+2025-02-16 20:38:14,613 - model_controller - DEBUG - Retornando a lista de arquivos existentes: ['neuralforecast_lstm_v4_1_000_epochs.joblib', 'neuralforecast_lstm_v6_10_000_epochs.joblib']
+2025-02-16 20:38:15,769 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 20:38:15,769 - model_controller - INFO - Listando modelos disponíveis para predição.
+2025-02-16 20:38:15,769 - model_controller - INFO - Obtendo lista de arquivos em ml_models
+2025-02-16 20:38:15,769 - model_controller - DEBUG - Retornando a lista de arquivos existentes: ['neuralforecast_lstm_v4_1_000_epochs.joblib', 'neuralforecast_lstm_v6_10_000_epochs.joblib']
+2025-02-16 20:38:16,399 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 20:38:16,399 - model_controller - INFO - Listando modelos disponíveis para predição.
+2025-02-16 20:38:16,399 - model_controller - INFO - Obtendo lista de arquivos em ml_models
+2025-02-16 20:38:16,399 - model_controller - DEBUG - Retornando a lista de arquivos existentes: ['neuralforecast_lstm_v4_1_000_epochs.joblib', 'neuralforecast_lstm_v6_10_000_epochs.joblib']
+2025-02-16 20:38:55,780 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 20:38:55,780 - model_controller - INFO - Listando modelos disponíveis para predição.
+2025-02-16 20:38:55,781 - model_controller - INFO - Obtendo lista de arquivos em ml_models
+2025-02-16 20:38:55,781 - model_controller - DEBUG - Retornando a lista de arquivos existentes: ['neuralforecast_lstm_v4_1_000_epochs.joblib', 'neuralforecast_lstm_v6_10_000_epochs.joblib']
+2025-02-16 20:39:13,724 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 20:39:13,724 - model_controller - INFO - Listando modelos disponíveis para predição.
+2025-02-16 20:39:13,724 - model_controller - INFO - Obtendo lista de arquivos em ml_models
+2025-02-16 20:39:13,724 - model_controller - DEBUG - Retornando a lista de arquivos existentes: ['neuralforecast_lstm_v4_1_000_epochs.joblib', 'neuralforecast_lstm_v6_10_000_epochs.joblib']
+2025-02-16 20:40:15,230 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 20:40:15,231 - model_controller - INFO - Iniciando previsão utilizando o modelo neuralforecast_lstm_v4_1_000_epochs.joblib
+2025-02-16 20:41:31,875 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 20:41:31,875 - model_controller - INFO - Iniciando previsão utilizando o modelo neuralforecast_lstm_v4_1_000_epochs.joblib
+2025-02-16 21:08:31,370 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 21:08:31,370 - model_controller - INFO - Listando modelos disponíveis para predição.
+2025-02-16 21:08:31,370 - model_controller - INFO - Obtendo lista de arquivos em ml_models
+2025-02-16 21:08:31,370 - model_controller - DEBUG - Retornando a lista de arquivos existentes: ['neuralforecast_lstm_20250216_2108.joblib', 'neuralforecast_lstm_v4_1_000_epochs.joblib', 'neuralforecast_autolstm_20250216_2101.joblib', 'neuralforecast_lstm_v6_10_000_epochs.joblib']
+2025-02-16 21:08:38,082 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 21:08:38,082 - model_controller - INFO - Listando modelos disponíveis para predição.
+2025-02-16 21:08:38,082 - model_controller - INFO - Obtendo lista de arquivos em ml_models
+2025-02-16 21:08:38,082 - model_controller - DEBUG - Retornando a lista de arquivos existentes: ['neuralforecast_lstm_20250216_2108.joblib', 'neuralforecast_lstm_v4_1_000_epochs.joblib', 'neuralforecast_autolstm_20250216_2101.joblib', 'neuralforecast_lstm_v6_10_000_epochs.joblib']
+2025-02-16 21:08:57,403 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 21:08:57,403 - model_controller - INFO - Listando modelos disponíveis para predição.
+2025-02-16 21:08:57,404 - model_controller - INFO - Obtendo lista de arquivos em ml_models
+2025-02-16 21:08:57,404 - model_controller - DEBUG - Retornando a lista de arquivos existentes: ['neuralforecast_lstm_20250216_2108.joblib', 'neuralforecast_lstm_v4_1_000_epochs.joblib', 'neuralforecast_autolstm_20250216_2101.joblib', 'neuralforecast_lstm_v6_10_000_epochs.joblib']
+2025-02-16 21:09:14,598 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 21:09:14,598 - model_controller - INFO - Iniciando previsão utilizando o modelo neuralforecast_lstm_20250216_2108.joblib
+2025-02-16 21:10:26,707 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 21:10:26,707 - model_controller - INFO - Iniciando previsão utilizando o modelo neuralforecast_lstm_20250216_2108.joblib
+2025-02-16 21:12:58,145 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 21:12:58,146 - model_controller - INFO - Iniciando previsão utilizando o modelo neuralforecast_lstm_20250216_2108.joblib
+2025-02-16 21:16:59,384 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 21:16:59,384 - model_controller - INFO - Iniciando previsão utilizando o modelo neuralforecast_lstm_20250216_2108.joblib
+2025-02-16 21:19:34,494 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 21:19:34,495 - model_controller - INFO - Iniciando previsão utilizando o modelo neuralforecast_lstm_20250216_2108.joblib
+2025-02-16 21:21:23,705 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 21:21:23,705 - model_controller - INFO - Iniciando previsão utilizando o modelo neuralforecast_lstm_20250216_2108.joblib
+2025-02-16 21:24:47,866 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 21:24:47,866 - model_controller - INFO - Listando modelos disponíveis para predição.
+2025-02-16 21:24:47,866 - model_controller - INFO - Obtendo lista de arquivos em ml_models
+2025-02-16 21:24:47,866 - model_controller - DEBUG - Retornando a lista de arquivos existentes: ['neuralforecast_lstm_20250216_2108.joblib', 'neuralforecast_lstm_v4_1_000_epochs.joblib', 'neuralforecast_autolstm_20250216_2101.joblib', 'neuralforecast_lstm_v6_10_000_epochs.joblib']
+2025-02-16 21:24:49,969 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 21:24:49,969 - model_controller - INFO - Listando modelos disponíveis para predição.
+2025-02-16 21:24:49,969 - model_controller - INFO - Obtendo lista de arquivos em ml_models
+2025-02-16 21:24:49,969 - model_controller - DEBUG - Retornando a lista de arquivos existentes: ['neuralforecast_lstm_20250216_2108.joblib', 'neuralforecast_lstm_v4_1_000_epochs.joblib', 'neuralforecast_autolstm_20250216_2101.joblib', 'neuralforecast_lstm_v6_10_000_epochs.joblib']
+2025-02-16 21:24:52,281 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 21:24:52,281 - model_controller - INFO - Listando modelos disponíveis para predição.
+2025-02-16 21:24:52,281 - model_controller - INFO - Obtendo lista de arquivos em ml_models
+2025-02-16 21:24:52,281 - model_controller - DEBUG - Retornando a lista de arquivos existentes: ['neuralforecast_lstm_20250216_2108.joblib', 'neuralforecast_lstm_v4_1_000_epochs.joblib', 'neuralforecast_autolstm_20250216_2101.joblib', 'neuralforecast_lstm_v6_10_000_epochs.joblib']
+2025-02-16 21:24:54,706 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 21:24:54,707 - model_controller - INFO - Listando modelos disponíveis para predição.
+2025-02-16 21:24:54,707 - model_controller - INFO - Obtendo lista de arquivos em ml_models
+2025-02-16 21:24:54,707 - model_controller - DEBUG - Retornando a lista de arquivos existentes: ['neuralforecast_lstm_20250216_2108.joblib', 'neuralforecast_lstm_v4_1_000_epochs.joblib', 'neuralforecast_autolstm_20250216_2101.joblib', 'neuralforecast_lstm_v6_10_000_epochs.joblib']
+2025-02-16 21:25:15,486 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 21:25:15,486 - model_controller - INFO - Listando modelos disponíveis para predição.
+2025-02-16 21:25:15,487 - model_controller - INFO - Obtendo lista de arquivos em ml_models
+2025-02-16 21:25:15,487 - model_controller - DEBUG - Retornando a lista de arquivos existentes: ['neuralforecast_lstm_20250216_2108.joblib', 'neuralforecast_lstm_v4_1_000_epochs.joblib', 'neuralforecast_autolstm_20250216_2101.joblib', 'neuralforecast_lstm_v6_10_000_epochs.joblib']
+2025-02-16 21:25:16,722 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 21:25:16,722 - model_controller - INFO - Listando modelos disponíveis para predição.
+2025-02-16 21:25:16,722 - model_controller - INFO - Obtendo lista de arquivos em ml_models
+2025-02-16 21:25:16,722 - model_controller - DEBUG - Retornando a lista de arquivos existentes: ['neuralforecast_lstm_20250216_2108.joblib', 'neuralforecast_lstm_v4_1_000_epochs.joblib', 'neuralforecast_autolstm_20250216_2101.joblib', 'neuralforecast_lstm_v6_10_000_epochs.joblib']
+2025-02-16 21:25:16,728 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 21:25:16,729 - model_controller - INFO - Iniciando previsão utilizando o modelo neuralforecast_lstm_20250216_2108.joblib
+2025-02-16 21:25:41,439 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 21:25:41,439 - model_controller - INFO - Listando modelos disponíveis para predição.
+2025-02-16 21:25:41,444 - model_controller - INFO - Obtendo lista de arquivos em ml_models
+2025-02-16 21:25:41,444 - model_controller - DEBUG - Retornando a lista de arquivos existentes: ['neuralforecast_lstm_20250216_2108.joblib', 'neuralforecast_lstm_v4_1_000_epochs.joblib', 'neuralforecast_autolstm_20250216_2101.joblib', 'neuralforecast_lstm_v6_10_000_epochs.joblib']
+2025-02-16 21:25:42,653 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 21:25:42,653 - model_controller - INFO - Listando modelos disponíveis para predição.
+2025-02-16 21:25:42,653 - model_controller - INFO - Obtendo lista de arquivos em ml_models
+2025-02-16 21:25:42,653 - model_controller - DEBUG - Retornando a lista de arquivos existentes: ['neuralforecast_lstm_20250216_2108.joblib', 'neuralforecast_lstm_v4_1_000_epochs.joblib', 'neuralforecast_autolstm_20250216_2101.joblib', 'neuralforecast_lstm_v6_10_000_epochs.joblib']
+2025-02-16 21:25:42,660 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 21:25:42,660 - model_controller - INFO - Iniciando previsão utilizando o modelo neuralforecast_lstm_20250216_2108.joblib
+2025-02-16 21:26:13,402 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 21:26:13,402 - model_controller - INFO - Listando modelos disponíveis para predição.
+2025-02-16 21:26:13,402 - model_controller - INFO - Obtendo lista de arquivos em ml_models
+2025-02-16 21:26:13,402 - model_controller - DEBUG - Retornando a lista de arquivos existentes: ['neuralforecast_lstm_20250216_2108.joblib', 'neuralforecast_lstm_v4_1_000_epochs.joblib', 'neuralforecast_autolstm_20250216_2101.joblib', 'neuralforecast_lstm_v6_10_000_epochs.joblib']
+2025-02-16 21:26:14,515 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 21:26:14,516 - model_controller - INFO - Listando modelos disponíveis para predição.
+2025-02-16 21:26:14,516 - model_controller - INFO - Obtendo lista de arquivos em ml_models
+2025-02-16 21:26:14,516 - model_controller - DEBUG - Retornando a lista de arquivos existentes: ['neuralforecast_lstm_20250216_2108.joblib', 'neuralforecast_lstm_v4_1_000_epochs.joblib', 'neuralforecast_autolstm_20250216_2101.joblib', 'neuralforecast_lstm_v6_10_000_epochs.joblib']
+2025-02-16 21:26:14,522 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 21:26:14,523 - model_controller - INFO - Iniciando previsão utilizando o modelo neuralforecast_lstm_20250216_2108.joblib
+2025-02-16 21:26:24,650 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 21:26:24,651 - model_controller - INFO - Listando modelos disponíveis para predição.
+2025-02-16 21:26:24,651 - model_controller - INFO - Obtendo lista de arquivos em ml_models
+2025-02-16 21:26:24,651 - model_controller - DEBUG - Retornando a lista de arquivos existentes: ['neuralforecast_lstm_20250216_2108.joblib', 'neuralforecast_lstm_v4_1_000_epochs.joblib', 'neuralforecast_autolstm_20250216_2101.joblib', 'neuralforecast_lstm_v6_10_000_epochs.joblib']
+2025-02-16 21:26:27,477 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 21:26:27,478 - model_controller - INFO - Listando modelos disponíveis para predição.
+2025-02-16 21:26:27,478 - model_controller - INFO - Obtendo lista de arquivos em ml_models
+2025-02-16 21:26:27,478 - model_controller - DEBUG - Retornando a lista de arquivos existentes: ['neuralforecast_lstm_20250216_2108.joblib', 'neuralforecast_lstm_v4_1_000_epochs.joblib', 'neuralforecast_autolstm_20250216_2101.joblib', 'neuralforecast_lstm_v6_10_000_epochs.joblib']
+2025-02-16 21:26:32,180 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 21:26:32,180 - model_controller - INFO - Listando modelos disponíveis para predição.
+2025-02-16 21:26:32,180 - model_controller - INFO - Obtendo lista de arquivos em ml_models
+2025-02-16 21:26:32,180 - model_controller - DEBUG - Retornando a lista de arquivos existentes: ['neuralforecast_lstm_20250216_2108.joblib', 'neuralforecast_lstm_v4_1_000_epochs.joblib', 'neuralforecast_autolstm_20250216_2101.joblib', 'neuralforecast_lstm_v6_10_000_epochs.joblib']
+2025-02-16 21:26:33,861 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 21:26:33,861 - model_controller - INFO - Listando modelos disponíveis para predição.
+2025-02-16 21:26:33,861 - model_controller - INFO - Obtendo lista de arquivos em ml_models
+2025-02-16 21:26:33,861 - model_controller - DEBUG - Retornando a lista de arquivos existentes: ['neuralforecast_lstm_20250216_2108.joblib', 'neuralforecast_lstm_v4_1_000_epochs.joblib', 'neuralforecast_autolstm_20250216_2101.joblib', 'neuralforecast_lstm_v6_10_000_epochs.joblib']
+2025-02-16 21:26:33,867 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 21:26:33,868 - model_controller - INFO - Iniciando previsão utilizando o modelo neuralforecast_lstm_20250216_2108.joblib
+2025-02-16 21:26:34,857 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 21:26:34,857 - model_controller - INFO - Iniciando previsão utilizando o modelo neuralforecast_lstm_20250216_2108.joblib
+2025-02-16 21:26:35,956 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 21:26:35,956 - model_controller - INFO - Iniciando previsão utilizando o modelo neuralforecast_lstm_20250216_2108.joblib
+2025-02-16 21:26:36,887 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 21:26:36,887 - model_controller - INFO - Iniciando previsão utilizando o modelo neuralforecast_lstm_20250216_2108.joblib
+2025-02-16 21:27:20,187 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 21:27:20,187 - model_controller - INFO - Listando modelos disponíveis para predição.
+2025-02-16 21:27:20,187 - model_controller - INFO - Obtendo lista de arquivos em ml_models
+2025-02-16 21:27:20,188 - model_controller - DEBUG - Retornando a lista de arquivos existentes: ['neuralforecast_lstm_20250216_2108.joblib', 'neuralforecast_lstm_v4_1_000_epochs.joblib', 'neuralforecast_autolstm_20250216_2101.joblib', 'neuralforecast_lstm_v6_10_000_epochs.joblib']
+2025-02-16 21:28:10,341 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 21:28:10,341 - model_controller - INFO - Listando modelos disponíveis para predição.
+2025-02-16 21:28:10,341 - model_controller - INFO - Obtendo lista de arquivos em ml_models
+2025-02-16 21:28:10,341 - model_controller - DEBUG - Retornando a lista de arquivos existentes: ['neuralforecast_lstm_20250216_2108.joblib', 'neuralforecast_lstm_v4_1_000_epochs.joblib', 'neuralforecast_autolstm_20250216_2101.joblib', 'neuralforecast_lstm_v6_10_000_epochs.joblib']
+2025-02-16 21:28:20,075 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 21:28:20,075 - model_controller - INFO - Listando modelos disponíveis para predição.
+2025-02-16 21:28:20,075 - model_controller - INFO - Obtendo lista de arquivos em ml_models
+2025-02-16 21:28:20,076 - model_controller - DEBUG - Retornando a lista de arquivos existentes: ['neuralforecast_lstm_20250216_2108.joblib', 'neuralforecast_lstm_v4_1_000_epochs.joblib', 'neuralforecast_autolstm_20250216_2101.joblib', 'neuralforecast_lstm_v6_10_000_epochs.joblib']
+2025-02-16 21:28:46,068 - model_controller - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 21:28:46,068 - model_controller - INFO - Listando modelos disponíveis para predição.
+2025-02-16 21:28:46,068 - model_controller - INFO - Obtendo lista de arquivos em ml_models
+2025-02-16 21:28:46,068 - model_controller - DEBUG - Retornando a lista de arquivos existentes: ['neuralforecast_lstm_20250216_2108.joblib', 'neuralforecast_lstm_v4_1_000_epochs.joblib', 'neuralforecast_autolstm_20250216_2101.joblib', 'neuralforecast_lstm_v6_10_000_epochs.joblib']

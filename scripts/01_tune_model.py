@@ -13,11 +13,12 @@ import mlflow.pyfunc
 import psutil
 import platform
 
-logger = setLog('tune_model', level=10)
+logger = setLog("tune_model", level=10)
 
 mlflow.set_tracking_uri("http://127.0.0.1:5000")
 mlflow.enable_system_metrics_logging()
 mlflow.set_experiment("autolstm_experiment")
+
 
 def log_system_info():
     mlflow.log_param("system", platform.system())
@@ -26,40 +27,38 @@ def log_system_info():
     mlflow.log_param("machine", platform.machine())
     mlflow.log_param("processor", platform.processor())
     mlflow.log_param("cpu_count", psutil.cpu_count())
-    mlflow.log_param("memory", psutil.virtual_memory().total / (1024 ** 3))
+    mlflow.log_param("memory", psutil.virtual_memory().total / (1024**3))
 
 
 def tuna_modelo_autolstm():
-
     # Carregando dados armazenados no DeltaLake
-    df = DeltaTable('deltalake').to_pandas()
-    df = df.sort_values(by=['unique_id', 'ds']).reset_index(drop=True)
+    df = DeltaTable("deltalake").to_pandas()
+    df = df.sort_values(by=["unique_id", "ds"]).reset_index(drop=True)
 
-    df = df.loc[df['ds'] > '2024-01-01']
-    logger.info(f'Dataframe filtrado: {df.shape}')
+    df = df.loc[df["ds"] > "2024-01-01"]
+    logger.info(f"Dataframe filtrado: {df.shape}")
 
-    logger.info(f'Dados carregados para os seguintes símbolos {df["unique_id"].unique()}')
+    logger.info(
+        f"Dados carregados para os seguintes símbolos {df['unique_id'].unique()}"
+    )
 
     # # Separando dados de treinamento e testes
-    train = df.loc[df['ds'] < '2024-10-01']
-    valid = df.loc[(df['ds'] >= '2024-10-01') & (df['ds'] < '2025-01-31')]
+    train = df.loc[df["ds"] < "2024-10-01"]
+    valid = df.loc[(df["ds"] >= "2024-10-01") & (df["ds"] < "2025-01-31")]
 
-    h = valid['ds'].nunique()
-    logger.info(f'Horizonte de treinamento definido como: {h}')
+    h = valid["ds"].nunique()
+    logger.info(f"Horizonte de treinamento definido como: {h}")
 
-    models = [AutoLSTM(h=h, 
-                    num_samples=30, 
-                    loss=WMAPE())]
+    models = [AutoLSTM(h=h, num_samples=30, loss=WMAPE())]
 
-    model = NeuralForecast(models=models, freq='D')
-    logger.info('Modelo carregado.')
-
+    model = NeuralForecast(models=models, freq="D")
+    logger.info("Modelo carregado.")
 
     with mlflow.start_run():
         run_name = f"fiap_mle_fase4_{datetime.datetime.now().strftime('%Y%m%d_%H%M')}"
 
-        mlflow.set_tag('mlflow.runName', run_name)
-        logger.info(f'Definindo o nome da execução do experimento como : {run_name}')
+        mlflow.set_tag("mlflow.runName", run_name)
+        logger.info(f"Definindo o nome da execução do experimento como : {run_name}")
 
         log_system_info()
 
@@ -67,11 +66,11 @@ def tuna_modelo_autolstm():
         mlflow.log_param("h", h)
         mlflow.log_param("num_samples", 30)
         mlflow.log_param("loss", "WMAPE")
-        
+
         model.fit(train, val_size=30)
 
-        mlflow.log_param('hparams', model.models[0].model.hparams)
-        logger.info(f'Melhores Hiperparâmetros: {model.models[0].model.hparams}')
+        mlflow.log_param("hparams", model.models[0].model.hparams)
+        logger.info(f"Melhores Hiperparâmetros: {model.models[0].model.hparams}")
 
         model_path = f"ml_models/neuralforecast_autolstm_{datetime.datetime.now().strftime('%Y%m%d_%H%M')}.joblib"
         joblib.dump(model, model_path)
@@ -103,7 +102,8 @@ def tuna_modelo_autolstm():
         plot_path = f"reports/forecast_plot_{datetime.datetime.now().strftime('%Y%m%d_%H%M')}.png"
         plt.savefig(plot_path)
         mlflow.log_artifact(plot_path)
-        logger.info(f'Plot salvo em : {plot_path}')
+        logger.info(f"Plot salvo em : {plot_path}")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     tuna_modelo_autolstm()

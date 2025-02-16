@@ -39,3 +39,11 @@
 2025-02-16 16:39:01,687 - train_model - INFO - Modelo treinado.
 2025-02-16 16:39:01,703 - train_model - INFO - Modelo salvo em: ml_models/neuralforecast_lstm_20250216_1639.joblib
 2025-02-16 16:39:01,703 - train_model - INFO - Tempo total de execução: 0:00:20.442088
+2025-02-16 21:07:54,917 - train_model - INFO - Iniciando treinamento utilizandos os seguintes hiperparâmetros: {'random_seed': 11, 'max_steps': 500, 'early_stop_patience_steps': -1, 'h': 82, 'input_size': 328, 'inference_input_size': -82, 'learning_rate': 0.0018313197699910044, 'val_check_steps': 100, 'batch_size': 32, 'scaler_type': 'robust', 'num_lr_decays': -1, 'drop_last_loader': False, 'encoder_n_layers': 1, 'encoder_hidden_size': 300, 'encoder_bias': True, 'encoder_dropout': 0, 'context_size': 5, 'decoder_hidden_size': 128, 'decoder_layers': 2}
+2025-02-16 21:07:54,944 - train_model - INFO - Modelo criado.
+2025-02-16 21:07:55,043 - train_model - INFO - Dados do deltalake carregados. Tamanho do dataset: 63207
+2025-02-16 21:07:55,065 - train_model - INFO - Dados após a remoção de duplicatas. Tamanho do dataset: 63207
+2025-02-16 21:07:55,073 - train_model - INFO - Restringindo dados de treinamento a um ano. Tamanho do dataset: 3012
+2025-02-16 21:08:13,988 - train_model - INFO - Modelo treinado.
+2025-02-16 21:08:14,009 - train_model - INFO - Modelo salvo em: ml_models/neuralforecast_lstm_20250216_2108.joblib
+2025-02-16 21:08:14,009 - train_model - INFO - Tempo total de execução: 0:00:19.091756

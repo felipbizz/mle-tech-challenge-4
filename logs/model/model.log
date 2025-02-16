@@ -265,3 +265,458 @@
 (261, 4)
 2025-02-16 16:59:57,035 - model - INFO - Gerando plot para as previsões de VALE3.SA
 2025-02-16 16:59:57,054 - model - INFO - Imagem do plot salva em reports/neuralforecast_lstm_VALE3.SA_20250216_1659.png
+2025-02-16 20:40:15,231 - model - INFO - Carregando o modelo neuralforecast_lstm_v4_1_000_epochs.joblib
+2025-02-16 20:40:15,236 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_v4_1_000_epochs.joblib
+2025-02-16 20:40:15,236 - model - INFO - Modelo neuralforecast_lstm_v4_1_000_epochs.joblib encontrado na pasta ml_models.
+2025-02-16 20:40:16,071 - model - INFO - Modelo neuralforecast_lstm_v4_1_000_epochs.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-02-16 20:40:16,071 - model - DEBUG - Chave utilizada na plotagem do resultado: LSTM
+2025-02-16 20:40:16,071 - model - INFO - Realizando previsões utilizando o horizonte definido no treinamento do modelo.
+2025-02-16 20:40:16,949 - model - INFO - Resultado da previsão:     unique_id         ds   AutoLSTM
+0       ABEV3 2024-08-31  12.711143
+1       ABEV3 2024-09-01  12.728634
+2       ABEV3 2024-09-02  12.800896
+3       ABEV3 2024-09-03  12.884574
+4       ABEV3 2024-09-04  12.878769
+..        ...        ...        ...
+149     BBAS3 2024-11-11  25.245216
+150     BBAS3 2024-11-12  25.278645
+151     BBAS3 2024-11-13  25.270189
+152     BBAS3 2024-11-14  25.318840
+153     BBAS3 2024-11-15  25.270353
+
+[154 rows x 3 columns]
+2025-02-16 20:40:16,954 - model - ERROR - no log files
+2025-02-16 20:41:31,875 - model - INFO - Carregando o modelo neuralforecast_lstm_v4_1_000_epochs.joblib
+2025-02-16 20:41:31,875 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_v4_1_000_epochs.joblib
+2025-02-16 20:41:31,875 - model - INFO - Modelo neuralforecast_lstm_v4_1_000_epochs.joblib encontrado na pasta ml_models.
+2025-02-16 20:41:31,934 - model - INFO - Modelo neuralforecast_lstm_v4_1_000_epochs.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-02-16 20:41:31,934 - model - DEBUG - Chave utilizada na plotagem do resultado: LSTM
+2025-02-16 20:41:31,934 - model - INFO - Realizando previsões utilizando o horizonte definido no treinamento do modelo.
+2025-02-16 20:41:32,225 - model - INFO - Resultado da previsão:     unique_id         ds   AutoLSTM
+0       ABEV3 2024-08-31  12.711143
+1       ABEV3 2024-09-01  12.728634
+2       ABEV3 2024-09-02  12.800896
+3       ABEV3 2024-09-03  12.884574
+4       ABEV3 2024-09-04  12.878769
+..        ...        ...        ...
+149     BBAS3 2024-11-11  25.245216
+150     BBAS3 2024-11-12  25.278645
+151     BBAS3 2024-11-13  25.270189
+152     BBAS3 2024-11-14  25.318840
+153     BBAS3 2024-11-15  25.270353
+
+[154 rows x 3 columns]
+2025-02-16 20:41:32,262 - model - INFO - Dados do deltalake carregados. Tamanho do dataset: 63207
+2025-02-16 20:41:32,269 - model - INFO - Dados após a remoção de duplicatas. Tamanho do dataset: 63207
+2025-02-16 20:41:32,270 - model - DEBUG - Header histórico:
+(179, 3)
+2025-02-16 20:41:32,271 - model - DEBUG - Header previsto:
+(154, 3)
+2025-02-16 20:41:32,271 - model - DEBUG - Stock: ['VALE3.SA']
+2025-02-16 20:41:32,272 - model - DEBUG - Dados concatenados : 
+(179, 4)
+2025-02-16 20:41:32,272 - model - INFO - Gerando plot para as previsões de VALE3.SA
+2025-02-16 20:41:32,294 - model - ERROR - 'LSTM'
+2025-02-16 21:09:14,598 - model - INFO - Carregando o modelo neuralforecast_lstm_20250216_2108.joblib
+2025-02-16 21:09:14,598 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_20250216_2108.joblib
+2025-02-16 21:09:14,598 - model - INFO - Modelo neuralforecast_lstm_20250216_2108.joblib encontrado na pasta ml_models.
+2025-02-16 21:09:14,611 - model - INFO - Modelo neuralforecast_lstm_20250216_2108.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-02-16 21:09:14,611 - model - DEBUG - Chave utilizada na plotagem do resultado: LSTM
+2025-02-16 21:09:14,611 - model - INFO - Realizando previsões utilizando o horizonte definido no treinamento do modelo.
+2025-02-16 21:09:14,869 - model - INFO - Resultado da previsão:     unique_id         ds       LSTM
+0    ABEV3.SA 2025-02-15  11.270290
+1    ABEV3.SA 2025-02-16  11.275084
+2    ABEV3.SA 2025-02-17  11.294024
+3    ABEV3.SA 2025-02-18  11.322982
+4    ABEV3.SA 2025-02-19  11.295885
+..        ...        ...        ...
+979  WEGE3.SA 2025-05-03  55.684143
+980  WEGE3.SA 2025-05-04  54.942474
+981  WEGE3.SA 2025-05-05  54.685040
+982  WEGE3.SA 2025-05-06  54.629173
+983  WEGE3.SA 2025-05-07  54.692944
+
+[984 rows x 3 columns]
+2025-02-16 21:09:14,899 - model - INFO - Dados do deltalake carregados. Tamanho do dataset: 63207
+2025-02-16 21:09:14,904 - model - INFO - Dados após a remoção de duplicatas. Tamanho do dataset: 63207
+2025-02-16 21:09:14,906 - model - DEBUG - Header histórico:
+(179, 3)
+2025-02-16 21:09:14,906 - model - DEBUG - Header previsto:
+(984, 3)
+2025-02-16 21:09:14,906 - model - DEBUG - Stock: ['VALE3.SA']
+2025-02-16 21:09:14,907 - model - DEBUG - Dados concatenados : 
+(261, 4)
+2025-02-16 21:09:14,907 - model - INFO - Gerando plot para as previsões de VALE3.SA
+2025-02-16 21:09:14,913 - model - INFO - Imagem do plot salva em reports/neuralforecast_lstm_VALE3.SA_20250216_2109.png
+2025-02-16 21:10:26,707 - model - INFO - Carregando o modelo neuralforecast_lstm_20250216_2108.joblib
+2025-02-16 21:10:26,707 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_20250216_2108.joblib
+2025-02-16 21:10:26,707 - model - INFO - Modelo neuralforecast_lstm_20250216_2108.joblib encontrado na pasta ml_models.
+2025-02-16 21:10:26,732 - model - INFO - Modelo neuralforecast_lstm_20250216_2108.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-02-16 21:10:26,733 - model - DEBUG - Chave utilizada na plotagem do resultado: LSTM
+2025-02-16 21:10:26,733 - model - INFO - Realizando previsões utilizando o horizonte definido no treinamento do modelo.
+2025-02-16 21:10:27,795 - model - INFO - Resultado da previsão:     unique_id         ds       LSTM
+0    ABEV3.SA 2025-02-15  11.270290
+1    ABEV3.SA 2025-02-16  11.275084
+2    ABEV3.SA 2025-02-17  11.294024
+3    ABEV3.SA 2025-02-18  11.322982
+4    ABEV3.SA 2025-02-19  11.295885
+..        ...        ...        ...
+979  WEGE3.SA 2025-05-03  55.684143
+980  WEGE3.SA 2025-05-04  54.942474
+981  WEGE3.SA 2025-05-05  54.685040
+982  WEGE3.SA 2025-05-06  54.629173
+983  WEGE3.SA 2025-05-07  54.692944
+
+[984 rows x 3 columns]
+2025-02-16 21:10:27,818 - model - INFO - Dados do deltalake carregados. Tamanho do dataset: 63207
+2025-02-16 21:10:27,823 - model - INFO - Dados após a remoção de duplicatas. Tamanho do dataset: 63207
+2025-02-16 21:10:27,825 - model - DEBUG - Header histórico:
+(179, 3)
+2025-02-16 21:10:27,825 - model - DEBUG - Header previsto:
+(984, 3)
+2025-02-16 21:10:27,825 - model - DEBUG - Stock: ['VALE3.SA']
+2025-02-16 21:10:27,827 - model - DEBUG - Dados concatenados : 
+(261, 4)
+2025-02-16 21:10:27,827 - model - INFO - Gerando plot para as previsões de VALE3.SA
+2025-02-16 21:10:27,830 - model - INFO - Imagem do plot salva em reports/neuralforecast_lstm_VALE3.SA_20250216_2110.png
+2025-02-16 21:12:58,146 - model - INFO - Carregando o modelo neuralforecast_lstm_20250216_2108.joblib
+2025-02-16 21:12:58,146 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_20250216_2108.joblib
+2025-02-16 21:12:58,146 - model - INFO - Modelo neuralforecast_lstm_20250216_2108.joblib encontrado na pasta ml_models.
+2025-02-16 21:12:58,189 - model - INFO - Modelo neuralforecast_lstm_20250216_2108.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-02-16 21:12:58,189 - model - DEBUG - Chave utilizada na plotagem do resultado: LSTM
+2025-02-16 21:12:58,190 - model - INFO - Realizando previsões utilizando o horizonte definido no treinamento do modelo.
+2025-02-16 21:12:58,521 - model - INFO - Resultado da previsão:     unique_id         ds       LSTM
+0    ABEV3.SA 2025-02-15  11.270290
+1    ABEV3.SA 2025-02-16  11.275084
+2    ABEV3.SA 2025-02-17  11.294024
+3    ABEV3.SA 2025-02-18  11.322982
+4    ABEV3.SA 2025-02-19  11.295885
+..        ...        ...        ...
+979  WEGE3.SA 2025-05-03  55.684143
+980  WEGE3.SA 2025-05-04  54.942474
+981  WEGE3.SA 2025-05-05  54.685040
+982  WEGE3.SA 2025-05-06  54.629173
+983  WEGE3.SA 2025-05-07  54.692944
+
+[984 rows x 3 columns]
+2025-02-16 21:12:58,574 - model - INFO - Dados do deltalake carregados. Tamanho do dataset: 63207
+2025-02-16 21:12:58,584 - model - INFO - Dados após a remoção de duplicatas. Tamanho do dataset: 63207
+2025-02-16 21:12:58,587 - model - DEBUG - Header histórico:
+(179, 3)
+2025-02-16 21:12:58,588 - model - DEBUG - Header previsto:
+(984, 3)
+2025-02-16 21:12:58,588 - model - DEBUG - Stock: ['VALE3.SA']
+2025-02-16 21:12:58,591 - model - DEBUG - Dados concatenados : 
+(261, 4)
+2025-02-16 21:12:58,591 - model - INFO - Gerando plot para as previsões de VALE3.SA
+2025-02-16 21:12:58,614 - model - INFO - Imagem do plot salva em reports/neuralforecast_lstm_VALE3.SA_20250216_2112.png
+2025-02-16 21:16:59,384 - model - INFO - Carregando o modelo neuralforecast_lstm_20250216_2108.joblib
+2025-02-16 21:16:59,384 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_20250216_2108.joblib
+2025-02-16 21:16:59,384 - model - INFO - Modelo neuralforecast_lstm_20250216_2108.joblib encontrado na pasta ml_models.
+2025-02-16 21:16:59,419 - model - INFO - Modelo neuralforecast_lstm_20250216_2108.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-02-16 21:16:59,420 - model - DEBUG - Chave utilizada na plotagem do resultado: LSTM
+2025-02-16 21:16:59,420 - model - INFO - Realizando previsões utilizando o horizonte definido no treinamento do modelo.
+2025-02-16 21:16:59,746 - model - INFO - Resultado da previsão:     unique_id         ds       LSTM
+0    ABEV3.SA 2025-02-15  11.270290
+1    ABEV3.SA 2025-02-16  11.275084
+2    ABEV3.SA 2025-02-17  11.294024
+3    ABEV3.SA 2025-02-18  11.322982
+4    ABEV3.SA 2025-02-19  11.295885
+..        ...        ...        ...
+979  WEGE3.SA 2025-05-03  55.684143
+980  WEGE3.SA 2025-05-04  54.942474
+981  WEGE3.SA 2025-05-05  54.685040
+982  WEGE3.SA 2025-05-06  54.629173
+983  WEGE3.SA 2025-05-07  54.692944
+
+[984 rows x 3 columns]
+2025-02-16 21:16:59,815 - model - INFO - Dados do deltalake carregados. Tamanho do dataset: 63207
+2025-02-16 21:16:59,826 - model - INFO - Dados após a remoção de duplicatas. Tamanho do dataset: 63207
+2025-02-16 21:16:59,829 - model - DEBUG - Header histórico:
+(179, 3)
+2025-02-16 21:16:59,830 - model - DEBUG - Header previsto:
+(984, 3)
+2025-02-16 21:16:59,830 - model - DEBUG - Stock: ['VALE3.SA']
+2025-02-16 21:16:59,833 - model - DEBUG - Dados concatenados : 
+(261, 4)
+2025-02-16 21:16:59,833 - model - INFO - Gerando plot para as previsões de VALE3.SA
+2025-02-16 21:16:59,862 - model - INFO - Imagem do plot salva em reports/neuralforecast_lstm_VALE3.SA_20250216_2116.png
+2025-02-16 21:19:34,496 - model - INFO - Carregando o modelo neuralforecast_lstm_20250216_2108.joblib
+2025-02-16 21:19:34,496 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_20250216_2108.joblib
+2025-02-16 21:19:34,497 - model - INFO - Modelo neuralforecast_lstm_20250216_2108.joblib encontrado na pasta ml_models.
+2025-02-16 21:19:34,542 - model - INFO - Modelo neuralforecast_lstm_20250216_2108.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-02-16 21:19:34,543 - model - DEBUG - Chave utilizada na plotagem do resultado: LSTM
+2025-02-16 21:19:34,543 - model - INFO - Realizando previsões utilizando o horizonte definido no treinamento do modelo.
+2025-02-16 21:19:34,876 - model - INFO - Resultado da previsão:     unique_id         ds       LSTM
+0    ABEV3.SA 2025-02-15  11.270290
+1    ABEV3.SA 2025-02-16  11.275084
+2    ABEV3.SA 2025-02-17  11.294024
+3    ABEV3.SA 2025-02-18  11.322982
+4    ABEV3.SA 2025-02-19  11.295885
+..        ...        ...        ...
+979  WEGE3.SA 2025-05-03  55.684143
+980  WEGE3.SA 2025-05-04  54.942474
+981  WEGE3.SA 2025-05-05  54.685040
+982  WEGE3.SA 2025-05-06  54.629173
+983  WEGE3.SA 2025-05-07  54.692944
+
+[984 rows x 3 columns]
+2025-02-16 21:19:34,940 - model - INFO - Dados do deltalake carregados. Tamanho do dataset: 63207
+2025-02-16 21:19:34,955 - model - INFO - Dados após a remoção de duplicatas. Tamanho do dataset: 63207
+2025-02-16 21:19:34,959 - model - DEBUG - Header histórico:
+(179, 3)
+2025-02-16 21:19:34,959 - model - DEBUG - Header previsto:
+(984, 3)
+2025-02-16 21:19:34,960 - model - DEBUG - Stock: ['VALE3.SA']
+2025-02-16 21:19:34,962 - model - DEBUG - Dados concatenados : 
+(261, 4)
+2025-02-16 21:19:34,962 - model - INFO - Gerando plot para as previsões de VALE3.SA
+2025-02-16 21:19:34,986 - model - INFO - Imagem do plot salva em reports/neuralforecast_lstm_VALE3.SA_20250216_2119.png
+2025-02-16 21:21:23,705 - model - INFO - Carregando o modelo neuralforecast_lstm_20250216_2108.joblib
+2025-02-16 21:21:23,705 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_20250216_2108.joblib
+2025-02-16 21:21:23,706 - model - INFO - Modelo neuralforecast_lstm_20250216_2108.joblib encontrado na pasta ml_models.
+2025-02-16 21:21:23,735 - model - INFO - Modelo neuralforecast_lstm_20250216_2108.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-02-16 21:21:23,735 - model - DEBUG - Chave utilizada na plotagem do resultado: LSTM
+2025-02-16 21:21:23,735 - model - INFO - Realizando previsões utilizando o horizonte definido no treinamento do modelo.
+2025-02-16 21:21:24,098 - model - INFO - Resultado da previsão:     unique_id         ds       LSTM
+0    ABEV3.SA 2025-02-15  11.270290
+1    ABEV3.SA 2025-02-16  11.275084
+2    ABEV3.SA 2025-02-17  11.294024
+3    ABEV3.SA 2025-02-18  11.322982
+4    ABEV3.SA 2025-02-19  11.295885
+..        ...        ...        ...
+979  WEGE3.SA 2025-05-03  55.684143
+980  WEGE3.SA 2025-05-04  54.942474
+981  WEGE3.SA 2025-05-05  54.685040
+982  WEGE3.SA 2025-05-06  54.629173
+983  WEGE3.SA 2025-05-07  54.692944
+
+[984 rows x 3 columns]
+2025-02-16 21:21:24,173 - model - INFO - Dados do deltalake carregados. Tamanho do dataset: 63207
+2025-02-16 21:21:24,189 - model - INFO - Dados após a remoção de duplicatas. Tamanho do dataset: 63207
+2025-02-16 21:21:24,195 - model - DEBUG - Header histórico:
+(179, 3)
+2025-02-16 21:21:24,195 - model - DEBUG - Header previsto:
+(984, 3)
+2025-02-16 21:21:24,196 - model - DEBUG - Stock: ['VALE3.SA']
+2025-02-16 21:21:24,201 - model - DEBUG - Dados concatenados : 
+(261, 4)
+2025-02-16 21:21:24,202 - model - INFO - Gerando plot para as previsões de VALE3.SA
+2025-02-16 21:21:24,234 - model - INFO - Imagem do plot salva em reports/neuralforecast_lstm_VALE3.SA_20250216_2121.png
+2025-02-16 21:25:16,729 - model - INFO - Carregando o modelo neuralforecast_lstm_20250216_2108.joblib
+2025-02-16 21:25:16,729 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_20250216_2108.joblib
+2025-02-16 21:25:16,729 - model - INFO - Modelo neuralforecast_lstm_20250216_2108.joblib encontrado na pasta ml_models.
+2025-02-16 21:25:16,741 - model - INFO - Modelo neuralforecast_lstm_20250216_2108.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-02-16 21:25:16,742 - model - DEBUG - Chave utilizada na plotagem do resultado: LSTM
+2025-02-16 21:25:16,742 - model - INFO - Realizando previsões utilizando o horizonte definido no treinamento do modelo.
+2025-02-16 21:25:17,076 - model - INFO - Resultado da previsão:     unique_id         ds       LSTM
+0    ABEV3.SA 2025-02-15  11.270290
+1    ABEV3.SA 2025-02-16  11.275084
+2    ABEV3.SA 2025-02-17  11.294024
+3    ABEV3.SA 2025-02-18  11.322982
+4    ABEV3.SA 2025-02-19  11.295885
+..        ...        ...        ...
+979  WEGE3.SA 2025-05-03  55.684143
+980  WEGE3.SA 2025-05-04  54.942474
+981  WEGE3.SA 2025-05-05  54.685040
+982  WEGE3.SA 2025-05-06  54.629173
+983  WEGE3.SA 2025-05-07  54.692944
+
+[984 rows x 3 columns]
+2025-02-16 21:25:17,138 - model - INFO - Dados do deltalake carregados. Tamanho do dataset: 63207
+2025-02-16 21:25:17,147 - model - INFO - Dados após a remoção de duplicatas. Tamanho do dataset: 63207
+2025-02-16 21:25:17,149 - model - DEBUG - Header histórico:
+(179, 3)
+2025-02-16 21:25:17,149 - model - DEBUG - Header previsto:
+(984, 3)
+2025-02-16 21:25:17,150 - model - DEBUG - Stock: ['VALE3.SA']
+2025-02-16 21:25:17,152 - model - DEBUG - Dados concatenados : 
+(261, 4)
+2025-02-16 21:25:17,152 - model - INFO - Gerando plot para as previsões de VALE3.SA
+2025-02-16 21:25:17,166 - model - INFO - Imagem do plot salva em reports/neuralforecast_lstm_VALE3.SA_20250216_2125.png
+2025-02-16 21:25:42,661 - model - INFO - Carregando o modelo neuralforecast_lstm_20250216_2108.joblib
+2025-02-16 21:25:42,661 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_20250216_2108.joblib
+2025-02-16 21:25:42,661 - model - INFO - Modelo neuralforecast_lstm_20250216_2108.joblib encontrado na pasta ml_models.
+2025-02-16 21:25:42,675 - model - INFO - Modelo neuralforecast_lstm_20250216_2108.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-02-16 21:25:42,675 - model - DEBUG - Chave utilizada na plotagem do resultado: LSTM
+2025-02-16 21:25:42,675 - model - INFO - Realizando previsões utilizando o horizonte definido no treinamento do modelo.
+2025-02-16 21:25:43,017 - model - INFO - Resultado da previsão:     unique_id         ds       LSTM
+0    ABEV3.SA 2025-02-15  11.270290
+1    ABEV3.SA 2025-02-16  11.275084
+2    ABEV3.SA 2025-02-17  11.294024
+3    ABEV3.SA 2025-02-18  11.322982
+4    ABEV3.SA 2025-02-19  11.295885
+..        ...        ...        ...
+979  WEGE3.SA 2025-05-03  55.684143
+980  WEGE3.SA 2025-05-04  54.942474
+981  WEGE3.SA 2025-05-05  54.685040
+982  WEGE3.SA 2025-05-06  54.629173
+983  WEGE3.SA 2025-05-07  54.692944
+
+[984 rows x 3 columns]
+2025-02-16 21:25:43,095 - model - INFO - Dados do deltalake carregados. Tamanho do dataset: 63207
+2025-02-16 21:25:43,111 - model - INFO - Dados após a remoção de duplicatas. Tamanho do dataset: 63207
+2025-02-16 21:25:43,116 - model - DEBUG - Header histórico:
+(179, 3)
+2025-02-16 21:25:43,116 - model - DEBUG - Header previsto:
+(984, 3)
+2025-02-16 21:25:43,117 - model - DEBUG - Stock: ['VALE3.SA']
+2025-02-16 21:25:43,120 - model - DEBUG - Dados concatenados : 
+(261, 4)
+2025-02-16 21:25:43,120 - model - INFO - Gerando plot para as previsões de VALE3.SA
+2025-02-16 21:25:43,142 - model - INFO - Imagem do plot salva em reports/neuralforecast_lstm_VALE3.SA_20250216_2125.png
+2025-02-16 21:26:14,523 - model - INFO - Carregando o modelo neuralforecast_lstm_20250216_2108.joblib
+2025-02-16 21:26:14,523 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_20250216_2108.joblib
+2025-02-16 21:26:14,523 - model - INFO - Modelo neuralforecast_lstm_20250216_2108.joblib encontrado na pasta ml_models.
+2025-02-16 21:26:14,537 - model - INFO - Modelo neuralforecast_lstm_20250216_2108.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-02-16 21:26:14,537 - model - DEBUG - Chave utilizada na plotagem do resultado: LSTM
+2025-02-16 21:26:14,537 - model - INFO - Realizando previsões utilizando o horizonte definido no treinamento do modelo.
+2025-02-16 21:26:14,852 - model - INFO - Resultado da previsão:     unique_id         ds       LSTM
+0    ABEV3.SA 2025-02-15  11.270290
+1    ABEV3.SA 2025-02-16  11.275084
+2    ABEV3.SA 2025-02-17  11.294024
+3    ABEV3.SA 2025-02-18  11.322982
+4    ABEV3.SA 2025-02-19  11.295885
+..        ...        ...        ...
+979  WEGE3.SA 2025-05-03  55.684143
+980  WEGE3.SA 2025-05-04  54.942474
+981  WEGE3.SA 2025-05-05  54.685040
+982  WEGE3.SA 2025-05-06  54.629173
+983  WEGE3.SA 2025-05-07  54.692944
+
+[984 rows x 3 columns]
+2025-02-16 21:26:14,880 - model - INFO - Dados do deltalake carregados. Tamanho do dataset: 63207
+2025-02-16 21:26:14,885 - model - INFO - Dados após a remoção de duplicatas. Tamanho do dataset: 63207
+2025-02-16 21:26:14,886 - model - DEBUG - Header histórico:
+(179, 3)
+2025-02-16 21:26:14,886 - model - DEBUG - Header previsto:
+(984, 3)
+2025-02-16 21:26:14,887 - model - DEBUG - Stock: ['VALE3.SA']
+2025-02-16 21:26:14,887 - model - DEBUG - Dados concatenados : 
+(261, 4)
+2025-02-16 21:26:14,888 - model - INFO - Gerando plot para as previsões de VALE3.SA
+2025-02-16 21:26:14,897 - model - INFO - Imagem do plot salva em reports/neuralforecast_lstm_VALE3.SA_20250216_2126.png
+2025-02-16 21:26:33,868 - model - INFO - Carregando o modelo neuralforecast_lstm_20250216_2108.joblib
+2025-02-16 21:26:33,868 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_20250216_2108.joblib
+2025-02-16 21:26:33,868 - model - INFO - Modelo neuralforecast_lstm_20250216_2108.joblib encontrado na pasta ml_models.
+2025-02-16 21:26:33,882 - model - INFO - Modelo neuralforecast_lstm_20250216_2108.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-02-16 21:26:33,882 - model - DEBUG - Chave utilizada na plotagem do resultado: LSTM
+2025-02-16 21:26:33,882 - model - INFO - Realizando previsões utilizando o horizonte definido no treinamento do modelo.
+2025-02-16 21:26:34,190 - model - INFO - Resultado da previsão:     unique_id         ds       LSTM
+0    ABEV3.SA 2025-02-15  11.270290
+1    ABEV3.SA 2025-02-16  11.275084
+2    ABEV3.SA 2025-02-17  11.294024
+3    ABEV3.SA 2025-02-18  11.322982
+4    ABEV3.SA 2025-02-19  11.295885
+..        ...        ...        ...
+979  WEGE3.SA 2025-05-03  55.684143
+980  WEGE3.SA 2025-05-04  54.942474
+981  WEGE3.SA 2025-05-05  54.685040
+982  WEGE3.SA 2025-05-06  54.629173
+983  WEGE3.SA 2025-05-07  54.692944
+
+[984 rows x 3 columns]
+2025-02-16 21:26:34,219 - model - INFO - Dados do deltalake carregados. Tamanho do dataset: 63207
+2025-02-16 21:26:34,225 - model - INFO - Dados após a remoção de duplicatas. Tamanho do dataset: 63207
+2025-02-16 21:26:34,227 - model - DEBUG - Header histórico:
+(179, 3)
+2025-02-16 21:26:34,227 - model - DEBUG - Header previsto:
+(984, 3)
+2025-02-16 21:26:34,227 - model - DEBUG - Stock: ['VALE3.SA']
+2025-02-16 21:26:34,229 - model - DEBUG - Dados concatenados : 
+(261, 4)
+2025-02-16 21:26:34,229 - model - INFO - Gerando plot para as previsões de VALE3.SA
+2025-02-16 21:26:34,245 - model - INFO - Imagem do plot salva em reports/neuralforecast_lstm_VALE3.SA_20250216_2126.png
+2025-02-16 21:26:34,857 - model - INFO - Carregando o modelo neuralforecast_lstm_20250216_2108.joblib
+2025-02-16 21:26:34,857 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_20250216_2108.joblib
+2025-02-16 21:26:34,857 - model - INFO - Modelo neuralforecast_lstm_20250216_2108.joblib encontrado na pasta ml_models.
+2025-02-16 21:26:34,868 - model - INFO - Modelo neuralforecast_lstm_20250216_2108.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-02-16 21:26:34,868 - model - DEBUG - Chave utilizada na plotagem do resultado: LSTM
+2025-02-16 21:26:34,868 - model - INFO - Realizando previsões utilizando o horizonte definido no treinamento do modelo.
+2025-02-16 21:26:35,144 - model - INFO - Resultado da previsão:     unique_id         ds       LSTM
+0    ABEV3.SA 2025-02-15  11.270290
+1    ABEV3.SA 2025-02-16  11.275084
+2    ABEV3.SA 2025-02-17  11.294024
+3    ABEV3.SA 2025-02-18  11.322982
+4    ABEV3.SA 2025-02-19  11.295885
+..        ...        ...        ...
+979  WEGE3.SA 2025-05-03  55.684143
+980  WEGE3.SA 2025-05-04  54.942474
+981  WEGE3.SA 2025-05-05  54.685040
+982  WEGE3.SA 2025-05-06  54.629173
+983  WEGE3.SA 2025-05-07  54.692944
+
+[984 rows x 3 columns]
+2025-02-16 21:26:35,199 - model - INFO - Dados do deltalake carregados. Tamanho do dataset: 63207
+2025-02-16 21:26:35,204 - model - INFO - Dados após a remoção de duplicatas. Tamanho do dataset: 63207
+2025-02-16 21:26:35,206 - model - DEBUG - Header histórico:
+(179, 3)
+2025-02-16 21:26:35,206 - model - DEBUG - Header previsto:
+(984, 3)
+2025-02-16 21:26:35,206 - model - DEBUG - Stock: ['ITUB4.SA']
+2025-02-16 21:26:35,207 - model - DEBUG - Dados concatenados : 
+(261, 4)
+2025-02-16 21:26:35,207 - model - INFO - Gerando plot para as previsões de ITUB4.SA
+2025-02-16 21:26:35,218 - model - INFO - Imagem do plot salva em reports/neuralforecast_lstm_ITUB4.SA_20250216_2126.png
+2025-02-16 21:26:35,956 - model - INFO - Carregando o modelo neuralforecast_lstm_20250216_2108.joblib
+2025-02-16 21:26:35,956 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_20250216_2108.joblib
+2025-02-16 21:26:35,956 - model - INFO - Modelo neuralforecast_lstm_20250216_2108.joblib encontrado na pasta ml_models.
+2025-02-16 21:26:35,977 - model - INFO - Modelo neuralforecast_lstm_20250216_2108.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-02-16 21:26:35,977 - model - DEBUG - Chave utilizada na plotagem do resultado: LSTM
+2025-02-16 21:26:35,977 - model - INFO - Realizando previsões utilizando o horizonte definido no treinamento do modelo.
+2025-02-16 21:26:36,109 - model - INFO - Resultado da previsão:     unique_id         ds       LSTM
+0    ABEV3.SA 2025-02-15  11.270290
+1    ABEV3.SA 2025-02-16  11.275084
+2    ABEV3.SA 2025-02-17  11.294024
+3    ABEV3.SA 2025-02-18  11.322982
+4    ABEV3.SA 2025-02-19  11.295885
+..        ...        ...        ...
+979  WEGE3.SA 2025-05-03  55.684143
+980  WEGE3.SA 2025-05-04  54.942474
+981  WEGE3.SA 2025-05-05  54.685040
+982  WEGE3.SA 2025-05-06  54.629173
+983  WEGE3.SA 2025-05-07  54.692944
+
+[984 rows x 3 columns]
+2025-02-16 21:26:36,172 - model - INFO - Dados do deltalake carregados. Tamanho do dataset: 63207
+2025-02-16 21:26:36,192 - model - INFO - Dados após a remoção de duplicatas. Tamanho do dataset: 63207
+2025-02-16 21:26:36,199 - model - DEBUG - Header histórico:
+(179, 3)
+2025-02-16 21:26:36,200 - model - DEBUG - Header previsto:
+(984, 3)
+2025-02-16 21:26:36,201 - model - DEBUG - Stock: ['BBAS3.SA']
+2025-02-16 21:26:36,206 - model - DEBUG - Dados concatenados : 
+(261, 4)
+2025-02-16 21:26:36,207 - model - INFO - Gerando plot para as previsões de BBAS3.SA
+2025-02-16 21:26:36,238 - model - INFO - Imagem do plot salva em reports/neuralforecast_lstm_BBAS3.SA_20250216_2126.png
+2025-02-16 21:26:36,887 - model - INFO - Carregando o modelo neuralforecast_lstm_20250216_2108.joblib
+2025-02-16 21:26:36,887 - model - INFO - Validando a existência do modelo treinado : neuralforecast_lstm_20250216_2108.joblib
+2025-02-16 21:26:36,887 - model - INFO - Modelo neuralforecast_lstm_20250216_2108.joblib encontrado na pasta ml_models.
+2025-02-16 21:26:36,900 - model - INFO - Modelo neuralforecast_lstm_20250216_2108.joblib carregado. Tipo do modelo <class 'neuralforecast.core.NeuralForecast'>
+2025-02-16 21:26:36,900 - model - DEBUG - Chave utilizada na plotagem do resultado: LSTM
+2025-02-16 21:26:36,900 - model - INFO - Realizando previsões utilizando o horizonte definido no treinamento do modelo.
+2025-02-16 21:26:37,085 - model - INFO - Resultado da previsão:     unique_id         ds       LSTM
+0    ABEV3.SA 2025-02-15  11.270290
+1    ABEV3.SA 2025-02-16  11.275084
+2    ABEV3.SA 2025-02-17  11.294024
+3    ABEV3.SA 2025-02-18  11.322982
+4    ABEV3.SA 2025-02-19  11.295885
+..        ...        ...        ...
+979  WEGE3.SA 2025-05-03  55.684143
+980  WEGE3.SA 2025-05-04  54.942474
+981  WEGE3.SA 2025-05-05  54.685040
+982  WEGE3.SA 2025-05-06  54.629173
+983  WEGE3.SA 2025-05-07  54.692944
+
+[984 rows x 3 columns]
+2025-02-16 21:26:37,133 - model - INFO - Dados do deltalake carregados. Tamanho do dataset: 63207
+2025-02-16 21:26:37,138 - model - INFO - Dados após a remoção de duplicatas. Tamanho do dataset: 63207
+2025-02-16 21:26:37,140 - model - DEBUG - Header histórico:
+(179, 3)
+2025-02-16 21:26:37,140 - model - DEBUG - Header previsto:
+(984, 3)
+2025-02-16 21:26:37,140 - model - DEBUG - Stock: ['JBSS3.SA']
+2025-02-16 21:26:37,141 - model - DEBUG - Dados concatenados : 
+(261, 4)
+2025-02-16 21:26:37,141 - model - INFO - Gerando plot para as previsões de JBSS3.SA
+2025-02-16 21:26:37,151 - model - INFO - Imagem do plot salva em reports/neuralforecast_lstm_JBSS3.SA_20250216_2126.png
