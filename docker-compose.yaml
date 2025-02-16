@@ -54,10 +54,6 @@ services:
     command: "mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root /mlflow/mlruns --host 0.0.0.0"
 
 
-# Linhas de comando para execução individual dos containers
-# sudo docker run -dit --name grafana -p3000:3000 --add-host host.docker.internal:host-gateway grafana/grafana
-# sudo docker run -dit --name prometheus -p9090:9090 -v ./prometheus.yaml:/etc/prometheus/prometheus.yml --add-host host.docker.internal:host-gateway prom/prometheus
-
 # Abaixo um exemplo de como carregar a GPU local no container docker
 
   # test:

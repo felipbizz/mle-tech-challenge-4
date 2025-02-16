@@ -21,8 +21,6 @@ def download(symbols: list) -> dict:
 
         try:
             df = yf.download(symbol)
-            logger.info(f'Dados de {symbol} carregados com sucessso.')
-            download_result['successful_downloads'].append(symbol)
         except Exception as e:
             logger.info(f'Não foi possível processar {symbol} por conta de {e}')
             download_result['failed_downloads'].append(symbol)
@@ -37,10 +35,18 @@ def download(symbols: list) -> dict:
 
         logger.info(f'Tamanho dos dados organizados de {symbol}: {len(df)}')
 
+        if(len(df) == 0):
+            download_result['failed_downloads'].append(symbol)
+            logger.warn(f'Não foram capturados dados para {symbol}')
+            continue
+
         df['unique_id'] = symbol
 
         write_deltalake('deltalake', df, mode='append', partition_by=['unique_id'])
         logger.info(f'Dados para {symbol} gravados com sucesso no DeltaLake')
+        
+        download_result['successful_downloads'].append(symbol)
+        logger.info(f'Dados de {symbol} carregados com sucessso.')
 
     return download_result
     

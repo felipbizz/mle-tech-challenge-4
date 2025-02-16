@@ -20,7 +20,7 @@ def download(symbols : Annotated[list[str] | None, Body()] = ['VALE3.SA', 'PETR4
 
     Returns:
 
-        dict : Dicionário contento duas listas, uma de cargas com sucesso e outra com as cargas com falhas.
+        dict : Dicionário contendo duas listas, uma de cargas com sucesso e outra com as cargas com falhas.
     '''
 
     logger.info('---------------------------------------------------------------------------------------------------')

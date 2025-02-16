@@ -1,0 +1,62 @@
+[2025-02-16 14:45:09,369 I 3069 3069] core_worker_process.cc:107: Constructing CoreWorkerProcess. pid: 3069
+[2025-02-16 14:45:09,371 I 3069 3069] io_service_pool.cc:35: IOServicePool is running with 1 io_service.
+[2025-02-16 14:45:09,373 I 3069 3069] grpc_server.cc:134: worker server started, listening on port 40441.
+[2025-02-16 14:45:09,374 I 3069 3069] core_worker.cc:275: Initializing worker at address: 172.19.0.2:40441 worker_id=5303a99b57a68b52f8e6126558dd8bbf06d6794b5aabfc7758d94682 node_id=816adedaa007cdcc0cd45373f60e7db6274e62064526c8820e476a2e
+[2025-02-16 14:45:09,375 I 3069 3069] task_event_buffer.cc:257: Reporting task events to GCS every 1000ms.
+[2025-02-16 14:45:09,375 I 3069 3069] core_worker.cc:703: Adjusted worker niceness to 15
+[2025-02-16 14:45:09,375 I 3069 3105] core_worker.cc:642: Event stats:
+
+
+Global stats: 9 total (5 active)
+Queueing time: mean = 13.468 us, max = 59.917 us, min = 27.384 us, total = 121.210 us
+Execution time:  mean = 73.937 us, total = 665.433 us
+Event stats:
+	PeriodicalRunner.RunFnPeriodically - 3 total (1 active, 1 running), Execution time: mean = 6.111 us, total = 18.332 us, Queueing time: mean = 29.100 us, max = 59.917 us, min = 27.384 us, total = 87.301 us
+	ray::rpc::InternalPubSubGcsService.grpc_client.GcsSubscriberPoll - 1 total (1 active), Execution time: mean = 0.000 s, total = 0.000 s, Queueing time: mean = 0.000 s, max = -0.000 s, min = 9223372036.855 s, total = 0.000 s
+	ray::rpc::WorkerInfoGcsService.grpc_client.AddWorkerInfo.OnReplyReceived - 1 total (0 active), Execution time: mean = 34.407 us, total = 34.407 us, Queueing time: mean = 33.909 us, max = 33.909 us, min = 33.909 us, total = 33.909 us
+	CoreWorker.ExitIfParentRayletDies - 1 total (1 active), Execution time: mean = 0.000 s, total = 0.000 s, Queueing time: mean = 0.000 s, max = -0.000 s, min = 9223372036.855 s, total = 0.000 s
+	Publisher.CheckDeadSubscribers - 1 total (1 active), Execution time: mean = 0.000 s, total = 0.000 s, Queueing time: mean = 0.000 s, max = -0.000 s, min = 9223372036.855 s, total = 0.000 s
+	ray::rpc::InternalPubSubGcsService.grpc_client.GcsSubscriberCommandBatch - 1 total (1 active), Execution time: mean = 0.000 s, total = 0.000 s, Queueing time: mean = 0.000 s, max = -0.000 s, min = 9223372036.855 s, total = 0.000 s
+	ray::rpc::WorkerInfoGcsService.grpc_client.AddWorkerInfo - 1 total (0 active), Execution time: mean = 612.694 us, total = 612.694 us, Queueing time: mean = 0.000 s, max = -0.000 s, min = 9223372036.855 s, total = 0.000 s
+
+-----------------
+Task Event stats:
+
+IO Service Stats:
+
+Global stats: 4 total (1 active)
+Queueing time: mean = 10.384 us, max = 21.864 us, min = 19.672 us, total = 41.536 us
+Execution time:  mean = 152.200 us, total = 608.801 us
+Event stats:
+	CoreWorker.deadline_timer.flush_task_events - 1 total (1 active), Execution time: mean = 0.000 s, total = 0.000 s, Queueing time: mean = 0.000 s, max = -0.000 s, min = 9223372036.855 s, total = 0.000 s
+	PeriodicalRunner.RunFnPeriodically - 1 total (0 active), Execution time: mean = 161.421 us, total = 161.421 us, Queueing time: mean = 19.672 us, max = 19.672 us, min = 19.672 us, total = 19.672 us
+	ray::rpc::TaskInfoGcsService.grpc_client.AddTaskEventData - 1 total (0 active), Execution time: mean = 431.704 us, total = 431.704 us, Queueing time: mean = 0.000 s, max = -0.000 s, min = 9223372036.855 s, total = 0.000 s
+	ray::rpc::TaskInfoGcsService.grpc_client.AddTaskEventData.OnReplyReceived - 1 total (0 active), Execution time: mean = 15.676 us, total = 15.676 us, Queueing time: mean = 21.864 us, max = 21.864 us, min = 21.864 us, total = 21.864 us
+Other Stats:
+	grpc_in_progress:0
+	current number of task status events in buffer: 0
+	current number of profile events in buffer: 0
+	current number of dropped task attempts tracked: 0
+	total task events sent: 0 MiB
+	total number of task attempts sent: 0
+	total number of task attempts dropped reported: 0
+	total number of sent failure: 0
+	num status task events dropped: 0
+	num profile task events dropped: 0
+
+
+[2025-02-16 14:45:09,376 I 3069 3069] event.cc:491: Ray Event initialized for CORE_WORKER
+[2025-02-16 14:45:09,376 I 3069 3069] event.cc:491: Ray Event initialized for EXPORT_TASK
+[2025-02-16 14:45:09,376 I 3069 3069] event.cc:322: Set ray event level to warning
+[2025-02-16 14:45:09,376 I 3069 3105] accessor.cc:762: Received notification for node, IsAlive = 1 node_id=816adedaa007cdcc0cd45373f60e7db6274e62064526c8820e476a2e
+[2025-02-16 14:45:09,376 I 3069 3105] core_worker.cc:4754: Number of alive nodes:1
+[2025-02-16 14:45:09,377 I 3069 3069] actor_task_submitter.cc:73: Set actor max pending calls to -1 actor_id=70ace0ebbaf2d3cf6cd09f4a01000000
+[2025-02-16 14:45:09,378 I 3069 3069] core_worker.cc:3017: Creating actor actor_id=70ace0ebbaf2d3cf6cd09f4a01000000
+[2025-02-16 14:45:12,962 I 3069 3069] task_receiver.cc:196: Actor creation task finished, task_id: ffffffffffffffff70ace0ebbaf2d3cf6cd09f4a01000000, actor_id: 70ace0ebbaf2d3cf6cd09f4a01000000, actor_repr_name: _train_tune
+[2025-02-16 14:45:19,381 W 3069 3100] metric_exporter.cc:105: [1] Export metrics to agent failed: RpcError: RPC Error message: failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:61040: Failed to connect to remote host: Connection refused; RPC Error details: . This won't affect Ray, but you can lose metrics from the cluster.
+[2025-02-16 14:45:41,828 I 3069 3105] core_worker.cc:4177: Force kill actor request has received. exiting immediately... The actor is dead because all references to the actor were removed.
+[2025-02-16 14:45:41,828 W 3069 3105] core_worker.cc:958: Force exit the process.  Details: Worker exits because the actor is killed. The actor is dead because all references to the actor were removed.
+[2025-02-16 14:45:41,828 I 3069 3105] core_worker.cc:855: Try killing all child processes of this worker as it exits. Child process pids: 
+[2025-02-16 14:45:41,829 I 3069 3105] core_worker.cc:814: Disconnecting to the raylet.
+[2025-02-16 14:45:41,829 I 3069 3105] raylet_client.cc:162: RayletClient::Disconnect, exit_type=INTENDED_SYSTEM_EXIT, exit_detail=Worker exits because the actor is killed. The actor is dead because all references to the actor were removed., has creation_task_exception_pb_bytes=0
+[2025-02-16 14:45:41,829 W 3069 3105] raylet_client.cc:187: IOError: Broken pipe [RayletClient] Failed to disconnect from raylet. This means the raylet the worker is connected is probably already dead.

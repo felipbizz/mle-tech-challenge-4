@@ -28,6 +28,19 @@ def log_system_info():
     mlflow.log_param("cpu_count", psutil.cpu_count())
     mlflow.log_param("memory", psutil.virtual_memory().total / (1024 ** 3))
 
+def sanitizeParameter(best_hp: dict) -> dict:
+    best_hp.pop('loss')
+    best_hp.pop('valid_loss')
+    logger.debug('Removendo parâmetros de perda, estes serão adicionados diretamente ao treinamento.')
+
+    result_dict : dict  = best_hp.copy()
+
+    for key in best_hp.keys():
+        if best_hp[key] is None:
+            logger.info(f'Removendo chave {key} que possui valor nulo.')
+            result_dict.pop(key)
+    
+    return result_dict
 
 def tuna_modelo_autolstm():
 
@@ -105,4 +118,7 @@ def tuna_modelo_autolstm():
         plt.savefig(plot_path)
         mlflow.log_artifact(plot_path)
         logger.info(f'Plot salvo em : {plot_path}')
+    
+    best_hp = sanitizeParameter(dict(best_hp))
+    
     return best_hp

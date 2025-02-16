@@ -1,134 +1,278 @@
-2025-02-05 00:33:50,785 - download_files - INFO - ---------------------------------------------------------------------------------------------------
-2025-02-05 00:33:50,786 - download_files - INFO - Iniciando a coleta de dados para os símbolos: ['VALE3.SA', 'PETR4.SA', 'ITUB4.SA', 'ABEV3.SA', 'BBDC4.SA', 'SANB11.SA', 'BBAS3.SA', 'JBSS3.SA', 'KLBN11.SA', 'BPAC11.SA', 'BBDC3.SA', 'ITSA4.SA', 'WEGE3.SA']
-2025-02-05 00:33:50,800 - download_files - INFO - Processando VALE3.SA
-2025-02-05 00:33:52,474 - download_files - INFO - Dados de VALE3.SA carregados com sucessso.
-2025-02-05 00:33:52,475 - download_files - INFO - Ajustando dados para gravação no DeltaLake
-2025-02-05 00:33:52,477 - download_files - INFO - Tamanho dos dados organizados de VALE3.SA: 6301
-2025-02-05 00:33:52,597 - download_files - INFO - Dados para VALE3.SA gravados com sucesso no DeltaLake
-2025-02-05 00:33:52,597 - download_files - INFO - Processando PETR4.SA
-2025-02-05 00:33:53,352 - download_files - INFO - Dados de PETR4.SA carregados com sucessso.
-2025-02-05 00:33:53,352 - download_files - INFO - Ajustando dados para gravação no DeltaLake
-2025-02-05 00:33:53,353 - download_files - INFO - Tamanho dos dados organizados de PETR4.SA: 6301
-2025-02-05 00:33:53,370 - download_files - INFO - Dados para PETR4.SA gravados com sucesso no DeltaLake
-2025-02-05 00:33:53,370 - download_files - INFO - Processando ITUB4.SA
-2025-02-05 00:33:54,281 - download_files - INFO - Dados de ITUB4.SA carregados com sucessso.
-2025-02-05 00:33:54,281 - download_files - INFO - Ajustando dados para gravação no DeltaLake
-2025-02-05 00:33:54,283 - download_files - INFO - Tamanho dos dados organizados de ITUB4.SA: 6048
-2025-02-05 00:33:54,296 - download_files - INFO - Dados para ITUB4.SA gravados com sucesso no DeltaLake
-2025-02-05 00:33:54,296 - download_files - INFO - Processando ABEV3.SA
-2025-02-05 00:33:55,200 - download_files - INFO - Dados de ABEV3.SA carregados com sucessso.
-2025-02-05 00:33:55,200 - download_files - INFO - Ajustando dados para gravação no DeltaLake
-2025-02-05 00:33:55,202 - download_files - INFO - Tamanho dos dados organizados de ABEV3.SA: 6299
-2025-02-05 00:33:55,215 - download_files - INFO - Dados para ABEV3.SA gravados com sucesso no DeltaLake
-2025-02-05 00:33:55,215 - download_files - INFO - Processando BBDC4.SA
-2025-02-05 00:33:59,905 - download_files - INFO - Dados de BBDC4.SA carregados com sucessso.
-2025-02-05 00:33:59,905 - download_files - INFO - Ajustando dados para gravação no DeltaLake
-2025-02-05 00:33:59,906 - download_files - INFO - Tamanho dos dados organizados de BBDC4.SA: 4245
-2025-02-05 00:33:59,926 - download_files - INFO - Dados para BBDC4.SA gravados com sucesso no DeltaLake
-2025-02-05 00:33:59,926 - download_files - INFO - Processando SANB11.SA
-2025-02-05 00:34:00,710 - download_files - INFO - Dados de SANB11.SA carregados com sucessso.
-2025-02-05 00:34:00,710 - download_files - INFO - Ajustando dados para gravação no DeltaLake
-2025-02-05 00:34:00,711 - download_files - INFO - Tamanho dos dados organizados de SANB11.SA: 3805
-2025-02-05 00:34:00,726 - download_files - INFO - Dados para SANB11.SA gravados com sucesso no DeltaLake
-2025-02-05 00:34:00,726 - download_files - INFO - Processando BBAS3.SA
-2025-02-05 00:34:01,547 - download_files - INFO - Dados de BBAS3.SA carregados com sucessso.
-2025-02-05 00:34:01,547 - download_files - INFO - Ajustando dados para gravação no DeltaLake
-2025-02-05 00:34:01,548 - download_files - INFO - Tamanho dos dados organizados de BBAS3.SA: 6301
-2025-02-05 00:34:01,571 - download_files - INFO - Dados para BBAS3.SA gravados com sucesso no DeltaLake
-2025-02-05 00:34:01,571 - download_files - INFO - Processando JBSS3.SA
-2025-02-05 00:34:02,033 - download_files - INFO - Dados de JBSS3.SA carregados com sucessso.
-2025-02-05 00:34:02,033 - download_files - INFO - Ajustando dados para gravação no DeltaLake
-2025-02-05 00:34:02,035 - download_files - INFO - Tamanho dos dados organizados de JBSS3.SA: 4431
-2025-02-05 00:34:02,049 - download_files - INFO - Dados para JBSS3.SA gravados com sucesso no DeltaLake
-2025-02-05 00:34:02,049 - download_files - INFO - Processando KLBN11.SA
-2025-02-05 00:34:02,529 - download_files - INFO - Dados de KLBN11.SA carregados com sucessso.
-2025-02-05 00:34:02,529 - download_files - INFO - Ajustando dados para gravação no DeltaLake
-2025-02-05 00:34:02,530 - download_files - INFO - Tamanho dos dados organizados de KLBN11.SA: 2744
-2025-02-05 00:34:02,547 - download_files - INFO - Dados para KLBN11.SA gravados com sucesso no DeltaLake
-2025-02-05 00:34:02,548 - download_files - INFO - Processando BPAC11.SA
-2025-02-05 00:34:02,960 - download_files - INFO - Dados de BPAC11.SA carregados com sucessso.
-2025-02-05 00:34:02,960 - download_files - INFO - Ajustando dados para gravação no DeltaLake
-2025-02-05 00:34:02,962 - download_files - INFO - Tamanho dos dados organizados de BPAC11.SA: 1978
-2025-02-05 00:34:02,977 - download_files - INFO - Dados para BPAC11.SA gravados com sucesso no DeltaLake
-2025-02-05 00:34:02,978 - download_files - INFO - Processando BBDC3.SA
-2025-02-05 00:34:03,600 - download_files - INFO - Dados de BBDC3.SA carregados com sucessso.
-2025-02-05 00:34:03,600 - download_files - INFO - Ajustando dados para gravação no DeltaLake
-2025-02-05 00:34:03,601 - download_files - INFO - Tamanho dos dados organizados de BBDC3.SA: 6301
-2025-02-05 00:34:03,624 - download_files - INFO - Dados para BBDC3.SA gravados com sucesso no DeltaLake
-2025-02-05 00:34:03,625 - download_files - INFO - Processando ITSA4.SA
-2025-02-05 00:34:04,180 - download_files - INFO - Dados de ITSA4.SA carregados com sucessso.
-2025-02-05 00:34:04,180 - download_files - INFO - Ajustando dados para gravação no DeltaLake
-2025-02-05 00:34:04,181 - download_files - INFO - Tamanho dos dados organizados de ITSA4.SA: 6301
-2025-02-05 00:34:04,193 - download_files - INFO - Dados para ITSA4.SA gravados com sucesso no DeltaLake
-2025-02-05 00:34:04,193 - download_files - INFO - Processando WEGE3.SA
-2025-02-05 00:34:04,701 - download_files - INFO - Dados de WEGE3.SA carregados com sucessso.
-2025-02-05 00:34:04,701 - download_files - INFO - Ajustando dados para gravação no DeltaLake
-2025-02-05 00:34:04,702 - download_files - INFO - Tamanho dos dados organizados de WEGE3.SA: 6301
-2025-02-05 00:34:04,787 - download_files - INFO - Dados para WEGE3.SA gravados com sucesso no DeltaLake
-2025-02-05 00:37:45,762 - download_files - INFO - ---------------------------------------------------------------------------------------------------
-2025-02-05 00:37:45,763 - download_files - INFO - Iniciando a coleta de dados para os símbolos: ['VALE3.SA', 'PETR4.SA', 'ITUB4.SA', 'ABEV3.SA', 'BBDC4.SA', 'SANB11.SA', 'BBAS3.SA', 'JBSS3.SA', 'KLBN11.SA', 'BPAC11.SA', 'BBDC3.SA', 'ITSA4.SA', 'WEGE3.SA']
-2025-02-05 00:37:45,764 - download_files - INFO - Processando VALE3.SA
-2025-02-05 00:37:46,497 - download_files - INFO - Dados de VALE3.SA carregados com sucessso.
-2025-02-05 00:37:46,497 - download_files - INFO - Ajustando dados para gravação no DeltaLake
-2025-02-05 00:37:46,498 - download_files - INFO - Tamanho dos dados organizados de VALE3.SA: 6301
-2025-02-05 00:37:46,508 - download_files - INFO - Dados para VALE3.SA gravados com sucesso no DeltaLake
-2025-02-05 00:37:46,508 - download_files - INFO - Processando PETR4.SA
-2025-02-05 00:37:47,229 - download_files - INFO - Dados de PETR4.SA carregados com sucessso.
-2025-02-05 00:37:47,229 - download_files - INFO - Ajustando dados para gravação no DeltaLake
-2025-02-05 00:37:47,230 - download_files - INFO - Tamanho dos dados organizados de PETR4.SA: 6301
-2025-02-05 00:37:47,239 - download_files - INFO - Dados para PETR4.SA gravados com sucesso no DeltaLake
-2025-02-05 00:37:47,239 - download_files - INFO - Processando ITUB4.SA
-2025-02-05 00:37:49,901 - download_files - INFO - Dados de ITUB4.SA carregados com sucessso.
-2025-02-05 00:37:49,901 - download_files - INFO - Ajustando dados para gravação no DeltaLake
-2025-02-05 00:37:49,902 - download_files - INFO - Tamanho dos dados organizados de ITUB4.SA: 6048
-2025-02-05 00:37:49,912 - download_files - INFO - Dados para ITUB4.SA gravados com sucesso no DeltaLake
-2025-02-05 00:37:49,913 - download_files - INFO - Processando ABEV3.SA
-2025-02-05 00:37:50,608 - download_files - INFO - Dados de ABEV3.SA carregados com sucessso.
-2025-02-05 00:37:50,608 - download_files - INFO - Ajustando dados para gravação no DeltaLake
-2025-02-05 00:37:50,609 - download_files - INFO - Tamanho dos dados organizados de ABEV3.SA: 6299
-2025-02-05 00:37:50,617 - download_files - INFO - Dados para ABEV3.SA gravados com sucesso no DeltaLake
-2025-02-05 00:37:50,617 - download_files - INFO - Processando BBDC4.SA
-2025-02-05 00:37:54,536 - download_files - INFO - Dados de BBDC4.SA carregados com sucessso.
-2025-02-05 00:37:54,536 - download_files - INFO - Ajustando dados para gravação no DeltaLake
-2025-02-05 00:37:54,537 - download_files - INFO - Tamanho dos dados organizados de BBDC4.SA: 4245
-2025-02-05 00:37:54,546 - download_files - INFO - Dados para BBDC4.SA gravados com sucesso no DeltaLake
-2025-02-05 00:37:54,546 - download_files - INFO - Processando SANB11.SA
-2025-02-05 00:37:55,223 - download_files - INFO - Dados de SANB11.SA carregados com sucessso.
-2025-02-05 00:37:55,223 - download_files - INFO - Ajustando dados para gravação no DeltaLake
-2025-02-05 00:37:55,224 - download_files - INFO - Tamanho dos dados organizados de SANB11.SA: 3805
-2025-02-05 00:37:55,234 - download_files - INFO - Dados para SANB11.SA gravados com sucesso no DeltaLake
-2025-02-05 00:37:55,234 - download_files - INFO - Processando BBAS3.SA
-2025-02-05 00:37:55,674 - download_files - INFO - Dados de BBAS3.SA carregados com sucessso.
-2025-02-05 00:37:55,674 - download_files - INFO - Ajustando dados para gravação no DeltaLake
-2025-02-05 00:37:55,675 - download_files - INFO - Tamanho dos dados organizados de BBAS3.SA: 6301
-2025-02-05 00:37:55,686 - download_files - INFO - Dados para BBAS3.SA gravados com sucesso no DeltaLake
-2025-02-05 00:37:55,686 - download_files - INFO - Processando JBSS3.SA
-2025-02-05 00:37:56,230 - download_files - INFO - Dados de JBSS3.SA carregados com sucessso.
-2025-02-05 00:37:56,230 - download_files - INFO - Ajustando dados para gravação no DeltaLake
-2025-02-05 00:37:56,231 - download_files - INFO - Tamanho dos dados organizados de JBSS3.SA: 4431
-2025-02-05 00:37:56,240 - download_files - INFO - Dados para JBSS3.SA gravados com sucesso no DeltaLake
-2025-02-05 00:37:56,240 - download_files - INFO - Processando KLBN11.SA
-2025-02-05 00:37:56,490 - download_files - INFO - Dados de KLBN11.SA carregados com sucessso.
-2025-02-05 00:37:56,491 - download_files - INFO - Ajustando dados para gravação no DeltaLake
-2025-02-05 00:37:56,492 - download_files - INFO - Tamanho dos dados organizados de KLBN11.SA: 2744
-2025-02-05 00:37:56,500 - download_files - INFO - Dados para KLBN11.SA gravados com sucesso no DeltaLake
-2025-02-05 00:37:56,501 - download_files - INFO - Processando BPAC11.SA
-2025-02-05 00:37:57,024 - download_files - INFO - Dados de BPAC11.SA carregados com sucessso.
-2025-02-05 00:37:57,024 - download_files - INFO - Ajustando dados para gravação no DeltaLake
-2025-02-05 00:37:57,025 - download_files - INFO - Tamanho dos dados organizados de BPAC11.SA: 1978
-2025-02-05 00:37:57,044 - download_files - INFO - Dados para BPAC11.SA gravados com sucesso no DeltaLake
-2025-02-05 00:37:57,045 - download_files - INFO - Processando BBDC3.SA
-2025-02-05 00:37:57,756 - download_files - INFO - Dados de BBDC3.SA carregados com sucessso.
-2025-02-05 00:37:57,756 - download_files - INFO - Ajustando dados para gravação no DeltaLake
-2025-02-05 00:37:57,756 - download_files - INFO - Tamanho dos dados organizados de BBDC3.SA: 6301
-2025-02-05 00:37:57,776 - download_files - INFO - Dados para BBDC3.SA gravados com sucesso no DeltaLake
-2025-02-05 00:37:57,776 - download_files - INFO - Processando ITSA4.SA
-2025-02-05 00:37:58,119 - download_files - INFO - Dados de ITSA4.SA carregados com sucessso.
-2025-02-05 00:37:58,119 - download_files - INFO - Ajustando dados para gravação no DeltaLake
-2025-02-05 00:37:58,120 - download_files - INFO - Tamanho dos dados organizados de ITSA4.SA: 6301
-2025-02-05 00:37:58,130 - download_files - INFO - Dados para ITSA4.SA gravados com sucesso no DeltaLake
-2025-02-05 00:37:58,131 - download_files - INFO - Processando WEGE3.SA
-2025-02-05 00:37:58,446 - download_files - INFO - Dados de WEGE3.SA carregados com sucessso.
-2025-02-05 00:37:58,446 - download_files - INFO - Ajustando dados para gravação no DeltaLake
-2025-02-05 00:37:58,447 - download_files - INFO - Tamanho dos dados organizados de WEGE3.SA: 6301
-2025-02-05 00:37:58,456 - download_files - INFO - Dados para WEGE3.SA gravados com sucesso no DeltaLake
+2025-02-15 19:49:47,216 - download_files - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-15 19:49:47,217 - download_files - INFO - Iniciando a coleta de dados para os símbolos: ['VALE3.SA', 'PETR4.SA', 'ITUB4.SA', 'ABEV3.SA', 'BBDC4.SA', 'SANB11.SA', 'BBAS3.SA', 'JBSS3.SA', 'KLBN11.SA', 'BPAC11.SA', 'BBDC3.SA', 'ITSA4.SA', 'WEGE3.SA']
+2025-02-15 19:49:47,218 - download_files - INFO - Processando VALE3.SA
+2025-02-15 19:49:48,794 - download_files - INFO - Dados de VALE3.SA carregados com sucessso.
+2025-02-15 19:49:48,795 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-15 19:49:48,795 - download_files - INFO - Tamanho dos dados organizados de VALE3.SA: 6309
+2025-02-15 19:49:48,861 - download_files - INFO - Dados para VALE3.SA gravados com sucesso no DeltaLake
+2025-02-15 19:49:48,861 - download_files - INFO - Processando PETR4.SA
+2025-02-15 19:49:49,799 - download_files - INFO - Dados de PETR4.SA carregados com sucessso.
+2025-02-15 19:49:49,799 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-15 19:49:49,800 - download_files - INFO - Tamanho dos dados organizados de PETR4.SA: 6309
+2025-02-15 19:49:49,815 - download_files - INFO - Dados para PETR4.SA gravados com sucesso no DeltaLake
+2025-02-15 19:49:49,815 - download_files - INFO - Processando ITUB4.SA
+2025-02-15 19:49:50,463 - download_files - INFO - Dados de ITUB4.SA carregados com sucessso.
+2025-02-15 19:49:50,463 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-15 19:49:50,464 - download_files - INFO - Tamanho dos dados organizados de ITUB4.SA: 6056
+2025-02-15 19:49:50,476 - download_files - INFO - Dados para ITUB4.SA gravados com sucesso no DeltaLake
+2025-02-15 19:49:50,476 - download_files - INFO - Processando ABEV3.SA
+2025-02-15 19:49:51,000 - download_files - INFO - Dados de ABEV3.SA carregados com sucessso.
+2025-02-15 19:49:51,000 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-15 19:49:51,002 - download_files - INFO - Tamanho dos dados organizados de ABEV3.SA: 6307
+2025-02-15 19:49:51,022 - download_files - INFO - Dados para ABEV3.SA gravados com sucesso no DeltaLake
+2025-02-15 19:49:51,022 - download_files - INFO - Processando BBDC4.SA
+2025-02-15 19:49:54,064 - download_files - INFO - Dados de BBDC4.SA carregados com sucessso.
+2025-02-15 19:49:54,064 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-15 19:49:54,065 - download_files - INFO - Tamanho dos dados organizados de BBDC4.SA: 0
+2025-02-15 20:06:34,328 - download_files - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-15 20:06:34,328 - download_files - INFO - Iniciando a coleta de dados para os símbolos: ['VALE3.SA', 'PETR4.SA', 'ITUB4.SA', 'ABEV3.SA', 'BBDC4.SA', 'SANB11.SA', 'BBAS3.SA', 'JBSS3.SA', 'KLBN11.SA', 'BPAC11.SA', 'BBDC3.SA', 'ITSA4.SA', 'WEGE3.SA']
+2025-02-15 20:06:34,329 - download_files - INFO - Processando VALE3.SA
+2025-02-15 20:06:35,106 - download_files - INFO - Dados de VALE3.SA carregados com sucessso.
+2025-02-15 20:06:35,106 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-15 20:06:35,107 - download_files - INFO - Tamanho dos dados organizados de VALE3.SA: 6309
+2025-02-15 20:06:35,122 - download_files - INFO - Dados para VALE3.SA gravados com sucesso no DeltaLake
+2025-02-15 20:06:35,123 - download_files - INFO - Processando PETR4.SA
+2025-02-15 20:06:35,729 - download_files - INFO - Dados de PETR4.SA carregados com sucessso.
+2025-02-15 20:06:35,729 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-15 20:06:35,730 - download_files - INFO - Tamanho dos dados organizados de PETR4.SA: 6309
+2025-02-15 20:06:35,740 - download_files - INFO - Dados para PETR4.SA gravados com sucesso no DeltaLake
+2025-02-15 20:06:35,741 - download_files - INFO - Processando ITUB4.SA
+2025-02-15 20:06:36,206 - download_files - INFO - Dados de ITUB4.SA carregados com sucessso.
+2025-02-15 20:06:36,206 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-15 20:06:36,207 - download_files - INFO - Tamanho dos dados organizados de ITUB4.SA: 6056
+2025-02-15 20:06:36,220 - download_files - INFO - Dados para ITUB4.SA gravados com sucesso no DeltaLake
+2025-02-15 20:06:36,221 - download_files - INFO - Processando ABEV3.SA
+2025-02-15 20:06:36,558 - download_files - INFO - Dados de ABEV3.SA carregados com sucessso.
+2025-02-15 20:06:36,558 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-15 20:06:36,559 - download_files - INFO - Tamanho dos dados organizados de ABEV3.SA: 6307
+2025-02-15 20:06:36,570 - download_files - INFO - Dados para ABEV3.SA gravados com sucesso no DeltaLake
+2025-02-15 20:06:36,570 - download_files - INFO - Processando BBDC4.SA
+2025-02-15 20:06:36,583 - download_files - INFO - Dados de BBDC4.SA carregados com sucessso.
+2025-02-15 20:06:36,583 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-15 20:06:36,585 - download_files - INFO - Tamanho dos dados organizados de BBDC4.SA: 0
+2025-02-15 20:08:30,314 - download_files - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-15 20:08:30,314 - download_files - INFO - Iniciando a coleta de dados para os símbolos: ['VALE3.SA', 'PETR4.SA', 'ITUB4.SA', 'ABEV3.SA', 'BBDC4.SA', 'SANB11.SA', 'BBAS3.SA', 'JBSS3.SA', 'KLBN11.SA', 'BPAC11.SA', 'BBDC3.SA', 'ITSA4.SA', 'WEGE3.SA']
+2025-02-15 20:08:30,314 - download_files - INFO - Processando VALE3.SA
+2025-02-15 20:08:31,064 - download_files - INFO - Dados de VALE3.SA carregados com sucessso.
+2025-02-15 20:08:31,064 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-15 20:08:31,065 - download_files - INFO - Tamanho dos dados organizados de VALE3.SA: 6309
+2025-02-15 20:08:31,081 - download_files - INFO - Dados para VALE3.SA gravados com sucesso no DeltaLake
+2025-02-15 20:08:31,082 - download_files - INFO - Processando PETR4.SA
+2025-02-15 20:08:31,514 - download_files - INFO - Dados de PETR4.SA carregados com sucessso.
+2025-02-15 20:08:31,514 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-15 20:08:31,515 - download_files - INFO - Tamanho dos dados organizados de PETR4.SA: 6309
+2025-02-15 20:08:31,526 - download_files - INFO - Dados para PETR4.SA gravados com sucesso no DeltaLake
+2025-02-15 20:08:31,527 - download_files - INFO - Processando ITUB4.SA
+2025-02-15 20:08:31,848 - download_files - INFO - Dados de ITUB4.SA carregados com sucessso.
+2025-02-15 20:08:31,848 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-15 20:08:31,849 - download_files - INFO - Tamanho dos dados organizados de ITUB4.SA: 6056
+2025-02-15 20:08:31,860 - download_files - INFO - Dados para ITUB4.SA gravados com sucesso no DeltaLake
+2025-02-15 20:08:31,860 - download_files - INFO - Processando ABEV3.SA
+2025-02-15 20:08:32,209 - download_files - INFO - Dados de ABEV3.SA carregados com sucessso.
+2025-02-15 20:08:32,209 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-15 20:08:32,210 - download_files - INFO - Tamanho dos dados organizados de ABEV3.SA: 6307
+2025-02-15 20:08:32,231 - download_files - INFO - Dados para ABEV3.SA gravados com sucesso no DeltaLake
+2025-02-15 20:08:32,231 - download_files - INFO - Processando BBDC4.SA
+2025-02-15 20:08:32,244 - download_files - INFO - Dados de BBDC4.SA carregados com sucessso.
+2025-02-15 20:08:32,244 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-15 20:08:32,246 - download_files - INFO - Tamanho dos dados organizados de BBDC4.SA: 0
+2025-02-15 20:20:05,401 - download_files - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-15 20:20:05,402 - download_files - INFO - Iniciando a coleta de dados para os símbolos: ['VALE3.SA', 'PETR4.SA', 'ITUB4.SA', 'ABEV3.SA', 'BBDC4.SA', 'SANB11.SA', 'BBAS3.SA', 'JBSS3.SA', 'KLBN11.SA', 'BPAC11.SA', 'BBDC3.SA', 'ITSA4.SA', 'WEGE3.SA']
+2025-02-15 20:20:05,403 - download_files - INFO - Processando VALE3.SA
+2025-02-15 20:20:06,947 - download_files - INFO - Dados de VALE3.SA carregados com sucessso.
+2025-02-15 20:20:06,947 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-15 20:20:06,948 - download_files - INFO - Tamanho dos dados organizados de VALE3.SA: 6309
+2025-02-15 20:20:07,067 - download_files - INFO - Dados para VALE3.SA gravados com sucesso no DeltaLake
+2025-02-15 20:20:07,067 - download_files - INFO - Processando PETR4.SA
+2025-02-15 20:20:08,026 - download_files - INFO - Dados de PETR4.SA carregados com sucessso.
+2025-02-15 20:20:08,026 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-15 20:20:08,028 - download_files - INFO - Tamanho dos dados organizados de PETR4.SA: 6309
+2025-02-15 20:20:08,046 - download_files - INFO - Dados para PETR4.SA gravados com sucesso no DeltaLake
+2025-02-15 20:20:08,047 - download_files - INFO - Processando ITUB4.SA
+2025-02-15 20:20:08,724 - download_files - INFO - Dados de ITUB4.SA carregados com sucessso.
+2025-02-15 20:20:08,724 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-15 20:20:08,725 - download_files - INFO - Tamanho dos dados organizados de ITUB4.SA: 6056
+2025-02-15 20:20:08,737 - download_files - INFO - Dados para ITUB4.SA gravados com sucesso no DeltaLake
+2025-02-15 20:20:08,738 - download_files - INFO - Processando ABEV3.SA
+2025-02-15 20:20:09,256 - download_files - INFO - Dados de ABEV3.SA carregados com sucessso.
+2025-02-15 20:20:09,256 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-15 20:20:09,257 - download_files - INFO - Tamanho dos dados organizados de ABEV3.SA: 6307
+2025-02-15 20:20:09,278 - download_files - INFO - Dados para ABEV3.SA gravados com sucesso no DeltaLake
+2025-02-15 20:20:09,278 - download_files - INFO - Processando BBDC4.SA
+2025-02-15 20:20:12,242 - download_files - INFO - Dados de BBDC4.SA carregados com sucessso.
+2025-02-15 20:20:12,242 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-15 20:20:12,244 - download_files - INFO - Tamanho dos dados organizados de BBDC4.SA: 0
+2025-02-15 20:20:12,244 - download_files - WARNING - Não foram capturados dados para BBDC4.SA
+2025-02-15 20:20:12,244 - download_files - INFO - Processando SANB11.SA
+2025-02-15 20:20:13,145 - download_files - INFO - Dados de SANB11.SA carregados com sucessso.
+2025-02-15 20:20:13,145 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-15 20:20:13,146 - download_files - INFO - Tamanho dos dados organizados de SANB11.SA: 3813
+2025-02-15 20:20:13,156 - download_files - INFO - Dados para SANB11.SA gravados com sucesso no DeltaLake
+2025-02-15 20:20:13,156 - download_files - INFO - Processando BBAS3.SA
+2025-02-15 20:20:13,809 - download_files - INFO - Dados de BBAS3.SA carregados com sucessso.
+2025-02-15 20:20:13,809 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-15 20:20:13,810 - download_files - INFO - Tamanho dos dados organizados de BBAS3.SA: 6309
+2025-02-15 20:20:13,832 - download_files - INFO - Dados para BBAS3.SA gravados com sucesso no DeltaLake
+2025-02-15 20:20:13,832 - download_files - INFO - Processando JBSS3.SA
+2025-02-15 20:20:14,610 - download_files - INFO - Dados de JBSS3.SA carregados com sucessso.
+2025-02-15 20:20:14,610 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-15 20:20:14,611 - download_files - INFO - Tamanho dos dados organizados de JBSS3.SA: 4439
+2025-02-15 20:20:14,621 - download_files - INFO - Dados para JBSS3.SA gravados com sucesso no DeltaLake
+2025-02-15 20:20:14,622 - download_files - INFO - Processando KLBN11.SA
+2025-02-15 20:20:15,234 - download_files - INFO - Dados de KLBN11.SA carregados com sucessso.
+2025-02-15 20:20:15,235 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-15 20:20:15,236 - download_files - INFO - Tamanho dos dados organizados de KLBN11.SA: 2752
+2025-02-15 20:20:15,245 - download_files - INFO - Dados para KLBN11.SA gravados com sucesso no DeltaLake
+2025-02-15 20:20:15,246 - download_files - INFO - Processando BPAC11.SA
+2025-02-15 20:20:15,690 - download_files - INFO - Dados de BPAC11.SA carregados com sucessso.
+2025-02-15 20:20:15,690 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-15 20:20:15,691 - download_files - INFO - Tamanho dos dados organizados de BPAC11.SA: 1986
+2025-02-15 20:20:15,700 - download_files - INFO - Dados para BPAC11.SA gravados com sucesso no DeltaLake
+2025-02-15 20:20:15,700 - download_files - INFO - Processando BBDC3.SA
+2025-02-15 20:20:16,649 - download_files - INFO - Dados de BBDC3.SA carregados com sucessso.
+2025-02-15 20:20:16,649 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-15 20:20:16,650 - download_files - INFO - Tamanho dos dados organizados de BBDC3.SA: 6309
+2025-02-15 20:20:16,662 - download_files - INFO - Dados para BBDC3.SA gravados com sucesso no DeltaLake
+2025-02-15 20:20:16,662 - download_files - INFO - Processando ITSA4.SA
+2025-02-15 20:20:18,031 - download_files - INFO - Dados de ITSA4.SA carregados com sucessso.
+2025-02-15 20:20:18,032 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-15 20:20:18,033 - download_files - INFO - Tamanho dos dados organizados de ITSA4.SA: 6309
+2025-02-15 20:20:18,045 - download_files - INFO - Dados para ITSA4.SA gravados com sucesso no DeltaLake
+2025-02-15 20:20:18,046 - download_files - INFO - Processando WEGE3.SA
+2025-02-15 20:20:19,117 - download_files - INFO - Dados de WEGE3.SA carregados com sucessso.
+2025-02-15 20:20:19,117 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-15 20:20:19,119 - download_files - INFO - Tamanho dos dados organizados de WEGE3.SA: 6309
+2025-02-15 20:20:19,130 - download_files - INFO - Dados para WEGE3.SA gravados com sucesso no DeltaLake
+2025-02-15 20:35:55,297 - download_files - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-15 20:35:55,297 - download_files - INFO - Iniciando a coleta de dados para os símbolos: ['VALE3.SA', 'PETR4.SA', 'ITUB4.SA', 'ABEV3.SA', 'BBDC4.SA', 'SANB11.SA', 'BBAS3.SA', 'JBSS3.SA', 'KLBN11.SA', 'BPAC11.SA', 'BBDC3.SA', 'ITSA4.SA', 'WEGE3.SA']
+2025-02-15 20:35:55,298 - download_files - INFO - Processando VALE3.SA
+2025-02-15 20:35:56,733 - download_files - INFO - Dados de VALE3.SA carregados com sucessso.
+2025-02-15 20:35:56,733 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-15 20:35:56,734 - download_files - INFO - Tamanho dos dados organizados de VALE3.SA: 6309
+2025-02-15 20:35:56,865 - download_files - INFO - Dados para VALE3.SA gravados com sucesso no DeltaLake
+2025-02-15 20:35:56,865 - download_files - INFO - Processando PETR4.SA
+2025-02-15 20:35:57,507 - download_files - INFO - Dados de PETR4.SA carregados com sucessso.
+2025-02-15 20:35:57,507 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-15 20:35:57,508 - download_files - INFO - Tamanho dos dados organizados de PETR4.SA: 6309
+2025-02-15 20:35:57,522 - download_files - INFO - Dados para PETR4.SA gravados com sucesso no DeltaLake
+2025-02-15 20:35:57,522 - download_files - INFO - Processando ITUB4.SA
+2025-02-15 20:35:58,588 - download_files - INFO - Dados de ITUB4.SA carregados com sucessso.
+2025-02-15 20:35:58,588 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-15 20:35:58,589 - download_files - INFO - Tamanho dos dados organizados de ITUB4.SA: 6056
+2025-02-15 20:35:58,601 - download_files - INFO - Dados para ITUB4.SA gravados com sucesso no DeltaLake
+2025-02-15 20:35:58,602 - download_files - INFO - Processando ABEV3.SA
+2025-02-15 20:35:59,821 - download_files - INFO - Dados de ABEV3.SA carregados com sucessso.
+2025-02-15 20:35:59,821 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-15 20:35:59,822 - download_files - INFO - Tamanho dos dados organizados de ABEV3.SA: 6307
+2025-02-15 20:35:59,834 - download_files - INFO - Dados para ABEV3.SA gravados com sucesso no DeltaLake
+2025-02-15 20:35:59,835 - download_files - INFO - Processando BBDC4.SA
+2025-02-15 20:36:02,458 - download_files - INFO - Dados de BBDC4.SA carregados com sucessso.
+2025-02-15 20:36:02,458 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-15 20:36:02,459 - download_files - INFO - Tamanho dos dados organizados de BBDC4.SA: 0
+2025-02-15 20:36:02,460 - download_files - WARNING - Não foram capturados dados para BBDC4.SA
+2025-02-15 20:36:02,460 - download_files - INFO - Processando SANB11.SA
+2025-02-15 20:36:03,373 - download_files - INFO - Dados de SANB11.SA carregados com sucessso.
+2025-02-15 20:36:03,373 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-15 20:36:03,374 - download_files - INFO - Tamanho dos dados organizados de SANB11.SA: 3813
+2025-02-15 20:36:03,385 - download_files - INFO - Dados para SANB11.SA gravados com sucesso no DeltaLake
+2025-02-15 20:36:03,385 - download_files - INFO - Processando BBAS3.SA
+2025-02-15 20:36:04,181 - download_files - INFO - Dados de BBAS3.SA carregados com sucessso.
+2025-02-15 20:36:04,181 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-15 20:36:04,182 - download_files - INFO - Tamanho dos dados organizados de BBAS3.SA: 6309
+2025-02-15 20:36:04,194 - download_files - INFO - Dados para BBAS3.SA gravados com sucesso no DeltaLake
+2025-02-15 20:36:04,194 - download_files - INFO - Processando JBSS3.SA
+2025-02-15 20:36:04,692 - download_files - INFO - Dados de JBSS3.SA carregados com sucessso.
+2025-02-15 20:36:04,692 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-15 20:36:04,693 - download_files - INFO - Tamanho dos dados organizados de JBSS3.SA: 4439
+2025-02-15 20:36:04,703 - download_files - INFO - Dados para JBSS3.SA gravados com sucesso no DeltaLake
+2025-02-15 20:36:04,703 - download_files - INFO - Processando KLBN11.SA
+2025-02-15 20:36:05,186 - download_files - INFO - Dados de KLBN11.SA carregados com sucessso.
+2025-02-15 20:36:05,186 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-15 20:36:05,187 - download_files - INFO - Tamanho dos dados organizados de KLBN11.SA: 2752
+2025-02-15 20:36:05,198 - download_files - INFO - Dados para KLBN11.SA gravados com sucesso no DeltaLake
+2025-02-15 20:36:05,198 - download_files - INFO - Processando BPAC11.SA
+2025-02-15 20:36:05,642 - download_files - INFO - Dados de BPAC11.SA carregados com sucessso.
+2025-02-15 20:36:05,642 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-15 20:36:05,643 - download_files - INFO - Tamanho dos dados organizados de BPAC11.SA: 1986
+2025-02-15 20:36:05,655 - download_files - INFO - Dados para BPAC11.SA gravados com sucesso no DeltaLake
+2025-02-15 20:36:05,656 - download_files - INFO - Processando BBDC3.SA
+2025-02-15 20:36:06,754 - download_files - INFO - Dados de BBDC3.SA carregados com sucessso.
+2025-02-15 20:36:06,754 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-15 20:36:06,755 - download_files - INFO - Tamanho dos dados organizados de BBDC3.SA: 6309
+2025-02-15 20:36:06,768 - download_files - INFO - Dados para BBDC3.SA gravados com sucesso no DeltaLake
+2025-02-15 20:36:06,769 - download_files - INFO - Processando ITSA4.SA
+2025-02-15 20:36:07,692 - download_files - INFO - Dados de ITSA4.SA carregados com sucessso.
+2025-02-15 20:36:07,693 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-15 20:36:07,694 - download_files - INFO - Tamanho dos dados organizados de ITSA4.SA: 6309
+2025-02-15 20:36:07,705 - download_files - INFO - Dados para ITSA4.SA gravados com sucesso no DeltaLake
+2025-02-15 20:36:07,705 - download_files - INFO - Processando WEGE3.SA
+2025-02-15 20:36:08,232 - download_files - INFO - Dados de WEGE3.SA carregados com sucessso.
+2025-02-15 20:36:08,232 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-15 20:36:08,233 - download_files - INFO - Tamanho dos dados organizados de WEGE3.SA: 6309
+2025-02-15 20:36:08,244 - download_files - INFO - Dados para WEGE3.SA gravados com sucesso no DeltaLake
+2025-02-16 16:13:09,218 - download_files - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 16:13:09,219 - download_files - INFO - Iniciando a coleta de dados para os símbolos: ['VALE3.SA', 'PETR4.SA', 'ITUB4.SA', 'ABEV3.SA', 'BBDC4.SA', 'SANB11.SA', 'BBAS3.SA', 'JBSS3.SA', 'KLBN11.SA', 'BPAC11.SA', 'BBDC3.SA', 'ITSA4.SA', 'WEGE3.SA']
+2025-02-16 16:13:09,220 - download_files - INFO - Processando VALE3.SA
+2025-02-16 16:13:10,925 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-16 16:13:10,926 - download_files - INFO - Tamanho dos dados organizados de VALE3.SA: 6309
+2025-02-16 16:13:11,060 - download_files - INFO - Dados para VALE3.SA gravados com sucesso no DeltaLake
+2025-02-16 16:13:11,061 - download_files - INFO - Dados de VALE3.SA carregados com sucessso.
+2025-02-16 16:13:11,061 - download_files - INFO - Processando PETR4.SA
+2025-02-16 16:13:11,723 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-16 16:13:11,724 - download_files - INFO - Tamanho dos dados organizados de PETR4.SA: 6309
+2025-02-16 16:13:11,736 - download_files - INFO - Dados para PETR4.SA gravados com sucesso no DeltaLake
+2025-02-16 16:13:11,737 - download_files - INFO - Dados de PETR4.SA carregados com sucessso.
+2025-02-16 16:13:11,737 - download_files - INFO - Processando ITUB4.SA
+2025-02-16 16:13:12,282 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-16 16:13:12,283 - download_files - INFO - Tamanho dos dados organizados de ITUB4.SA: 6056
+2025-02-16 16:13:12,297 - download_files - INFO - Dados para ITUB4.SA gravados com sucesso no DeltaLake
+2025-02-16 16:13:12,297 - download_files - INFO - Dados de ITUB4.SA carregados com sucessso.
+2025-02-16 16:13:12,297 - download_files - INFO - Processando ABEV3.SA
+2025-02-16 16:13:12,824 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-16 16:13:12,825 - download_files - INFO - Tamanho dos dados organizados de ABEV3.SA: 6307
+2025-02-16 16:13:12,838 - download_files - INFO - Dados para ABEV3.SA gravados com sucesso no DeltaLake
+2025-02-16 16:13:12,838 - download_files - INFO - Dados de ABEV3.SA carregados com sucessso.
+2025-02-16 16:13:12,838 - download_files - INFO - Processando BBDC4.SA
+2025-02-16 16:13:15,400 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-16 16:13:15,401 - download_files - INFO - Tamanho dos dados organizados de BBDC4.SA: 0
+2025-02-16 16:13:15,401 - download_files - WARNING - Não foram capturados dados para BBDC4.SA
+2025-02-16 16:13:15,401 - download_files - INFO - Processando SANB11.SA
+2025-02-16 16:13:16,324 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-16 16:13:16,325 - download_files - INFO - Tamanho dos dados organizados de SANB11.SA: 3813
+2025-02-16 16:13:16,338 - download_files - INFO - Dados para SANB11.SA gravados com sucesso no DeltaLake
+2025-02-16 16:13:16,339 - download_files - INFO - Dados de SANB11.SA carregados com sucessso.
+2025-02-16 16:13:16,339 - download_files - INFO - Processando BBAS3.SA
+2025-02-16 16:13:16,970 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-16 16:13:16,971 - download_files - INFO - Tamanho dos dados organizados de BBAS3.SA: 6309
+2025-02-16 16:13:16,985 - download_files - INFO - Dados para BBAS3.SA gravados com sucesso no DeltaLake
+2025-02-16 16:13:16,985 - download_files - INFO - Dados de BBAS3.SA carregados com sucessso.
+2025-02-16 16:13:16,985 - download_files - INFO - Processando JBSS3.SA
+2025-02-16 16:13:17,453 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-16 16:13:17,453 - download_files - INFO - Tamanho dos dados organizados de JBSS3.SA: 4439
+2025-02-16 16:13:17,475 - download_files - INFO - Dados para JBSS3.SA gravados com sucesso no DeltaLake
+2025-02-16 16:13:17,475 - download_files - INFO - Dados de JBSS3.SA carregados com sucessso.
+2025-02-16 16:13:17,475 - download_files - INFO - Processando KLBN11.SA
+2025-02-16 16:13:17,985 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-16 16:13:17,986 - download_files - INFO - Tamanho dos dados organizados de KLBN11.SA: 2752
+2025-02-16 16:13:17,997 - download_files - INFO - Dados para KLBN11.SA gravados com sucesso no DeltaLake
+2025-02-16 16:13:17,997 - download_files - INFO - Dados de KLBN11.SA carregados com sucessso.
+2025-02-16 16:13:17,998 - download_files - INFO - Processando BPAC11.SA
+2025-02-16 16:13:18,431 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-16 16:13:18,432 - download_files - INFO - Tamanho dos dados organizados de BPAC11.SA: 1986
+2025-02-16 16:13:18,443 - download_files - INFO - Dados para BPAC11.SA gravados com sucesso no DeltaLake
+2025-02-16 16:13:18,443 - download_files - INFO - Dados de BPAC11.SA carregados com sucessso.
+2025-02-16 16:13:18,443 - download_files - INFO - Processando BBDC3.SA
+2025-02-16 16:13:18,980 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-16 16:13:18,981 - download_files - INFO - Tamanho dos dados organizados de BBDC3.SA: 6309
+2025-02-16 16:13:18,995 - download_files - INFO - Dados para BBDC3.SA gravados com sucesso no DeltaLake
+2025-02-16 16:13:18,995 - download_files - INFO - Dados de BBDC3.SA carregados com sucessso.
+2025-02-16 16:13:18,995 - download_files - INFO - Processando ITSA4.SA
+2025-02-16 16:13:19,546 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-16 16:13:19,547 - download_files - INFO - Tamanho dos dados organizados de ITSA4.SA: 6309
+2025-02-16 16:13:19,559 - download_files - INFO - Dados para ITSA4.SA gravados com sucesso no DeltaLake
+2025-02-16 16:13:19,560 - download_files - INFO - Dados de ITSA4.SA carregados com sucessso.
+2025-02-16 16:13:19,560 - download_files - INFO - Processando WEGE3.SA
+2025-02-16 16:13:20,323 - download_files - INFO - Ajustando dados para gravação no DeltaLake
+2025-02-16 16:13:20,324 - download_files - INFO - Tamanho dos dados organizados de WEGE3.SA: 6309
+2025-02-16 16:13:20,335 - download_files - INFO - Dados para WEGE3.SA gravados com sucesso no DeltaLake
+2025-02-16 16:13:20,336 - download_files - INFO - Dados de WEGE3.SA carregados com sucessso.

@@ -1,18 +1,18 @@
 # FIAP - Tech Challenge - Machine Learning Engineering - Fase 4
 
-## Grupo _adicionar número do grupo_
+## Grupo 9
 
 <details open>
 
 <summary> Expandir/Ocultar... </summary>
 
-| **Nome**       |  **RM**  |
-| :------------- | :------: |
-| Alecrim        |          |
-| Diogo Padilha  |          |
-| Felipe Bizzo   |          |
-| Gabriel Rony   |          |
-| Thales Gomes   | _123456_ |
+| **Nome**       | **RM** |
+| :------------- | :----: |
+| Diogo Padilha  | 357526 |
+| Felipe Bizzo   | 356970 |
+| Gabriel Rony   | 357376 |
+| Lucas Alecrim  | 357415 |
+| Thales Gomes   | 357646 |
 
 </details>
 
@@ -45,31 +45,35 @@ As tarefas que devem ser executadas estão definidas em: https://github.com/feli
 
 Para limitar o escopo de treinamento do modelo restringimos as ações availiadas às seguintes empresas:
 
-```
-Atualizar a tabela abaixo com os símbolos reamente em uso:  
-['DIS', 'VALE3', 'PETR4', 'ITUB4', 'ABEV3', 'BBDC4', 'SANB11', 'BBAS3', 'JBSS3', 'KLBN11', 'BPAC11', 'BBDC3', 'ITSA4', 'WEGE3']
-```
-
-| Cód.  | Empresa   |
-| ----- | --------- |
-| AAPL  | Apple     |
-| MSFT  | Microsoft |
-| GOOGL | Google    |
-| AMZN  | Amazon    |
-| TSLA  | Tesla     |
-| DIS   | Disney    |
+|Cód.|Empresa|
+|---|---|
+|DIS|Disney|
+|VALE3.SA|Vale SA|
+|PETR4.SA|Petroleo Brasileiro SA Petrobras Preference Shares|
+|ITUB4.SA|Itau Unibanco Holding SA Preference Shares|
+|ABEV3.SA|Ambev SA|
+|BBDC4.SA|Banco Bradesco SA Preference Shares|
+|SANB11.SA|SANTANDER BR UNT|
+|BBAS3.SA|Banco do Brasil SA|
+|JBSS3.SA|JBS SA|
+|KLBN11.SA|KLABIN S/A UNT N2|
+|BPAC11.SA|BTG PACTUAL BANCO UNT|
+|BBDC3.SA|BRADESCO ON EJ N1|
+|ITSA4.SA|ITAUSA PN|
+|WEGE3.SA|Weg SA|
 
 Para o monitoramento online da API foi utilizada a integração do FastAPI com o Pydantic Logfire.  
 Vale ressaltar que para utilizar o Pydantic Logfire é necessário realizar o registro no portal (sendo possível utilizar as credenciais do GitHub como Single Sign On).  
-Uma vez registrado, siga as instruções do [link] para configurar o projeto e criar as credenciais necessárias para o envio de métricas.  
-Configure o token como uma variável de ambiente a ser utilizada pelo Docker Compose durante a criação do ambiente.  
+Uma vez registrado, siga as instruções encontradas nas referências abaixo para configurar o projeto e criar as credenciais necessárias para o envio de métricas.  
+Para a correta execução do ambiente do docker compose será necessário injetar as credenciais do Logfire na imagem da API.
+Mais informações sobre como realizar a build se encontram em seções abaixo. 
 
 > Referências (acessadas em 29/01/2025):  
 > [Criando um projeto no Pydantic Logfire](https://logfire.pydantic.dev/docs/)  
 > [Criando tokens de acesso ao projeto do Pydantic Logfire](https://logfire.pydantic.dev/docs/how-to-guides/create-write-tokens/)  
 > [Integrando o FastAPI com o Pydantic Logfire](https://logfire.pydantic.dev/docs/integrations/web-frameworks/fastapi/)  
 
-### Definição do modelo
+# Definição do modelo
 ## Buscando os melhores hiperparâmetros utilizando o AutoLSTM
 
 ## Treinando o modelo
@@ -95,9 +99,10 @@ Estes hiperparâmetros foram então usados no treinamento do modelo, utilizando 
 | :---: | :--- |
 | mle-api | API para execução das tarefas |
 | prometheus | Servidor Prometheus |
-| grafana | Servidor Grafana ||
+| grafana | Servidor Grafana |
+| mlflow | Servidor MLFlow |
 
-### Gerando as imagens
+### Gerando a imagem da API
 
 #### API
 
@@ -109,8 +114,6 @@ docker build -f Dockerfile -t mle-api --secret id=logfire,src=.logfire/logfire_c
 
 </details>
 
-## Executando o projeto
-
 <details open>
 
 <summary> Expandir/Ocultar... </summary>
@@ -118,49 +121,157 @@ docker build -f Dockerfile -t mle-api --secret id=logfire,src=.logfire/logfire_c
 Para iniciar todos os containers necessários para a execução do projeto, basta executar o comando a seguir:  
 _Lembre-se que é necessário que todas as imagens tenham sido criadas_
 
+
+> **Importante**  
+> Os modelos foram treinados em um ambiente com GPU e, portanto, podem gerar o erro abaixo caso não sejam executados em um ambiente que não a possua.
+
+![Erro por falta de GPU](readme_files/NoGPU-Error.png)
+
 ```
 docker-compose up -d
 ```
 
 </details>
 
-## Visualizando métricas
+## Acessando a API
+
+Acesse a URL : http://localhost:8000/docs para ter acesso ao SwaggerUI
+
+### Atualizando o DeltaLake com dados do Yahoo! Finance
+
+<details open>
+
+<summary> Expandir/Ocultar... </summary>  
+
+Ao executar o endpoint de download, os símbolos informados no corpo da requisição serão baixados e inseridos no DeltaLake.  
+É importante notar que caso não haja valores para um certo símbolo ele será considerado como um erro de carga.
+
+![Dados baixados](readme_files/DeltalakeDownload.png)
+
+</details>
+
+
+### Listando modelos treinados disponíveis para previsões
 
 <details open>
 
 <summary> Expandir/Ocultar... </summary>
 
-### Visualize as métricas da API online através do portal Logfire
+Utilize o endpoint 'list' para obter os modelos disponíveis.  
+Dentre os modelos, poderão ser listados tanto modelos gerados durante o ajuste de hiperparâmetros quanto modelos treinados com os parâmetros informados à API de treinamento.  
 
-Acesse a URL : https://logfire.pydantic.dev/thalexbr/fiap-mle-fase4
+![Modelos disponíveis](readme_files/AvailableModels.png)
 
-### Obtendo métricas coletadas diretamente do cliente do Prometheus
+</details>
 
-Acesse a URL : http://localhost:5000/api/v1/query
+### Ajustando o modelo em busca dos melhores hiperparâmetros
+
+<details open>
+
+<summary> Expandir/Ocultar... </summary>
+
+Este é processo que pode levar bastante tempo e, por isso, é recomendado que só seja realizado quando necessário.  
+Ao final da execução serão retornados os melhores hiperparâmetros encontrados durante a fase de ajuste.
+O ajuste abaixo foi executado em 15m23s.
+
+![Ajuste do modelo](readme_files/ModelTuning.png)
+
+</details>
+
+### Treinando o modelo
+
+<details open>
+
+<summary> Expandir/Ocultar... </summary>
+
+De posse dos hiperparâmetros encontrados na fase de ajuste, é possível executar o treinamento do modelo que será utilizado para as previsões.  
+Este endpoint retorna o nome do arquivo salvo contendo o modelo treinado no formato JOBLIB.
+
+![Treinamento do modelo](readme_files/ModelTraining.png)
+
+</details>
+
+### Realizando previsões
+
+<details open>
+
+<summary> Expandir/Ocultar... </summary>
+
+Informe a ação (símbolo) e o modelo a ser usado na previsão.
+
+> Uma lista com os modelos treinados disponíveis para previsão pode ser obtida através de um endpoint da própria API.
+
+![Endpoint de previsão](readme_files/PredictionEndpoint.png)
+
+Ao final da previsão o endpoint irá gerar uma imagem na pasta _reports_ com o resultado similar à imagem abaixo:
+
+![Resultado da previsão](readme_files/neuralforecast_lstm_VALE3.SA_20250216_1659.png)
+
+</details>
+
+# Visualizando métricas
+
+<details open>
+
+<summary> Expandir/Ocultar... </summary>
+
+## Visualize as métricas da API online através do portal Logfire
+
+O acesso ao dashboard do Logfire irá variar de acordo com o usuário e projetos utilizados na ferramenta.  
+A URL abaixo é apenas uma referência, uma vez que será solicitada a credencial de acesso para o usuário.  
+URL : https://logfire.pydantic.dev/_usuario_/_nome_do_projeto_
+
+## Obtendo métricas coletadas diretamente do cliente do Prometheus
+
+Acesse a URL : http://localhost:8000/metrics/
 
 ou, execute o comando abaixo em um terminal:
 
 ```
-curl http://localhost:5000/api/v1/query
+curl http://localhost:8000/metrics/
 ```
 
-### Acessando a interface do servidor Prometheus
+## Acessando a interface do servidor Prometheus
 
 Acesse a URL: http://localhost:9090/query
 
-### Acessando a interface do servidor Grafana
+## Acessando a interface do servidor Grafana
 
 Acesse a URL : http://localhost:3000
 
-> Para detalhes de como acessar o dashboard criado para o projeto, acesse [aqui](./readme_files/GRAFANA.md)
+> Acesse o dashboard utilizando as credenciais admin/admin.  
+> É possível que seja solicitado que esta credencial seja alterada no primeiro acesso.
 
-### Monitore a fila de requisições do RabbitMQ
+### Definição da fonte de dados
 
-Acesse a URL : http://localhost:15672/#/
+O Grafana foi configurado para receber dados coletados pelo servidor Prometheus.  
+Detalhes desta configuração estão fora do escopo deste trabalho, mas podem ser encontrados na referência abaixo.
 
-> Para detalhes de como navegar na página do RabbitMQ [clique aqui](readme_files/RABBITMQ.md)
+[Suporte do Grafana à fonte de dados do Prometheus](https://prometheus.io/docs/visualization/grafana/)
 
-</details>
+
+### Visualizando o dashboard
+
+![Dashboard Granfana](readme_files/GrafanaDashboard.png)
+![alt text](image.png)
+
+#### Verificando dados do dashboard de acordo com o que foi registrado no log
+
+Abaixo podemos fazer a correspondência entre o valor registrado no dashboard do grafana com o valor calculado e registrado nos logs para o tempo consumido em uma requisição de treinamento.
+
+![Tempo de treinamento no Grafana](readme_files/GrafanaTrainTime.png)
+
+![Tempo de treinamento registrado nos logs](readme_files/LogTrainTime.png)
+
+## Acessando os logs da aplicação
+
+Informações relevantes são registradas nos logs correspondentes de cada módulo da aplicação.
+
+![Pasta de logs](readme_files/LogDirectory.png)
+
+Abaixo é exibido um exemplo de como estão estruturados os logs gerados.
+
+![Exemplo do arquivo de logs](readme_files/LogExample.png)
 
 ## Estrutura do projeto <<< Atualizar ao Final da Implementação >>>
 

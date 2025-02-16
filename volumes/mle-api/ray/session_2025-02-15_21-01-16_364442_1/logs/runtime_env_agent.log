@@ -1,0 +1,153 @@
+2025-02-15 21:01:18,658	INFO runtime_env_agent.py:193 -- Starting runtime env agent at pid 409
+2025-02-15 21:01:18,659	INFO runtime_env_agent.py:194 -- Parent raylet pid is 343
+2025-02-15 21:01:18,665	INFO runtime_env_agent.py:250 -- Listening to address 172.19.0.2, port 53129
+2025-02-15 21:01:18,948	INFO runtime_env_agent.py:371 -- Creating runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}} with timeout 600 seconds.
+2025-02-15 21:01:18,948	INFO runtime_env_agent.py:418 -- Successfully created runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}, the context: {"command_prefix": [], "env_vars": {"PL_DISABLE_FORK": "1"}, "py_executable": "/app/.venv/bin/python", "resources_dir": null, "override_worker_entrypoint": null, "java_jars": []}
+2025-02-15 21:01:54,022	INFO runtime_env_agent.py:524 -- Got request from raylet to decrease reference for runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:01:54,022	INFO runtime_env_agent.py:129 -- Unused runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:01:54,023	INFO runtime_env_agent.py:270 -- Runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}} removed from env-level cache.
+2025-02-15 21:01:54,448	INFO runtime_env_agent.py:371 -- Creating runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}} with timeout 600 seconds.
+2025-02-15 21:01:54,448	INFO runtime_env_agent.py:418 -- Successfully created runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}, the context: {"command_prefix": [], "env_vars": {"PL_DISABLE_FORK": "1"}, "py_executable": "/app/.venv/bin/python", "resources_dir": null, "override_worker_entrypoint": null, "java_jars": []}
+2025-02-15 21:02:41,068	INFO runtime_env_agent.py:524 -- Got request from raylet to decrease reference for runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:02:41,068	INFO runtime_env_agent.py:129 -- Unused runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:02:41,068	INFO runtime_env_agent.py:270 -- Runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}} removed from env-level cache.
+2025-02-15 21:02:41,501	INFO runtime_env_agent.py:371 -- Creating runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}} with timeout 600 seconds.
+2025-02-15 21:02:41,502	INFO runtime_env_agent.py:418 -- Successfully created runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}, the context: {"command_prefix": [], "env_vars": {"PL_DISABLE_FORK": "1"}, "py_executable": "/app/.venv/bin/python", "resources_dir": null, "override_worker_entrypoint": null, "java_jars": []}
+2025-02-15 21:03:07,625	INFO runtime_env_agent.py:524 -- Got request from raylet to decrease reference for runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:03:07,625	INFO runtime_env_agent.py:129 -- Unused runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:03:07,626	INFO runtime_env_agent.py:270 -- Runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}} removed from env-level cache.
+2025-02-15 21:03:08,524	INFO runtime_env_agent.py:371 -- Creating runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}} with timeout 600 seconds.
+2025-02-15 21:03:08,524	INFO runtime_env_agent.py:418 -- Successfully created runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}, the context: {"command_prefix": [], "env_vars": {"PL_DISABLE_FORK": "1"}, "py_executable": "/app/.venv/bin/python", "resources_dir": null, "override_worker_entrypoint": null, "java_jars": []}
+2025-02-15 21:03:26,685	INFO runtime_env_agent.py:524 -- Got request from raylet to decrease reference for runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:03:26,686	INFO runtime_env_agent.py:129 -- Unused runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:03:26,686	INFO runtime_env_agent.py:270 -- Runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}} removed from env-level cache.
+2025-02-15 21:03:27,527	INFO runtime_env_agent.py:371 -- Creating runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}} with timeout 600 seconds.
+2025-02-15 21:03:27,528	INFO runtime_env_agent.py:418 -- Successfully created runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}, the context: {"command_prefix": [], "env_vars": {"PL_DISABLE_FORK": "1"}, "py_executable": "/app/.venv/bin/python", "resources_dir": null, "override_worker_entrypoint": null, "java_jars": []}
+2025-02-15 21:03:39,670	INFO runtime_env_agent.py:524 -- Got request from raylet to decrease reference for runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:03:39,670	INFO runtime_env_agent.py:129 -- Unused runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:03:39,670	INFO runtime_env_agent.py:270 -- Runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}} removed from env-level cache.
+2025-02-15 21:03:40,547	INFO runtime_env_agent.py:371 -- Creating runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}} with timeout 600 seconds.
+2025-02-15 21:03:40,548	INFO runtime_env_agent.py:418 -- Successfully created runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}, the context: {"command_prefix": [], "env_vars": {"PL_DISABLE_FORK": "1"}, "py_executable": "/app/.venv/bin/python", "resources_dir": null, "override_worker_entrypoint": null, "java_jars": []}
+2025-02-15 21:04:04,801	INFO runtime_env_agent.py:524 -- Got request from raylet to decrease reference for runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:04:04,801	INFO runtime_env_agent.py:129 -- Unused runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:04:04,801	INFO runtime_env_agent.py:270 -- Runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}} removed from env-level cache.
+2025-02-15 21:04:05,563	INFO runtime_env_agent.py:371 -- Creating runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}} with timeout 600 seconds.
+2025-02-15 21:04:05,563	INFO runtime_env_agent.py:418 -- Successfully created runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}, the context: {"command_prefix": [], "env_vars": {"PL_DISABLE_FORK": "1"}, "py_executable": "/app/.venv/bin/python", "resources_dir": null, "override_worker_entrypoint": null, "java_jars": []}
+2025-02-15 21:04:17,471	INFO runtime_env_agent.py:524 -- Got request from raylet to decrease reference for runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:04:17,471	INFO runtime_env_agent.py:129 -- Unused runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:04:17,471	INFO runtime_env_agent.py:270 -- Runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}} removed from env-level cache.
+2025-02-15 21:04:17,565	INFO runtime_env_agent.py:371 -- Creating runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}} with timeout 600 seconds.
+2025-02-15 21:04:17,565	INFO runtime_env_agent.py:418 -- Successfully created runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}, the context: {"command_prefix": [], "env_vars": {"PL_DISABLE_FORK": "1"}, "py_executable": "/app/.venv/bin/python", "resources_dir": null, "override_worker_entrypoint": null, "java_jars": []}
+2025-02-15 21:04:58,737	INFO runtime_env_agent.py:524 -- Got request from raylet to decrease reference for runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:04:58,737	INFO runtime_env_agent.py:129 -- Unused runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:04:58,738	INFO runtime_env_agent.py:270 -- Runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}} removed from env-level cache.
+2025-02-15 21:04:59,591	INFO runtime_env_agent.py:371 -- Creating runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}} with timeout 600 seconds.
+2025-02-15 21:04:59,591	INFO runtime_env_agent.py:418 -- Successfully created runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}, the context: {"command_prefix": [], "env_vars": {"PL_DISABLE_FORK": "1"}, "py_executable": "/app/.venv/bin/python", "resources_dir": null, "override_worker_entrypoint": null, "java_jars": []}
+2025-02-15 21:05:36,598	INFO runtime_env_agent.py:524 -- Got request from raylet to decrease reference for runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:05:36,599	INFO runtime_env_agent.py:129 -- Unused runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:05:36,599	INFO runtime_env_agent.py:270 -- Runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}} removed from env-level cache.
+2025-02-15 21:05:36,629	INFO runtime_env_agent.py:371 -- Creating runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}} with timeout 600 seconds.
+2025-02-15 21:05:36,629	INFO runtime_env_agent.py:418 -- Successfully created runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}, the context: {"command_prefix": [], "env_vars": {"PL_DISABLE_FORK": "1"}, "py_executable": "/app/.venv/bin/python", "resources_dir": null, "override_worker_entrypoint": null, "java_jars": []}
+2025-02-15 21:06:01,761	INFO runtime_env_agent.py:524 -- Got request from raylet to decrease reference for runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:06:01,761	INFO runtime_env_agent.py:129 -- Unused runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:06:01,761	INFO runtime_env_agent.py:270 -- Runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}} removed from env-level cache.
+2025-02-15 21:06:02,642	INFO runtime_env_agent.py:371 -- Creating runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}} with timeout 600 seconds.
+2025-02-15 21:06:02,642	INFO runtime_env_agent.py:418 -- Successfully created runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}, the context: {"command_prefix": [], "env_vars": {"PL_DISABLE_FORK": "1"}, "py_executable": "/app/.venv/bin/python", "resources_dir": null, "override_worker_entrypoint": null, "java_jars": []}
+2025-02-15 21:06:40,624	INFO runtime_env_agent.py:524 -- Got request from raylet to decrease reference for runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:06:40,625	INFO runtime_env_agent.py:129 -- Unused runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:06:40,625	INFO runtime_env_agent.py:270 -- Runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}} removed from env-level cache.
+2025-02-15 21:06:41,671	INFO runtime_env_agent.py:371 -- Creating runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}} with timeout 600 seconds.
+2025-02-15 21:06:41,671	INFO runtime_env_agent.py:418 -- Successfully created runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}, the context: {"command_prefix": [], "env_vars": {"PL_DISABLE_FORK": "1"}, "py_executable": "/app/.venv/bin/python", "resources_dir": null, "override_worker_entrypoint": null, "java_jars": []}
+2025-02-15 21:07:16,423	INFO runtime_env_agent.py:524 -- Got request from raylet to decrease reference for runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:07:16,423	INFO runtime_env_agent.py:129 -- Unused runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:07:16,423	INFO runtime_env_agent.py:270 -- Runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}} removed from env-level cache.
+2025-02-15 21:07:16,684	INFO runtime_env_agent.py:371 -- Creating runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}} with timeout 600 seconds.
+2025-02-15 21:07:16,684	INFO runtime_env_agent.py:418 -- Successfully created runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}, the context: {"command_prefix": [], "env_vars": {"PL_DISABLE_FORK": "1"}, "py_executable": "/app/.venv/bin/python", "resources_dir": null, "override_worker_entrypoint": null, "java_jars": []}
+2025-02-15 21:07:34,937	INFO runtime_env_agent.py:524 -- Got request from raylet to decrease reference for runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:07:34,938	INFO runtime_env_agent.py:129 -- Unused runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:07:34,938	INFO runtime_env_agent.py:270 -- Runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}} removed from env-level cache.
+2025-02-15 21:07:35,704	INFO runtime_env_agent.py:371 -- Creating runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}} with timeout 600 seconds.
+2025-02-15 21:07:35,704	INFO runtime_env_agent.py:418 -- Successfully created runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}, the context: {"command_prefix": [], "env_vars": {"PL_DISABLE_FORK": "1"}, "py_executable": "/app/.venv/bin/python", "resources_dir": null, "override_worker_entrypoint": null, "java_jars": []}
+2025-02-15 21:08:02,683	INFO runtime_env_agent.py:524 -- Got request from raylet to decrease reference for runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:08:02,683	INFO runtime_env_agent.py:129 -- Unused runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:08:02,683	INFO runtime_env_agent.py:270 -- Runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}} removed from env-level cache.
+2025-02-15 21:08:02,711	INFO runtime_env_agent.py:371 -- Creating runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}} with timeout 600 seconds.
+2025-02-15 21:08:02,711	INFO runtime_env_agent.py:418 -- Successfully created runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}, the context: {"command_prefix": [], "env_vars": {"PL_DISABLE_FORK": "1"}, "py_executable": "/app/.venv/bin/python", "resources_dir": null, "override_worker_entrypoint": null, "java_jars": []}
+2025-02-15 21:08:31,936	INFO runtime_env_agent.py:524 -- Got request from raylet to decrease reference for runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:08:31,936	INFO runtime_env_agent.py:129 -- Unused runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:08:31,936	INFO runtime_env_agent.py:270 -- Runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}} removed from env-level cache.
+2025-02-15 21:08:32,730	INFO runtime_env_agent.py:371 -- Creating runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}} with timeout 600 seconds.
+2025-02-15 21:08:32,730	INFO runtime_env_agent.py:418 -- Successfully created runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}, the context: {"command_prefix": [], "env_vars": {"PL_DISABLE_FORK": "1"}, "py_executable": "/app/.venv/bin/python", "resources_dir": null, "override_worker_entrypoint": null, "java_jars": []}
+2025-02-15 21:09:05,546	INFO runtime_env_agent.py:524 -- Got request from raylet to decrease reference for runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:09:05,546	INFO runtime_env_agent.py:129 -- Unused runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:09:05,546	INFO runtime_env_agent.py:270 -- Runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}} removed from env-level cache.
+2025-02-15 21:09:05,767	INFO runtime_env_agent.py:371 -- Creating runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}} with timeout 600 seconds.
+2025-02-15 21:09:05,767	INFO runtime_env_agent.py:418 -- Successfully created runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}, the context: {"command_prefix": [], "env_vars": {"PL_DISABLE_FORK": "1"}, "py_executable": "/app/.venv/bin/python", "resources_dir": null, "override_worker_entrypoint": null, "java_jars": []}
+2025-02-15 21:09:22,317	INFO runtime_env_agent.py:524 -- Got request from raylet to decrease reference for runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:09:22,318	INFO runtime_env_agent.py:129 -- Unused runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:09:22,318	INFO runtime_env_agent.py:270 -- Runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}} removed from env-level cache.
+2025-02-15 21:09:23,771	INFO runtime_env_agent.py:371 -- Creating runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}} with timeout 600 seconds.
+2025-02-15 21:09:23,772	INFO runtime_env_agent.py:418 -- Successfully created runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}, the context: {"command_prefix": [], "env_vars": {"PL_DISABLE_FORK": "1"}, "py_executable": "/app/.venv/bin/python", "resources_dir": null, "override_worker_entrypoint": null, "java_jars": []}
+2025-02-15 21:09:43,731	INFO runtime_env_agent.py:524 -- Got request from raylet to decrease reference for runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:09:43,731	INFO runtime_env_agent.py:129 -- Unused runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:09:43,731	INFO runtime_env_agent.py:270 -- Runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}} removed from env-level cache.
+2025-02-15 21:09:44,786	INFO runtime_env_agent.py:371 -- Creating runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}} with timeout 600 seconds.
+2025-02-15 21:09:44,786	INFO runtime_env_agent.py:418 -- Successfully created runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}, the context: {"command_prefix": [], "env_vars": {"PL_DISABLE_FORK": "1"}, "py_executable": "/app/.venv/bin/python", "resources_dir": null, "override_worker_entrypoint": null, "java_jars": []}
+2025-02-15 21:10:02,460	INFO runtime_env_agent.py:524 -- Got request from raylet to decrease reference for runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:10:02,460	INFO runtime_env_agent.py:129 -- Unused runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:10:02,460	INFO runtime_env_agent.py:270 -- Runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}} removed from env-level cache.
+2025-02-15 21:10:02,790	INFO runtime_env_agent.py:371 -- Creating runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}} with timeout 600 seconds.
+2025-02-15 21:10:02,790	INFO runtime_env_agent.py:418 -- Successfully created runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}, the context: {"command_prefix": [], "env_vars": {"PL_DISABLE_FORK": "1"}, "py_executable": "/app/.venv/bin/python", "resources_dir": null, "override_worker_entrypoint": null, "java_jars": []}
+2025-02-15 21:10:38,540	INFO runtime_env_agent.py:524 -- Got request from raylet to decrease reference for runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:10:38,540	INFO runtime_env_agent.py:129 -- Unused runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:10:38,540	INFO runtime_env_agent.py:270 -- Runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}} removed from env-level cache.
+2025-02-15 21:10:38,828	INFO runtime_env_agent.py:371 -- Creating runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}} with timeout 600 seconds.
+2025-02-15 21:10:38,828	INFO runtime_env_agent.py:418 -- Successfully created runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}, the context: {"command_prefix": [], "env_vars": {"PL_DISABLE_FORK": "1"}, "py_executable": "/app/.venv/bin/python", "resources_dir": null, "override_worker_entrypoint": null, "java_jars": []}
+2025-02-15 21:10:57,738	INFO runtime_env_agent.py:524 -- Got request from raylet to decrease reference for runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:10:57,738	INFO runtime_env_agent.py:129 -- Unused runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:10:57,738	INFO runtime_env_agent.py:270 -- Runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}} removed from env-level cache.
+2025-02-15 21:10:57,830	INFO runtime_env_agent.py:371 -- Creating runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}} with timeout 600 seconds.
+2025-02-15 21:10:57,830	INFO runtime_env_agent.py:418 -- Successfully created runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}, the context: {"command_prefix": [], "env_vars": {"PL_DISABLE_FORK": "1"}, "py_executable": "/app/.venv/bin/python", "resources_dir": null, "override_worker_entrypoint": null, "java_jars": []}
+2025-02-15 21:11:23,070	INFO runtime_env_agent.py:524 -- Got request from raylet to decrease reference for runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:11:23,070	INFO runtime_env_agent.py:129 -- Unused runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:11:23,070	INFO runtime_env_agent.py:270 -- Runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}} removed from env-level cache.
+2025-02-15 21:11:23,849	INFO runtime_env_agent.py:371 -- Creating runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}} with timeout 600 seconds.
+2025-02-15 21:11:23,850	INFO runtime_env_agent.py:418 -- Successfully created runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}, the context: {"command_prefix": [], "env_vars": {"PL_DISABLE_FORK": "1"}, "py_executable": "/app/.venv/bin/python", "resources_dir": null, "override_worker_entrypoint": null, "java_jars": []}
+2025-02-15 21:11:40,103	INFO runtime_env_agent.py:524 -- Got request from raylet to decrease reference for runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:11:40,103	INFO runtime_env_agent.py:129 -- Unused runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:11:40,103	INFO runtime_env_agent.py:270 -- Runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}} removed from env-level cache.
+2025-02-15 21:11:40,865	INFO runtime_env_agent.py:371 -- Creating runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}} with timeout 600 seconds.
+2025-02-15 21:11:40,865	INFO runtime_env_agent.py:418 -- Successfully created runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}, the context: {"command_prefix": [], "env_vars": {"PL_DISABLE_FORK": "1"}, "py_executable": "/app/.venv/bin/python", "resources_dir": null, "override_worker_entrypoint": null, "java_jars": []}
+2025-02-15 21:11:56,288	INFO runtime_env_agent.py:524 -- Got request from raylet to decrease reference for runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:11:56,289	INFO runtime_env_agent.py:129 -- Unused runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:11:56,289	INFO runtime_env_agent.py:270 -- Runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}} removed from env-level cache.
+2025-02-15 21:11:56,868	INFO runtime_env_agent.py:371 -- Creating runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}} with timeout 600 seconds.
+2025-02-15 21:11:56,868	INFO runtime_env_agent.py:418 -- Successfully created runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}, the context: {"command_prefix": [], "env_vars": {"PL_DISABLE_FORK": "1"}, "py_executable": "/app/.venv/bin/python", "resources_dir": null, "override_worker_entrypoint": null, "java_jars": []}
+2025-02-15 21:12:29,939	INFO runtime_env_agent.py:524 -- Got request from raylet to decrease reference for runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:12:29,940	INFO runtime_env_agent.py:129 -- Unused runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:12:29,940	INFO runtime_env_agent.py:270 -- Runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}} removed from env-level cache.
+2025-02-15 21:12:30,887	INFO runtime_env_agent.py:371 -- Creating runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}} with timeout 600 seconds.
+2025-02-15 21:12:30,887	INFO runtime_env_agent.py:418 -- Successfully created runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}, the context: {"command_prefix": [], "env_vars": {"PL_DISABLE_FORK": "1"}, "py_executable": "/app/.venv/bin/python", "resources_dir": null, "override_worker_entrypoint": null, "java_jars": []}
+2025-02-15 21:12:50,478	INFO runtime_env_agent.py:524 -- Got request from raylet to decrease reference for runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:12:50,478	INFO runtime_env_agent.py:129 -- Unused runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:12:50,478	INFO runtime_env_agent.py:270 -- Runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}} removed from env-level cache.
+2025-02-15 21:12:51,908	INFO runtime_env_agent.py:371 -- Creating runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}} with timeout 600 seconds.
+2025-02-15 21:12:51,908	INFO runtime_env_agent.py:418 -- Successfully created runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}, the context: {"command_prefix": [], "env_vars": {"PL_DISABLE_FORK": "1"}, "py_executable": "/app/.venv/bin/python", "resources_dir": null, "override_worker_entrypoint": null, "java_jars": []}
+2025-02-15 21:13:29,066	INFO runtime_env_agent.py:524 -- Got request from raylet to decrease reference for runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:13:29,066	INFO runtime_env_agent.py:129 -- Unused runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:13:29,066	INFO runtime_env_agent.py:270 -- Runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}} removed from env-level cache.
+2025-02-15 21:13:29,926	INFO runtime_env_agent.py:371 -- Creating runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}} with timeout 600 seconds.
+2025-02-15 21:13:29,927	INFO runtime_env_agent.py:418 -- Successfully created runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}, the context: {"command_prefix": [], "env_vars": {"PL_DISABLE_FORK": "1"}, "py_executable": "/app/.venv/bin/python", "resources_dir": null, "override_worker_entrypoint": null, "java_jars": []}
+2025-02-15 21:14:20,837	INFO runtime_env_agent.py:524 -- Got request from raylet to decrease reference for runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:14:20,838	INFO runtime_env_agent.py:129 -- Unused runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:14:20,838	INFO runtime_env_agent.py:270 -- Runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}} removed from env-level cache.
+2025-02-15 21:14:20,980	INFO runtime_env_agent.py:371 -- Creating runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}} with timeout 600 seconds.
+2025-02-15 21:14:20,981	INFO runtime_env_agent.py:418 -- Successfully created runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}, the context: {"command_prefix": [], "env_vars": {"PL_DISABLE_FORK": "1"}, "py_executable": "/app/.venv/bin/python", "resources_dir": null, "override_worker_entrypoint": null, "java_jars": []}
+2025-02-15 21:14:40,363	INFO runtime_env_agent.py:524 -- Got request from raylet to decrease reference for runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:14:40,363	INFO runtime_env_agent.py:129 -- Unused runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:14:40,363	INFO runtime_env_agent.py:270 -- Runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}} removed from env-level cache.
+2025-02-15 21:14:40,984	INFO runtime_env_agent.py:371 -- Creating runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}} with timeout 600 seconds.
+2025-02-15 21:14:40,984	INFO runtime_env_agent.py:418 -- Successfully created runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}, the context: {"command_prefix": [], "env_vars": {"PL_DISABLE_FORK": "1"}, "py_executable": "/app/.venv/bin/python", "resources_dir": null, "override_worker_entrypoint": null, "java_jars": []}
+2025-02-15 21:15:03,902	INFO runtime_env_agent.py:524 -- Got request from raylet to decrease reference for runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:15:03,902	INFO runtime_env_agent.py:129 -- Unused runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-02-15 21:15:03,902	INFO runtime_env_agent.py:270 -- Runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}} removed from env-level cache.

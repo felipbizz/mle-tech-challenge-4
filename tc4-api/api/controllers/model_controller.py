@@ -13,8 +13,10 @@ logger = setLog('model_controller', level=10)
 router = APIRouter(prefix='/api/v1/model', tags=['Endpoints do Modelo'])
 
 # Define Prometheus metrics
-REQUEST_TIME = Summary('request_processing_seconds', 'Time spent processing request')
-REQUEST_COUNT = Counter('request_count', 'Total number of requests')
+TUNE_REQUEST_TIME = Summary('tune_request_processing_seconds', 'Tempo gasto processando requisições de ajuste')
+TRAIN_REQUEST_TIME = Summary('train_request_processing_seconds', 'Tempo gasto processando requisições de treinamento')
+PREDICT_REQUEST_TIME = Summary('predict_request_processing_seconds', 'Tempo gasto processando requisições de previsão')
+PREDICT_COUNT = Counter('request_count', 'Número total de previsões')
 
 @router.get('/list')
 def list_models():
@@ -42,10 +44,42 @@ def list_models():
     
     return model_list
 
+@router.get('/tune')
+@TUNE_REQUEST_TIME.time()
+def tune():
+    '''    
+    Ajusta o modelo e retorna os melhores hiperparâmetros encontrados.
 
+    Parameters:
+
+        Nenhum parâmetro de entrada.
+
+    Returns:
+    
+        dict : Dicionário com os melhores hiperparâmetros encontrados pelo tuning.
+    '''
+    best_hp = tuna_modelo_autolstm()
+    
+    return best_hp
+
+@router.post('/train')
+@TRAIN_REQUEST_TIME.time()
+def train(best_config : Annotated[dict | None, Body()]) -> str:
+    '''    
+    Treina o modelo utilizando os hiperparâmetros informados.
+
+    Parameters:
+
+        dict : Dicionário contendo os hiperparâmetros a serem utilizados no treinamento.
+
+    Returns:
+    
+        str : O caminho onde foi salvo o modelo treinado.
+    '''
+    return train_model(best_config)
 
 @router.post('/predict')
-@REQUEST_TIME.time()
+@PREDICT_REQUEST_TIME.time()
 def predict(model_file: Annotated[str | None, Body()], stock_option : str = 'VALE3.SA'):
     '''    
     Lista os modelos treinados disponíveis para serem utilizados em previsões.
@@ -56,7 +90,7 @@ def predict(model_file: Annotated[str | None, Body()], stock_option : str = 'VAL
 
     Returns:
     
-        Ainda decidindo o retorno.
+        str: String contendo o caminho onde o gráfico da previsão foi salvo.
 
     Exceptions:
 
@@ -64,15 +98,5 @@ def predict(model_file: Annotated[str | None, Body()], stock_option : str = 'VAL
     '''
     logger.info('---------------------------------------------------------------------------------------------------')
     logger.info(f'Iniciando previsão utilizando o modelo {model_file}')
-    REQUEST_COUNT.inc()
+    PREDICT_COUNT.inc()
     return { 'message' : model.make_predictions(model_file, stock_option) } 
-
-@router.get('/tune')
-@REQUEST_TIME.time()
-def tune():
-    return tuna_modelo_autolstm()
-
-@router.post('/train')
-@REQUEST_TIME.time()
-def train(best_config : Annotated[dict | None, Body()]):
-    return train_model(best_config)

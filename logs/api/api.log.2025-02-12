@@ -1,0 +1,120 @@
+2025-02-11 00:03:19,321 - api - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-11 00:03:19,322 - api - INFO - Iniciando API
+2025-02-11 00:03:19,322 - api - INFO - Configurando acesso ao Pydantic Logfire.
+2025-02-11 00:03:19,377 - api - INFO - Adicionando rotas.
+2025-02-11 00:03:19,380 - api - INFO - Configurando o instrumentador de métricas do cliente do Prometheus.
+2025-02-11 00:03:19,380 - api - INFO - Definindo o endpoint de coleta de métricas a ser usado pelo servidor do Prometheus.
+2025-02-11 00:03:19,380 - api - INFO - Realizando configuração inicial da API
+2025-02-11 00:03:19,380 - api - INFO - Adicionando middleware para CORS
+2025-02-11 01:53:17,797 - api - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-11 01:53:17,798 - api - INFO - Iniciando API
+2025-02-11 01:53:17,798 - api - INFO - Configurando acesso ao Pydantic Logfire.
+2025-02-11 01:53:17,840 - api - INFO - Adicionando rotas.
+2025-02-11 01:53:17,845 - api - INFO - Configurando o instrumentador de métricas do cliente do Prometheus.
+2025-02-11 01:53:17,845 - api - INFO - Definindo o endpoint de coleta de métricas a ser usado pelo servidor do Prometheus.
+2025-02-11 01:53:17,845 - api - INFO - Realizando configuração inicial da API
+2025-02-11 01:53:17,845 - api - INFO - Adicionando middleware para CORS
+2025-02-11 01:54:16,857 - api - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-11 01:54:16,857 - api - INFO - Iniciando API
+2025-02-11 01:54:16,858 - api - INFO - Configurando acesso ao Pydantic Logfire.
+2025-02-11 01:54:16,885 - api - INFO - Adicionando rotas.
+2025-02-11 01:54:16,888 - api - INFO - Configurando o instrumentador de métricas do cliente do Prometheus.
+2025-02-11 01:54:16,889 - api - INFO - Definindo o endpoint de coleta de métricas a ser usado pelo servidor do Prometheus.
+2025-02-11 01:54:16,889 - api - INFO - Realizando configuração inicial da API
+2025-02-11 01:54:16,889 - api - INFO - Adicionando middleware para CORS
+2025-02-11 02:10:59,491 - api - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-11 02:10:59,492 - api - INFO - Iniciando API
+2025-02-11 02:10:59,492 - api - INFO - Configurando acesso ao Pydantic Logfire.
+2025-02-11 02:10:59,513 - api - INFO - Adicionando rotas.
+2025-02-11 02:10:59,516 - api - INFO - Configurando o instrumentador de métricas do cliente do Prometheus.
+2025-02-11 02:10:59,516 - api - INFO - Definindo o endpoint de coleta de métricas a ser usado pelo servidor do Prometheus.
+2025-02-11 02:10:59,516 - api - INFO - Realizando configuração inicial da API
+2025-02-11 02:10:59,516 - api - INFO - Adicionando middleware para CORS
+2025-02-11 02:12:01,477 - api - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-11 02:12:01,477 - api - INFO - Iniciando API
+2025-02-11 02:12:01,477 - api - INFO - Configurando acesso ao Pydantic Logfire.
+2025-02-11 02:12:01,500 - api - INFO - Adicionando rotas.
+2025-02-11 02:12:01,503 - api - INFO - Configurando o instrumentador de métricas do cliente do Prometheus.
+2025-02-11 02:12:01,503 - api - INFO - Definindo o endpoint de coleta de métricas a ser usado pelo servidor do Prometheus.
+2025-02-11 02:12:01,503 - api - INFO - Realizando configuração inicial da API
+2025-02-11 02:12:01,503 - api - INFO - Adicionando middleware para CORS
+2025-02-11 02:14:25,569 - api - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-11 02:14:25,569 - api - INFO - Iniciando API
+2025-02-11 02:14:25,569 - api - INFO - Configurando acesso ao Pydantic Logfire.
+2025-02-11 02:14:25,594 - api - INFO - Adicionando rotas.
+2025-02-11 02:14:25,597 - api - INFO - Configurando o instrumentador de métricas do cliente do Prometheus.
+2025-02-11 02:14:25,597 - api - INFO - Definindo o endpoint de coleta de métricas a ser usado pelo servidor do Prometheus.
+2025-02-11 02:14:25,597 - api - INFO - Realizando configuração inicial da API
+2025-02-11 02:14:25,597 - api - INFO - Adicionando middleware para CORS
+2025-02-11 02:31:47,512 - api - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-11 02:31:47,513 - api - INFO - Iniciando API
+2025-02-11 02:31:47,513 - api - INFO - Configurando acesso ao Pydantic Logfire.
+2025-02-11 02:31:47,550 - api - INFO - Adicionando rotas.
+2025-02-11 02:31:47,553 - api - INFO - Configurando o instrumentador de métricas do cliente do Prometheus.
+2025-02-11 02:31:47,553 - api - INFO - Definindo o endpoint de coleta de métricas a ser usado pelo servidor do Prometheus.
+2025-02-11 02:31:47,553 - api - INFO - Realizando configuração inicial da API
+2025-02-11 02:31:47,553 - api - INFO - Adicionando middleware para CORS
+2025-02-11 02:40:31,916 - api - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-11 02:40:31,916 - api - INFO - Iniciando API
+2025-02-11 02:40:31,917 - api - INFO - Configurando acesso ao Pydantic Logfire.
+2025-02-11 02:40:31,944 - api - INFO - Adicionando rotas.
+2025-02-11 02:40:31,947 - api - INFO - Configurando o instrumentador de métricas do cliente do Prometheus.
+2025-02-11 02:40:31,947 - api - INFO - Definindo o endpoint de coleta de métricas a ser usado pelo servidor do Prometheus.
+2025-02-11 02:40:31,947 - api - INFO - Realizando configuração inicial da API
+2025-02-11 02:40:31,947 - api - INFO - Adicionando middleware para CORS
+2025-02-11 03:44:56,528 - api - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-11 03:44:56,528 - api - INFO - Iniciando API
+2025-02-11 03:44:56,528 - api - INFO - Configurando acesso ao Pydantic Logfire.
+2025-02-11 03:44:56,567 - api - INFO - Adicionando rotas.
+2025-02-11 03:44:56,570 - api - INFO - Configurando o instrumentador de métricas do cliente do Prometheus.
+2025-02-11 03:44:56,570 - api - INFO - Definindo o endpoint de coleta de métricas a ser usado pelo servidor do Prometheus.
+2025-02-11 03:44:56,570 - api - INFO - Realizando configuração inicial da API
+2025-02-11 03:44:56,570 - api - INFO - Adicionando middleware para CORS
+2025-02-11 03:51:00,104 - api - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-11 03:51:00,105 - api - INFO - Iniciando API
+2025-02-11 03:51:00,105 - api - INFO - Configurando acesso ao Pydantic Logfire.
+2025-02-11 03:51:00,143 - api - INFO - Adicionando rotas.
+2025-02-11 03:51:00,146 - api - INFO - Configurando o instrumentador de métricas do cliente do Prometheus.
+2025-02-11 03:51:00,146 - api - INFO - Definindo o endpoint de coleta de métricas a ser usado pelo servidor do Prometheus.
+2025-02-11 03:51:00,146 - api - INFO - Realizando configuração inicial da API
+2025-02-11 03:51:00,146 - api - INFO - Adicionando middleware para CORS
+2025-02-11 10:47:32,496 - api - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-11 10:47:32,497 - api - INFO - Iniciando API
+2025-02-11 10:47:32,497 - api - INFO - Configurando acesso ao Pydantic Logfire.
+2025-02-11 10:47:32,536 - api - INFO - Adicionando rotas.
+2025-02-11 10:47:32,538 - api - INFO - Configurando o instrumentador de métricas do cliente do Prometheus.
+2025-02-11 10:47:32,538 - api - INFO - Definindo o endpoint de coleta de métricas a ser usado pelo servidor do Prometheus.
+2025-02-11 10:47:32,539 - api - INFO - Realizando configuração inicial da API
+2025-02-11 10:47:32,539 - api - INFO - Adicionando middleware para CORS
+2025-02-11 22:27:17,927 - api - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-11 22:27:17,928 - api - INFO - Iniciando API
+2025-02-11 22:27:17,928 - api - INFO - Configurando acesso ao Pydantic Logfire.
+2025-02-11 22:27:17,962 - api - INFO - Adicionando rotas.
+2025-02-11 22:27:17,965 - api - INFO - Configurando o instrumentador de métricas do cliente do Prometheus.
+2025-02-11 22:27:17,965 - api - INFO - Definindo o endpoint de coleta de métricas a ser usado pelo servidor do Prometheus.
+2025-02-11 22:27:17,965 - api - INFO - Realizando configuração inicial da API
+2025-02-11 22:27:17,966 - api - INFO - Adicionando middleware para CORS
+2025-02-11 23:41:42,458 - api - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-11 23:41:42,459 - api - INFO - Iniciando API
+2025-02-11 23:41:42,459 - api - INFO - Configurando acesso ao Pydantic Logfire.
+2025-02-11 23:41:42,502 - api - INFO - Adicionando rotas.
+2025-02-11 23:41:42,508 - api - INFO - Configurando o instrumentador de métricas do cliente do Prometheus.
+2025-02-11 23:41:42,509 - api - INFO - Definindo o endpoint de coleta de métricas a ser usado pelo servidor do Prometheus.
+2025-02-11 23:41:42,509 - api - INFO - Realizando configuração inicial da API
+2025-02-11 23:41:42,509 - api - INFO - Adicionando middleware para CORS
+2025-02-12 01:56:07,929 - api - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-12 01:56:07,930 - api - INFO - Iniciando API
+2025-02-12 01:56:07,931 - api - INFO - Configurando acesso ao Pydantic Logfire.
+2025-02-12 01:56:07,985 - api - INFO - Adicionando rotas.
+2025-02-12 01:56:07,990 - api - INFO - Configurando o instrumentador de métricas do cliente do Prometheus.
+2025-02-12 01:56:07,990 - api - INFO - Definindo o endpoint de coleta de métricas a ser usado pelo servidor do Prometheus.
+2025-02-12 01:56:07,990 - api - INFO - Realizando configuração inicial da API
+2025-02-12 01:56:07,990 - api - INFO - Adicionando middleware para CORS
+2025-02-12 02:02:34,762 - api - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-12 02:02:34,762 - api - INFO - Iniciando API
+2025-02-12 02:02:34,762 - api - INFO - Configurando acesso ao Pydantic Logfire.
+2025-02-12 02:02:34,803 - api - INFO - Adicionando rotas.
+2025-02-12 02:02:34,808 - api - INFO - Configurando o instrumentador de métricas do cliente do Prometheus.
+2025-02-12 02:02:34,808 - api - INFO - Definindo o endpoint de coleta de métricas a ser usado pelo servidor do Prometheus.
+2025-02-12 02:02:34,809 - api - INFO - Realizando configuração inicial da API
+2025-02-12 02:02:34,809 - api - INFO - Adicionando middleware para CORS

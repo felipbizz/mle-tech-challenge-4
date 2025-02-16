@@ -1,0 +1,15 @@
+{
+  "batch_size": 16,
+  "context_size": 50,
+  "decoder_hidden_size": 256,
+  "encoder_hidden_size": 200,
+  "encoder_n_layers": 2,
+  "h": 82,
+  "inference_input_size": -82,
+  "input_size": 5248,
+  "learning_rate": 0.01815894541260323,
+  "loss": "WMAPE()",
+  "max_steps": 500,
+  "random_seed": 11,
+  "valid_loss": "WMAPE()"
+}

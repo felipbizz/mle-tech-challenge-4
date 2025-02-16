@@ -1,6 +1,5 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from api.controllers import model_controller, datalake_controller
 from src.utils import setLog
 from src.setup import detect_routers
 from prometheus_client import make_asgi_app
