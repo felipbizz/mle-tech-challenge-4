@@ -19,3 +19,6 @@ lightning_logs/*
 .secrets.toml
 
 mlruns/*
+reports/* 
+logs/* 
+volumes/* 
