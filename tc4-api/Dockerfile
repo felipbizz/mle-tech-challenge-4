@@ -33,6 +33,16 @@ RUN --mount=type=secret,id=logfire,target=/root/logfire_credentials.json \
 cp /root/logfire_credentials.json /app/.logfire/logfire_credentials.json
 
 
+RUN chmod -R 777 /app/deltalake
+
+RUN chmod -R 777 /app/logs
+
+RUN chmod -R 777 /app/ml_models
+
+RUN chmod -R 777 /app/reports
+
+RUN chmod -R 777 /tmp/ray
+
 # Inicializa a API utilizando o FastAPI.
 # Como sugestão de melhoria, pensar em implementar a customização da porta através de variável de ambiente.
 CMD ["/app/.venv/bin/fastapi", "run", "api/app.py", "--port", "8000", "--host", "0.0.0.0"]

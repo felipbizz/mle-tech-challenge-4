@@ -118,6 +118,7 @@ Caso decida por não utilizar o Logfire, execute o script shell abaixo na raiz d
 ```bash
 sh inicializarLogfireCredentials.sh
 ```
+
 ![Criando credenciais vazias](readme_files/EmptyCredentialsCreation.png)
 
 > **Importante**  

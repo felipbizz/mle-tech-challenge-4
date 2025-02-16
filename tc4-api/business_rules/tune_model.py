@@ -120,5 +120,6 @@ def tuna_modelo_autolstm():
         logger.info(f'Plot salvo em : {plot_path}')
     
     best_hp = sanitizeParameter(dict(best_hp))
+    logger.info(f'Melhores hiperparâmetros após tratamento de nulos: {best_hp}')
     
     return best_hp
