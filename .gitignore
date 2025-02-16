@@ -24,3 +24,5 @@ reports/*.png
 *.log
 
 volumes/mle-api/*
+
+logs/*
