@@ -127,7 +127,7 @@ _Lembre-se que é necessário que todas as imagens tenham sido criadas_
 
 ![Erro por falta de GPU](readme_files/NoGPU-Error.png)
 
-```
+```bash
 docker-compose up -d
 ```
 
@@ -215,11 +215,29 @@ Ao final da previsão o endpoint irá gerar uma imagem na pasta _reports_ com o 
 
 <summary> Expandir/Ocultar... </summary>
 
+## Dados do TensorBoard
+
+Durante a fase de ajuste, é possível visualizar os dados do Tensorboard que são expostos pelo container.  
+Os arquivos de log a serem utilizados para a visualização do TensorBoard se encontram em: volumes/mle-api/ray/_id-da-sessao_/artifacts/_data-da-sessao_/__train_tune_data-de-execucao_/driver_artifacts
+
+```bash
+tensorboard --logdir volumes/mle-api/ray/_id-da-sessao_/artifacts/_data-da-sessao_/__train_tune_data-de-execucao_/driver_artifacts
+```
+
+![Executando o TensorBoard](readme_files/StartingTensorBoard.png)
+
+O dashboard será carregado na URL http://localhost:6006/  
+Neste dashboard é possível ver o comparativo dos gráficos gerados por cada amostra realizada pelo AutoLSTM.
+
+![Dashboard do TensorBoard](readme_files/TensorBoardDashboard.png)
+
 ## Visualize as métricas da API online através do portal Logfire
 
 O acesso ao dashboard do Logfire irá variar de acordo com o usuário e projetos utilizados na ferramenta.  
 A URL abaixo é apenas uma referência, uma vez que será solicitada a credencial de acesso para o usuário.  
 URL : https://logfire.pydantic.dev/_usuario_/_nome_do_projeto_
+
+![Dashboard do Logfire](readme_files/LogfireDashboard.png)
 
 ## Obtendo métricas coletadas diretamente do cliente do Prometheus
 
@@ -227,7 +245,7 @@ Acesse a URL : http://localhost:8000/metrics/
 
 ou, execute o comando abaixo em um terminal:
 
-```
+```bash
 curl http://localhost:8000/metrics/
 ```
 
