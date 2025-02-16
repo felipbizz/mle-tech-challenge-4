@@ -113,6 +113,13 @@ Esta função se chama WMAPE (Weighted Mean Absolute Percentage Error) e pode se
 
 Garanta que o logfire está autenticado e que o arquivo de credencial exista no caminho <APP>/.logfire/logfire_credentials.json  
 
+Caso decida por não utilizar o Logfire, execute o script shell abaixo na raiz da API (_tc4-api_) abaixo para criar o arquivo de credenciais vazio.
+
+```bash
+sh inicializarLogfireCredentials.sh
+```
+![Criando credenciais vazias](readme_files/EmptyCredentialsCreation.png)
+
 > **Importante**  
 > O comando abaixo deve ser executado na raiz da API (_tc4-api_), e não na raiz do projeto do GitHub.
 
