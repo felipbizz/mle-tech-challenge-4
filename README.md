@@ -171,7 +171,7 @@ Dentre os modelos, poderão ser listados tanto modelos gerados durante o ajuste 
 <summary> Expandir/Ocultar... </summary>
 
 Este é processo que pode levar bastante tempo e, por isso, é recomendado que só seja realizado quando necessário.  
-Ao final da execução serão retornados os melhores hiperparâmetros encontrados durante a fase de ajuste.
+Ao final da execução serão retornados os melhores hiperparâmetros encontrados durante a fase de ajuste.  
 O ajuste abaixo foi executado em 15m23s.
 
 ![Ajuste do modelo](readme_files/ModelTuning.png)
