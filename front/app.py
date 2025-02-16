@@ -9,7 +9,7 @@ st.info("Selecione as ações e aperte o botão 'PREDICT'")
 
 st.sidebar.header("Configurações")
 
-url_list_models = "http://localhost:8000/api/v1/model/list"
+url_list_models = "http://mle-api:8000/api/v1/model/list"
 lista_de_modelos = json.loads(requests.request("GET", url_list_models).text)
 
 # Lista de tipos de energia
@@ -39,7 +39,7 @@ if st.sidebar.button("PREDICT"):
     for stock in tipos_stock:
         st.subheader(f"Previsão para {stock.capitalize()} ")
 
-        url = f"http://localhost:8000/api/v1/model/predict?stock_option={stock}"
+        url = f"http://mle-api:8000/api/v1/model/predict?stock_option={stock}"
 
         payload = json.dumps(modelo_selecionado)
         headers = {
