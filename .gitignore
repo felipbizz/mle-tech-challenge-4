@@ -19,3 +19,8 @@ lightning_logs/*
 .secrets.toml
 
 mlruns/*
+
+*.png
+*.log
+
+volumes/mle-api/*

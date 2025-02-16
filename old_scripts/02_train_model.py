@@ -20,6 +20,5 @@ train = df.loc[df["ds"] < "2024-09-01"]
 
 model = NeuralForecast(models=models, freq="D")
 
-if __name__ == "__main__":  
-    
+if __name__ == "__main__":
     model.fit(train)

@@ -110,3 +110,18 @@
 2025-02-16 16:59:54,378 - api - INFO - Definindo o endpoint de coleta de métricas a ser usado pelo servidor do Prometheus.
 2025-02-16 16:59:54,378 - api - INFO - Realizando configuração inicial da API
 2025-02-16 16:59:54,378 - api - INFO - Adicionando middleware para CORS
+2025-02-16 20:15:06,477 - api - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 20:15:06,477 - api - INFO - Iniciando API
+2025-02-16 20:15:06,478 - api - INFO - Configurando acesso ao Pydantic Logfire.
+2025-02-16 20:17:39,543 - api - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 20:17:39,543 - api - INFO - Iniciando API
+2025-02-16 20:17:39,543 - api - INFO - Configurando acesso ao Pydantic Logfire.
+2025-02-16 20:26:43,419 - api - INFO - ---------------------------------------------------------------------------------------------------
+2025-02-16 20:26:43,420 - api - INFO - Iniciando API
+2025-02-16 20:26:43,421 - api - INFO - Configurando acesso ao Pydantic Logfire.
+2025-02-16 20:26:43,430 - api - INFO - Não foi possível acessar as credenciais do logfire... 
+2025-02-16 20:26:43,430 - api - INFO - Adicionando rotas.
+2025-02-16 20:27:00,066 - api - INFO - Configurando o instrumentador de métricas do cliente do Prometheus.
+2025-02-16 20:27:00,067 - api - INFO - Definindo o endpoint de coleta de métricas a ser usado pelo servidor do Prometheus.
+2025-02-16 20:27:00,068 - api - INFO - Realizando configuração inicial da API
+2025-02-16 20:27:00,069 - api - INFO - Adicionando middleware para CORS
