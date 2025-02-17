@@ -25,4 +25,4 @@ mlruns/*
 uv.lock
 .env
 
-.data/
+./data/
