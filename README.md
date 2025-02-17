@@ -47,7 +47,6 @@ Para limitar o escopo de treinamento do modelo restringimos as ações avaliadas
 
 |Cód.|Empresa|
 |---|---|
-|DIS|Disney|
 |VALE3.SA|Vale SA|
 |PETR4.SA|Petroleo Brasileiro SA Petrobras Preference Shares|
 |ITUB4.SA|Itau Unibanco Holding SA Preference Shares|
