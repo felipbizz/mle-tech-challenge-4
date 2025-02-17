@@ -210,4 +210,6 @@ Em resumo, essa arquitetura combina a capacidade de capturar relações temporai
 
 ## Monitoramento da API
 
+[FastAPI Observability](https://grafana.com/grafana/dashboards/16110-fastapi-observability/)
+
 ### Grafana + Prometheus
