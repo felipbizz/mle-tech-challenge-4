@@ -102,6 +102,7 @@ Esta função se chama WMAPE (Weighted Mean Absolute Percentage Error) e pode se
 | prometheus | Servidor Prometheus |
 | grafana | Servidor Grafana |
 | mlflow | Servidor MLFlow |
+| front | Frontend Streamlit |
 
 </details>
 
@@ -137,6 +138,14 @@ Para iniciar todos os containers necessários para a execução do projeto, bast
 
 ```bash
 docker-compose up -d
+```
+
+O Docker Compose fará a build da imagem do frontend na primeira execução.
+
+Caso seja feita alguma alteração ao código, será necessário forçar o rebuild da imagem.
+
+```bash
+docker-compose build --no-cache
 ```
 
 </details>
@@ -303,3 +312,15 @@ Informações relevantes são registradas nos logs correspondentes de cada módu
 Abaixo é exibido um exemplo de como estão estruturados os logs gerados.
 
 ![Exemplo do arquivo de logs](readme_files/LogExample.png)
+
+# Testando o ambiente produtivo através do frontend
+
+Acesse a URL: http://localhost:8501
+
+Selecione o modelo (pré-treinado) da caixa de seleção.
+
+Escolha quais ações devem executar a previsão e clique em **PREDICT**
+
+Serão exibidos os gráficos com as previsões correspondentes a cada ação selecionada.
+
+![Resultado do FrontEnd](readme_files/FrontEndResult.png)
