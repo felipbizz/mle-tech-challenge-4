@@ -1,14 +1,34 @@
-model:
-  num_stocks: 9
-  num_lstm_layers: 32
-  lstm_out_size: 64
-  output_sequence_length: 7
+models:
+  LSTMModel_v2:
+    num_stocks: 13
+    num_lstm_layers: 32
+    lstm_out_size: 64
+    output_sequence_length: 7
+  LSTMModel_v3:
+    num_stocks: 13
+    num_lstm_layers: 32
+    lstm_out_size: 64
+    output_sequence_length: 7
+  StockPredictionModel:
+    num_stocks: 13
+    hidden_size: 256
+    num_layers: 4
+    sequence_target_len: 5
+    dropout: 0.05
+    teacher_forcing_ratio: 0.5
 training:
-  num_epochs: 50
+  num_epochs: 100
   learning_rate: 0.001
 dataset:
-  input_len: 14
-  target_len: 7
+  input_len: 30
+  target_len: 5
+  num_stocks: 13
 dataloader:
-  batch_size: 32
+  batch_size: 128
   shuffle: yes
+api:
+  model:
+    model_name: ProductionModel
+  run:
+    model_name: StockPredictionModel
+    run_id: 340685054f93461b81505f50a444bd50

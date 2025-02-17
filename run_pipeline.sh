@@ -1,27 +1,27 @@
 #!/bin/bash
 
-# Exit immediately if a command exits with a non-zero status
+# Sai imediatamente se um comando retornar um status diferente de zero
 set -e
 
-# Step 1: Sync files with 'uv' command
-echo "Syncing files with group 'neuralnetwork'..."
+# Passo 1: Sincronizar arquivos com o comando 'uv'
+echo "Sincronizando arquivos com o grupo 'neuralnetwork'..."
 uv sync --group=neuralnetwork
 
-# Step 2: Activate virtual environment
-echo "Activating virtual environment..."
+# Passo 2: Ativar o ambiente virtual
+echo "Ativando o ambiente virtual..."
 source .venv/bin/activate
 
-# Step 3: Run script to download files
-echo "Running 00_download_files.py..."
+# Passo 3: Executar o script para baixar arquivos
+echo "Executando 00_download_files.py..."
 python scripts/00_download_files.py
 
-# Step 4: Run script for data preparation
-echo "Running 01_data_preparation.py..."
+# Passo 4: Executar o script de preparação dos dados
+echo "Executando 01_data_preparation.py..."
 python scripts/01_data_preparation.py
 
-# Step 5: Run script for data preparation
-echo "Running 02_model_creation.py..."
+# Passo 5: Executar o script de criação do modelo
+echo "Executando 02_model_creation.py..."
 python scripts/02_model_creation.py
- 
 
-echo "Pipeline completed successfully!"
+echo "Pipeline concluído com sucesso!"
+
