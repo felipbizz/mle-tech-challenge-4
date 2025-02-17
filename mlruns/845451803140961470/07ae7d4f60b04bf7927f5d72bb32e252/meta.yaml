@@ -1,0 +1,15 @@
+artifact_uri: file:///app/mlruns/845451803140961470/07ae7d4f60b04bf7927f5d72bb32e252/artifacts
+end_time: 1739798878346
+entry_point_name: ''
+experiment_id: '845451803140961470'
+lifecycle_stage: active
+run_id: 07ae7d4f60b04bf7927f5d72bb32e252
+run_name: test_StockPredictionModel_optimizer_Adam_lossfn_StockPredictionLoss_1
+run_uuid: 07ae7d4f60b04bf7927f5d72bb32e252
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739798878307
+status: 3
+tags: []
+user_id: alecrim

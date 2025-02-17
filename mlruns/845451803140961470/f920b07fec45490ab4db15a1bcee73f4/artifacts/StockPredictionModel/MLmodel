@@ -1,0 +1,33 @@
+artifact_path: StockPredictionModel
+flavors:
+  python_function:
+    config:
+      device: null
+    data: data
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.pytorch
+    pickle_module_name: mlflow.pytorch.pickle_module
+    python_version: 3.11.11
+  pytorch:
+    code: null
+    model_data: data
+    pytorch_version: 2.6.0+cu124
+is_signature_from_type_hint: false
+mlflow_version: 2.20.2
+model_size_bytes: 32274142
+model_uuid: 704bec0b2c1d46e09cc6cae4531d8b8b
+run_id: f920b07fec45490ab4db15a1bcee73f4
+saved_input_example_info:
+  artifact_path: input_example.json
+  serving_input_path: serving_input_example.json
+  type: ndarray
+signature:
+  inputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float32", "shape": [-1, 30,
+    13]}}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float32", "shape": [-1,
+    5, 13]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-02-17 13:27:54.535450'

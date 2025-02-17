@@ -1,8 +1,42 @@
 # prometheus.yml
-global:
-  scrape_interval: 15s
+# global:
+#   scrape_interval: 15s
+#
+# scrape_configs:
+#   - job_name: 'ml_monitoring'
+#     static_configs:
+#       - targets: ['api:8080']
 
+# Global configuration settings for Prometheus
+global:
+  # Set the interval at which Prometheus scrapes targets (15 seconds)
+  scrape_interval: 15s
+  # Set the timeout for individual scrape requests (10 seconds)
+  scrape_timeout: 10s
+  # Set the interval at which rules are evaluated (15 seconds)
+  evaluation_interval: 15s
+
+# Alerting configuration for Prometheus
+alerting:
+  alertmanagers:
+    # Configure Alertmanager with HTTP settings
+  - follow_redirects: true
+    enable_http2: true
+    scheme: http
+    timeout: 10s
+    api_version: v2
+    # Configure static targets for Alertmanager
+    static_configs:
+    - targets: []
+
+# Scrape configurations for Prometheus, defining jobs and their settings
 scrape_configs:
-  - job_name: 'ml_monitoring'
+  # Job configuration for 'fastapi'
+  - job_name: 'fastapi'
+    # Set the interval at which Prometheus scrapes targets for this job (10 seconds)
+    scrape_interval: 10s
+    # Set the metrics path for this job
+    metrics_path: /metrics
+    # Define static targets for this job
     static_configs:
       - targets: ['api:8080']

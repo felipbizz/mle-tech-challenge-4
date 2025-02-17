@@ -46,6 +46,14 @@ api = [
     "mlflow>=2.19.0",
     "torch>=2.6.0",
     "prometheus-client>=0.21.1",
+    "prometheus-fastapi-instrumentator>=7.0.2",
+    "python-logging-loki>=0.3.1",
+    "httpx>=0.28.1",
+    "uvicorn>=0.34.0",
+    "opentelemetry-distro>=0.51b0",
+    "opentelemetry-instrumentation-fastapi>=0.51b0",
+    "opentelemetry-instrumentation-logging>=0.51b0",
+    "opentelemetry-exporter-otlp>=1.30.0",
 ]
 
 [tool.uv.sources]

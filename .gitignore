@@ -21,7 +21,7 @@ lightning_logs/*
 #mage
 mage-ai/*
 *.db
-mlruns/*
+# mlruns/*
 uv.lock
 .env
 

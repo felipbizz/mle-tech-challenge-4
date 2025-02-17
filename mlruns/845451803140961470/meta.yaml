@@ -1,0 +1,6 @@
+artifact_location: file:///app/mlruns/845451803140961470
+creation_time: 1739798834963
+experiment_id: '845451803140961470'
+last_update_time: 1739798834963
+lifecycle_stage: active
+name: Model StockPredictionModel - Experiment 1

@@ -2,25 +2,28 @@
 # BIBLIOTECAS E MÓDULOS
 # =============================================================================
 
+import logging
+import os
 from pathlib import Path
 from typing import List
 
-import psutil
 import torch
 import uvicorn
 import yaml
-from common.utils import (
-    get_path_project,
-    load_model_and_scaler_by_run,
-    load_model_and_scaler,
-)
+from common.metrics_utils import PrometheusMiddleware, metrics, setting_otlp
+from common.utils import get_path_project, load_model_and_scaler
 from fastapi import FastAPI
-from prometheus_client import Gauge, make_asgi_app
 from src import schemas
+from src.routers import metrics as metrics_router
 
 # =============================================================================
-# CONSTANTES
+# VARIÁVEIS DE AMBIENTE
 # =============================================================================
+
+APP_NAME = os.environ.get("APP_NAME", "app")
+EXPOSE_PORT = os.environ.get("EXPOSE_PORT", 8000)
+OTLP_GRPC_ENDPOINT = os.environ.get("OTLP_GRPC_ENDPOINT", "http://tempo:4317")
+
 
 # Garantindo os paths corretos
 DIR_PROJECT = get_path_project(project_name="app")
@@ -35,23 +38,18 @@ with open(file=CONFIG_PATH, mode="r", encoding="utf-8") as yaml_file:
 config_api = config["api"]
 
 # =============================================================================
-# Modelo - Rede Neural
+# REDE NEURAL
 # =============================================================================
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
-# =============================================================================
-# Modelo - Rede Neural
-# =============================================================================
-
-# modelo, scaler = load_model_and_scaler_by_run(**config_api["run"])
 modelo, scaler = load_model_and_scaler(version=None, **config_api["model"])
 
 modelo = modelo.to(device=device)
 modelo.eval()
 
 # =============================================================================
-# API
+# FUNÇÕES HELPER
 # =============================================================================
 
 
@@ -78,41 +76,32 @@ def predict_request(request: schemas.TimeSeries) -> List[List[float]]:
 
 
 # =============================================================================
-# API
+# APP
 # =============================================================================
 
-
-# -----------------------------------------------------------------------------
-# Prometheus
-# -----------------------------------------------------------------------------
-
-# Define Prometheus metrics
-cpu_usage_gauge = Gauge("cpu_usage", "CPU usage percentage")
-gpu_usage_gauge = Gauge("gpu_usage", "GPU memory usage percentage")
-predicted_value_gauge = Gauge("predicted_value", "Predicted value from model")
-
-
-# Function to update system metrics
-def update_metrics():
-    cpu_usage_gauge.set(psutil.cpu_percent())
-
-    if torch.cuda.is_available():
-        gpu_memory_allocated = torch.cuda.memory_allocated(0)
-        gpu_memory_total = torch.cuda.get_device_properties(0).total_memory
-        gpu_usage_gauge.set((gpu_memory_allocated / gpu_memory_total) * 100)
-    else:
-        gpu_usage_gauge.set(0)
-
-
-# -----------------------------------------------------------------------------
-# App
-# -----------------------------------------------------------------------------
-
 app = FastAPI()
+app.include_router(router=metrics_router.router)
 
-# -----------------------------------------------------------------------------
-# Endpoints
-# -----------------------------------------------------------------------------
+# Setting metrics middleware
+app.add_middleware(PrometheusMiddleware, app_name=APP_NAME)
+app.add_route("/metrics", metrics)
+
+# Setting OpenTelemetry exporter
+setting_otlp(app, APP_NAME, OTLP_GRPC_ENDPOINT)
+
+
+# Filter out /endpoint
+class EndpointFilter(logging.Filter):
+    # Uvicorn endpoint access log filter
+    def filter(self, record: logging.LogRecord) -> bool:
+        return record.getMessage().find("GET /metrics") == -1
+
+
+logging.getLogger("uvicorn.access").addFilter(EndpointFilter())
+
+# =============================================================================
+# ENDPOINTS
+# =============================================================================
 
 
 @app.get("/", response_model=schemas.Message)
@@ -128,14 +117,22 @@ async def predict(historico_uma_semana: schemas.TimeSeries) -> schemas.Predictio
     )
 
 
-metrics_app = make_asgi_app()
-app.mount("/metrics", metrics_app)
+# =============================================================================
+# MAIN
+# =============================================================================
 
 
 def main() -> None:
-    uvicorn.run(app=app, host="0.0.0.0", port=8000)
+
+    # update uvicorn access logger format
+    log_config = uvicorn.config.LOGGING_CONFIG
+    log_config["formatters"]["access"][
+        "fmt"
+    ] = "%(asctime)s %(levelname)s [%(name)s] [%(filename)s:%(lineno)d] [trace_id=%(otelTraceID)s span_id=%(otelSpanID)s resource.service.name=%(otelServiceName)s] - %(message)s"
+    uvicorn.run(app, host="0.0.0.0", port=EXPOSE_PORT, log_config=log_config)
+
     return None
 
 
-# if __name__ == "__main__":
-#     main()
+if __name__ == "__main__":
+    main()

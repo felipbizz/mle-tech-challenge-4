@@ -1,3 +1,14 @@
+x-logging: &default-logging
+  driver: loki
+  options:
+    loki-url: 'http://localhost:3100/api/prom/push'
+    loki-pipeline-stages: |
+      - multiline:
+          firstline: '^\d{4}-\d{2}-\d{2} \d{1,2}:\d{2}:\d{2}'
+          max_wait_time: 3s
+      - regex:
+          expression: '^(?P<time>\d{4}-\d{2}-\d{2} \d{1,2}:\d{2}:\d{2},\d{3}) (?P<message>(?s:.*))$$'
+
 services:
 
   mlflow:
@@ -11,40 +22,100 @@ services:
       - ./mlflow.db:/mlflow/mlflow.db
     command: mlflow server --host 0.0.0.0 --port 5000 --default-artifact-root /mlruns
 
-  api:
+  # api:
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile.api
+  #   environment:
+  #     - MLFLOW_TRACKING_URI=http://mlflow:5000
+  #     - MLFLOW_MODEL_URI=models:/ProductionModel/latest
+  #     - LOKI_ENDPOINT=http://loki:3100/loki/api/v1/push
+  #   volumes:
+  #     - ./mlruns:/app/mlruns
+  #   ports:
+  #     - "8080:8080" # FastAPI
+  #     - "8000:8000" # Prometheus
+  #   depends_on:
+  #     - mlflow
+  #     - prometheus
+  #     - grafana
+
+  loki:
+    image: grafana/loki:3.0.0
+    command: -config.file=/etc/loki/local-config.yaml
+    ports:
+      - "3100:3100"
+
+  app-a:
     build:
       context: .
       dockerfile: Dockerfile.api
-    environment:
-      - MLFLOW_TRACKING_URI=http://mlflow:5000
-      - MLFLOW_MODEL_URI=models:/ProductionModel/latest
-    volumes:
-      - ./mlruns:/app/mlruns
     ports:
-      - "8080:8080" # FastAPI
-      - "8000:8000" # Prometheus
+      - "8000:8000"
     depends_on:
-      - mlflow
-      - prometheus
-      - grafana
+      - loki
+    environment:
+      APP_NAME: "app-a"
+    logging: *default-logging
+
+  app-b:
+    # build: ./fastapi_app/
+    image: ghcr.io/blueswen/fastapi-observability/app:latest
+    ports:
+      - "8001:8000"
+    depends_on:
+      - loki
+    environment:
+      APP_NAME: "app-b"
+    logging: *default-logging
+
+  app-c:
+    # build: ./fastapi_app/
+    image: ghcr.io/blueswen/fastapi-observability/app:latest
+    ports:
+      - "8002:8000"
+    depends_on:
+      - loki
+    environment:
+      APP_NAME: "app-c"
+    logging: *default-logging
 
   prometheus:
-    image: prom/prometheus
+    image: prom/prometheus:v2.51.2
     ports:
       - "9090:9090"
     volumes:
-      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./etc/prometheus:/workspace
+    command:
+      - --config.file=/workspace/prometheus.yml
+      - --enable-feature=exemplar-storage
+    depends_on:
+      - loki
+    logging: *default-logging
+
+  tempo:
+    image: grafana/tempo:2.4.1
+    command: [ "--target=all", "--storage.trace.backend=local", "--storage.trace.local.path=/var/tempo", "--auth.enabled=false" ]
+    ports:
+      - "4317:4317"
+      - "4318:4318"
+    depends_on:
+      - loki
+    logging: *default-logging
 
   grafana:
-    image: grafana/grafana
+    image: grafana/grafana:10.4.2
     ports:
       - "3000:3000"
-    environment:
-      - GF_SECURITY_ADMIN_PASSWORD=admin
     volumes:
-      - grafana-storage:/var/lib/grafana
+      - ./etc/grafana/:/etc/grafana/provisioning/datasources
+      - ./etc/dashboards.yaml:/etc/grafana/provisioning/dashboards/dashboards.yaml
+      - ./etc/dashboards:/etc/grafana/dashboards
+    depends_on:
+      - loki
+      - prometheus
+    logging: *default-logging
 
 volumes:
   api_data:
     driver: local
-  grafana-storage:

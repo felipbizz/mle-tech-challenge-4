@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1739798878291
+current_stage: None
+description: null
+last_updated_timestamp: 1739798878291
+name: StockPredictionModel
+run_id: f920b07fec45490ab4db15a1bcee73f4
+run_link: null
+source: file:///app/mlruns/845451803140961470/f920b07fec45490ab4db15a1bcee73f4/artifacts/StockPredictionModel
+status: READY
+status_message: null
+storage_location: file:///app/mlruns/845451803140961470/f920b07fec45490ab4db15a1bcee73f4/artifacts/StockPredictionModel
+user_id: null
+version: 1
