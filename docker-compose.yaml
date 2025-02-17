@@ -1,0 +1,87 @@
+services:
+  mle-api:
+    image: mle-api
+    stdin_open: true # Representa o comando docker run -i
+    tty: true        # Representa o comando docker run -t
+    container_name: mle-api
+    ports:
+      - "8000:8000"
+    healthcheck:
+      test: "cat /proc/net/tcp 2>&1 | grep '00000000:1F40' || exit 1"
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    volumes:
+      - ./deltalake:/app/deltalake
+      - ./logs:/app/logs
+      - ./ml_models:/app/ml_models
+      - ./reports:/app/reports
+      - ./volumes/mle-api/ray:/tmp/ray
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+  prometheus:
+    image: prom/prometheus
+    container_name: prometheus
+    ports:
+      - 9090:9090
+    volumes:
+      - ./prometheus.yaml:/etc/prometheus/prometheus.yml
+  
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    volumes:
+       - ./volumes/grafana/var:/var/lib/grafana
+       - ./volumes/grafana/etc:/etc/grafana
+       - ./volumes/grafana/log:/var/log/grafana
+    ports:
+      - 3000:3000
+    depends_on:
+      - prometheus
+
+  mlflow:
+    image: ghcr.io/mlflow/mlflow:latest
+    container_name: mlflow
+    ports:
+      - "5000:5000"
+    environment:
+      - MLFLOW_TRACKING_URI=http://0.0.0.0:5000
+    volumes:
+      - ./mlruns:/mlflow/mlruns
+    command: "mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root /mlflow/mlruns --host 0.0.0.0"
+
+  front:
+    build:
+      context: ./front
+      dockerfile: Dockerfile
+    image: front:latest
+    container_name: front
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./reports:/app/reports
+    depends_on:
+      mle-api:
+        condition: service_healthy
+
+
+# Abaixo um exemplo de como carregar a GPU local no container docker
+
+  # test:
+  #   image: nvidia/cuda:12.3.1-base-ubuntu20.04
+  #   command: nvidia-smi
+  #   deploy:
+  #     resources:
+  #       reservations:
+  #         devices:
+  #           - driver: nvidia
+  #             count: 1
+  #             capabilities: [gpu]

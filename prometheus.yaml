@@ -1,0 +1,10 @@
+global:
+  scrape_interval: 5s
+
+scrape_configs:
+  - job_name: 'prometheus_client'
+    static_configs:
+      - targets: ['mle-api:8000']
+  # - job_name: 'prometheus'
+  #   static_configs:
+  #     - targets: ['host.docker.internal:9090']
