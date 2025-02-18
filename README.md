@@ -34,12 +34,9 @@ O projeto está organizado da seguinte forma:
 Para executar o projeto, siga as seguintes etapas:
 
 1. Clone este repositório: `git clone https://github.com/felipbizz/mle-tech-challenge-4.git`
-2. Navegue até o diretório do projeto: `cd tc4-api` 
-3. Execute o script de inicialização: `sh inicializarLogfireCredentials.sh`
-4. Construa a imagem da API: `docker build -f Dockerfile -t mle-api --secret id=logfire,src=.logfire/logfire_credentials.json .`
-5. Volte ao diretório anterior: `cd ..`
-6. Torne o comando executável: `chmod +x run_project.sh`
-7. Inicie os containers: `sh run_project.sh`
+2. Rode o script: `sh run_project.sh`
+
+Com isso serão criados as dependências e inicializado os containers da aplicação
 
 ## Como Usar o Projeto
 
@@ -48,11 +45,11 @@ Para utilizar o projeto, siga estas etapas:
 1. Acesse a API através do Swagger UI em: http://localhost:8000/docs
 
 2. Execute as seguintes operações na API:
-    - Use o endpoint de download para atualizar dados do Yahoo Finance
-    - Liste os modelos disponíveis com o endpoint 'list'
-    - Ajuste o modelo usando o endpoint de tuning (opcional)
-    - Treine o modelo com o endpoint de treinamento
-    - Realize previsões usando o endpoint de predição
+    - 1. Use o endpoint de download para atualizar dados do Yahoo Finance
+    - 2. Liste os modelos disponíveis com o endpoint 'list'
+    - 3. Ajuste o modelo usando o endpoint de tuning (opcional)
+    - 4. Treine o modelo com o endpoint de treinamento
+    - 5. Realize previsões usando o endpoint de predição
 
 3. Visualize os resultados através de:
     - Interface web Streamlit: http://localhost:8501
