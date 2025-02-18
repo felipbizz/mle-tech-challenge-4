@@ -37,7 +37,9 @@ Para executar o projeto, siga as seguintes etapas:
 2. Navegue até o diretório do projeto: `cd tc4-api` 
 3. Execute o script de inicialização: `sh inicializarLogfireCredentials.sh`
 4. Construa a imagem da API: `docker build -f Dockerfile -t mle-api --secret id=logfire,src=.logfire/logfire_credentials.json .`
-5. Inicie os containers: `sh run_project.sh`
+5. Volte ao diretório anterior: `cd ..`
+6. Torne o comando executável: `chmod +x run_project.sh`
+7. Inicie os containers: `sh run_project.sh`
 
 ## Como Usar o Projeto
 
