@@ -16,6 +16,7 @@ dependencies = [
     "neuralforecast>=1.7.7",
     "polars>=1.21.0",
     "prometheus-client>=0.21.1",
+    "tensorboard>=2.19.0",
     "tqdm>=4.67.1",
     "yfinance>=0.2.51",
 ]

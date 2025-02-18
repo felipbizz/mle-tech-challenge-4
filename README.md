@@ -103,6 +103,11 @@ Como métrica de erro, implementamos o WMAPE (Weighted Mean Absolute Percentage 
 
 ![Função WMAPE](readme_files/WMAPE.png)
 
+> Referências:  
+> - [Documentação Torch](https://lightning.ai/docs/torchmetrics/stable/regression/weighted_mean_absolute_percentage_error.html)
+> - [Guia de ciência da computação do Baeldung](https://www.baeldung.com/cs/mape-vs-wape-vs-wmape)
+> - [Guia do IBF](https://ibf.org/knowledge/glossary/weighted-mean-absolute-percentage-error-wmape-299)
+
 ### Implantação
 
 1. Configure o Logfire:

@@ -1,14 +1,13 @@
 [project]
 name = "front"
 version = "0.1.0"
-description = "Add your description here"
+description = "environment pra desenvolvimento do front da aplicação"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "matplotlib>=3.10.0",
     "plotly>=6.0.0",
     "streamlit>=1.42.0",
-
 ]
 
 [tool.setuptools]
