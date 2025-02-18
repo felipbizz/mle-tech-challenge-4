@@ -1,10 +1,10 @@
 # FIAP - Tech Challenge - Machine Learning Engineering - Fase 4
 
+## Modelo Preditivo de Redes Neurais LSTM para Previsão de Valores de Fechamento da Bolsa de Valores
+
+Este projeto tem como objetivo desenvolver um modelo preditivo utilizando redes neurais Long Short Term Memory (LSTM) para prever o valor de fechamento da bolsa de valores de uma empresa específica. O projeto abrange todas as etapas do desenvolvimento, desde a criação do modelo preditivo até a sua implantação.
+
 ## Grupo 9
-
-<details open>
-
-<summary> Expandir/Ocultar... </summary>
 
 | **Nome**       | **RM** |
 | :------------- | :----: |
@@ -14,140 +14,118 @@
 | Lucas Alecrim  | 357415 |
 | Thales Gomes   | 357646 |
 
-</details>
+## Estrutura do Projeto
 
-## Setup
+O projeto está organizado da seguinte forma:
 
-<details open>
+- config/: Contém arquivos de configuração da modelagem.
+- deltalake/: Contém os dados brutos e pré-processados da bolsa de valores.
+- front/: Contém arquivos de uso do modelo via aplicação web.
+- ml_models/: Contém os arquivos de modelo treinados e salvos.
+- notebooks/: Contém notebooks Jupyter para exploração de dados, visualização e desenvolvimento do modelo.
+- readme_files/: Contém arquivos usados de suporte no README.
+- reports/: Contém relatórios gerados e imagens das previsões do modelo.
+- scripts/: Contém os scripts Python para coleta de dados, pré-processamento, treinamento e avaliação do modelo.
+- src/: Contém arquivos de suporte a modelagem e avaliação de modelos.
+- tc4-api/: Contém arquivos de desenvolvimento da API.
+- README.md: Este arquivo, contendo informações sobre o projeto e instruções de uso.
 
-<summary> Expandir/Ocultar... </summary>
+## Como Executar o Projeto
+Para executar o projeto, siga as seguintes etapas:
 
-Esse projeto utiliza o [UV](https://docs.astral.sh/uv/) para gerenciamento do projeto.  
-Para instalar siga a documentação em: https://docs.astral.sh/uv/getting-started/  
+1. Clone este repositório: `git clone https://github.com/felipbizz/mle-tech-challenge-4.git`
+2. Navegue até o diretório do projeto: `cd tc4-api` 
+3. Execute o script de inicialização: `sh inicializarLogfireCredentials.sh`
+4. Construa a imagem da API: `docker build -f Dockerfile -t mle-api --secret id=logfire,src=.logfire/logfire_credentials.json .`
+5. Inicie os containers: `sh run_project.sh`
 
-</details>
+## Como Usar o Projeto
 
-## Roadmap
+Para utilizar o projeto, siga estas etapas:
 
-<details open>
+1. Acesse a API através do Swagger UI em: http://localhost:8000/docs
 
-<summary> Expandir/Ocultar... </summary>
+2. Execute as seguintes operações na API:
+    - Use o endpoint de download para atualizar dados do Yahoo Finance
+    - Liste os modelos disponíveis com o endpoint 'list'
+    - Ajuste o modelo usando o endpoint de tuning (opcional)
+    - Treine o modelo com o endpoint de treinamento
+    - Realize previsões usando o endpoint de predição
 
-As tarefas que devem ser executadas estão definidas em: https://github.com/felipbizz/mle-tech-challenge-4/issues/1
+3. Visualize os resultados através de:
+    - Interface web Streamlit: http://localhost:8501
+    - Dashboard Grafana: http://localhost:3000
+    - TensorBoard: http://localhost:6006
+    - Prometheus: http://localhost:9090
 
-</details>
+4. Para monitorar o treinamento:
+    - Verifique métricas via MlFlow: http://localhost:5000
 
+5. Para monitoramento:
+    - Verifique métricas em tempo real via Prometheus
+    - Acompanhe logs da aplicação na pasta de logs
+    - Monitore o desempenho através do Grafana dashboard
 ## Premissas do projeto
 
-<details open>
-
-<summary> Expandir/Ocultar... </summary>
-
-Para limitar o escopo de treinamento do modelo restringimos as ações avaliadas às seguintes empresas:
+O escopo de treinamento foi limitado às seguintes empresas listadas na B3:
 
 |Cód.|Empresa|
 |---|---|
 |VALE3.SA|Vale SA|
-|PETR4.SA|Petroleo Brasileiro SA Petrobras Preference Shares|
-|ITUB4.SA|Itau Unibanco Holding SA Preference Shares|
+|PETR4.SA|Petroleo Brasileiro SA Petrobras PN|
+|ITUB4.SA|Itau Unibanco Holding SA PN|
 |ABEV3.SA|Ambev SA|
-|BBDC4.SA|Banco Bradesco SA Preference Shares|
-|SANB11.SA|SANTANDER BR UNT|
+|BBDC4.SA|Banco Bradesco SA PN|
+|SANB11.SA|Banco Santander Brasil UNT|
 |BBAS3.SA|Banco do Brasil SA|
 |JBSS3.SA|JBS SA|
-|KLBN11.SA|KLABIN S/A UNT N2|
-|BPAC11.SA|BTG PACTUAL BANCO UNT|
-|BBDC3.SA|BRADESCO ON EJ N1|
-|ITSA4.SA|ITAUSA PN|
+|KLBN11.SA|Klabin SA UNT|
+|BPAC11.SA|BTG Pactual UNT|
+|BBDC3.SA|Banco Bradesco ON|
+|ITSA4.SA|Itausa PN|
 |WEGE3.SA|Weg SA|
 
-Para o monitoramento online da API foi empregada a integração do FastAPI com o Pydantic Logfire.  
-Vale ressaltar que para utilizar o Pydantic Logfire é necessário realizar o registro no portal (sendo possível utilizar as credenciais do GitHub como Single Sign On).  
-Uma vez registrado, siga as instruções encontradas nas referências abaixo para configurar o projeto e criar as credenciais necessárias para o envio de métricas.  
-Para a correta execução do ambiente do docker compose será necessário injetar as credenciais do Logfire na imagem da API.
-Mais informações sobre como realizar a build se encontram em seções abaixo. 
+O monitoramento online da API utiliza integração FastAPI com Pydantic Logfire. Para usar o Pydantic Logfire:
+1. Registre-se no portal (possível usar GitHub SSO)
+2. Configure o projeto seguindo a documentação oficial
+3. Crie as credenciais para métricas
+4. Injete as credenciais na imagem Docker da API
 
-> Referências (acessadas em 29/01/2025):  
-> [Criando um projeto no Pydantic Logfire](https://logfire.pydantic.dev/docs/)  
-> [Criando tokens de acesso ao projeto do Pydantic Logfire](https://logfire.pydantic.dev/docs/how-to-guides/create-write-tokens/)  
-> [Integrando o FastAPI com o Pydantic Logfire](https://logfire.pydantic.dev/docs/integrations/web-frameworks/fastapi/)  
+> Referências:  
+> - [Documentação Pydantic Logfire](https://logfire.pydantic.dev/docs/)
+> - [Tokens de acesso](https://logfire.pydantic.dev/docs/how-to-guides/create-write-tokens/)
+> - [Integração FastAPI](https://logfire.pydantic.dev/docs/integrations/web-frameworks/fastapi/)
 
-# Definição do modelo
-## Buscando os melhores hiperparâmetros utilizando o AutoLSTM
+## Definição do modelo
 
-Para a execução deste trabalho fizemos uso do modelo LSTM da biblioteca NeuralForecast desenvolvida pela NIXTLA.  
-Esta biblioteca possui uma função de autoajuste (AutoLSTM) que foi utilizada para a definição dos hiperparâmetros utilizados no treinamento do modelo produtivo.  
+O projeto utiliza o modelo LSTM da biblioteca NeuralForecast (NIXTLA) com função de autoajuste (AutoLSTM) para otimização de hiperparâmetros.
 
-> **Referência**: https://nixtlaverse.nixtla.io/neuralforecast/models.lstm.html
+Como métrica de erro, implementamos o WMAPE (Weighted Mean Absolute Percentage Error), uma variação ponderada do MAPE.
 
-Como função de erro, desenvolvemos uma variação da função MAPE que faz uso de valores ponderados no cálculo do erro.  
-Esta função se chama WMAPE (Weighted Mean Absolute Percentage Error) e pode ser encontrada como função utilitária no projeto.
+![Função WMAPE](readme_files/WMAPE.png)
 
-> **Referência**: https://lightning.ai/docs/torchmetrics/stable/regression/weighted_mean_absolute_percentage_error.html
+### Implantação
 
-![Função de erro WMAPE](readme_files/WMAPE.png)
+1. Configure o Logfire:
+    - Garanta que existe o arquivo `.logfire/logfire_credentials.json`
+    - Ou execute `sh inicializarLogfireCredentials.sh` na pasta `tc4-api` para criar credenciais vazias
 
-</details>
-
-## Imagens docker do projeto
-
-<details open>
-
-<summary> Expandir/Ocultar... </summary>
-
-| Imagem Docker | Descrição |
-| :---: | :--- |
-| mle-api | API para execução das tarefas |
-| prometheus | Servidor Prometheus |
-| grafana | Servidor Grafana |
-| mlflow | Servidor MLFlow |
-| front | Frontend Streamlit |
-
-</details>
-
-### Gerando a imagem da API
-
-<details open>
-
-<summary> Expandir/Ocultar... </summary>
-
-Garanta que o logfire está autenticado e que o arquivo de credencial exista no caminho <APP>/.logfire/logfire_credentials.json  
-
-Caso decida por não utilizar o Logfire, execute o script shell abaixo na raiz da API (_tc4-api_) abaixo para criar o arquivo de credenciais vazio.
-
-```bash
-sh inicializarLogfireCredentials.sh
-```
-
-![Criando credenciais vazias](readme_files/EmptyCredentialsCreation.png)
-
-> **Importante**  
-> O comando abaixo deve ser executado na raiz da API (_tc4-api_), e não na raiz do projeto do GitHub.
-
+2. Build da imagem API:
 ```bash
 docker build -f Dockerfile -t mle-api --secret id=logfire,src=.logfire/logfire_credentials.json .
 ```
 
-Para iniciar todos os containers necessários para a execução do projeto, basta executar o comando a seguir:  
-
-> **Importante**  
-> Os modelos foram treinados em um ambiente com GPU e, portanto, podem gerar o erro abaixo caso não sejam executados em um ambiente que não a possua.
-
-![Erro por falta de GPU](readme_files/NoGPU-Error.png)
-
+3. Inicie os containers:
 ```bash
 docker-compose up -d
 ```
 
-O Docker Compose fará a build da imagem do frontend na primeira execução.
+> **Nota**: Os modelos requerem GPU para execução adequada.
 
-Caso seja feita alguma alteração ao código, será necessário forçar o rebuild da imagem.
-
+Para reconstruir após alterações:
 ```bash
 docker-compose build --no-cache
 ```
-
-</details>
 
 ## Acessando a API
 
@@ -155,36 +133,19 @@ Acesse a URL : http://localhost:8000/docs para ter acesso ao SwaggerUI
 
 ### Atualizando o DeltaLake com dados do Yahoo! Finance
 
-<details open>
-
-<summary> Expandir/Ocultar... </summary>  
-
 Ao executar o endpoint de download, os símbolos informados no corpo da requisição serão baixados e inseridos no DeltaLake.  
 É importante notar que caso não haja valores para um certo símbolo ele será considerado como um erro de carga.
 
 ![Dados baixados](readme_files/DeltalakeDownload.png)
 
-</details>
-
-
 ### Listando modelos treinados disponíveis para previsões
-
-<details open>
-
-<summary> Expandir/Ocultar... </summary>
 
 Utilize o endpoint 'list' para obter os modelos disponíveis.  
 Dentre os modelos, poderão ser listados tanto modelos gerados durante o ajuste de hiperparâmetros quanto modelos treinados com os parâmetros informados à API de treinamento.  
 
 ![Modelos disponíveis](readme_files/AvailableModels.png)
 
-</details>
-
 ### Ajustando o modelo em busca dos melhores hiperparâmetros
-
-<details open>
-
-<summary> Expandir/Ocultar... </summary>
 
 Este é processo que pode levar bastante tempo e, por isso, é recomendado que só seja realizado quando necessário.  
 Ao final da execução serão retornados os melhores hiperparâmetros encontrados durante a fase de ajuste.  
@@ -192,26 +153,14 @@ O ajuste abaixo foi executado em 15m23s.
 
 ![Ajuste do modelo](readme_files/ModelTuning.png)
 
-</details>
-
 ### Treinando o modelo
-
-<details open>
-
-<summary> Expandir/Ocultar... </summary>
 
 De posse dos hiperparâmetros encontrados na fase de ajuste, é possível executar o treinamento do modelo que será utilizado para as previsões.  
 Este endpoint retorna o nome do arquivo salvo contendo o modelo treinado no formato JOBLIB.
 
 ![Treinamento do modelo](readme_files/ModelTraining.png)
 
-</details>
-
 ### Realizando previsões
-
-<details open>
-
-<summary> Expandir/Ocultar... </summary>
 
 Informe a ação (símbolo) e o modelo a ser usado na previsão.
 
@@ -223,13 +172,8 @@ Ao final da previsão o endpoint irá gerar uma imagem na pasta _reports_ com o 
 
 ![Resultado da previsão](readme_files/neuralforecast_lstm_VALE3.SA_20250216_1659.png)
 
-</details>
 
 # Visualizando métricas
-
-<details open>
-
-<summary> Expandir/Ocultar... </summary>
 
 ## Dados do TensorBoard
 
